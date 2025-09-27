@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-export default function StartForm({ onStart, topic = "English", totalQuestions = 10, totalTime = 5 }) {
+export default function StartForm({ onStart, topic = "English", totalQuestions = 109, totalTime = 50 }) {
   const [name, setName] = useState("");
   const [expectedScore, setExpectedScore] = useState("");
 

@@ -3,7 +3,7 @@ import useTimer from "../hooks/useTimer";
 
 export default function Quiz({ questions, onSubmit }) {
   const [answers, setAnswers] = useState({});
-  const totalTime = 2400; // total time in seconds (20 mins)
+  const totalTime = 3000; // total time in seconds (20 mins)
   const timeLeft = useTimer(totalTime, () => onSubmit(answers));
 
   // Convert seconds to MM:SS
