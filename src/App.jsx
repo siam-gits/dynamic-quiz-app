@@ -9,7 +9,9 @@ import BanglaQuestions from "./questions/BanglaQuestions";
 import BangladeshAffairs from "./questions/BangladeshAffairs";
 import InternationalAffairs from "./questions/InternationalAffairs";
 import MathAndIQQuestions from "./questions/MathAndIQQuestions";
+import CurrentAffairs from "./questions/CurrentAffairs";
 import AllQuestions from "./questions/AllQuestions";
+import Revision from "./questions/Revision";
 
 export default function App() {
   const [step, setStep] = useState("start");
@@ -24,10 +26,11 @@ export default function App() {
     "Bangladesh Affairs": BangladeshAffairs,
     "International Affairs": InternationalAffairs,
     Math: MathAndIQQuestions,
+    "Current Affairs": CurrentAffairs,
     All: AllQuestions,
+    "Revision": Revision
   };
 
-  // 🚀 Start Quiz
 // 🚀 Start Quiz
 function handleStart(name, expectedScore, totalTime, topic, totalQuestions) {
   const selectedQuestions = topicsData[topic] || [];
