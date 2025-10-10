@@ -23,7 +23,7 @@ export default function StartForm({ onStart }) {
     Bangla: BanglaQuestions,
     "Bangladesh Affairs": BangladeshAffairs,
     "International Affairs": InternationalAffairs,
-    Math: MathAndIQQuestions,
+    "Math & IQ": MathAndIQQuestions,
     All: AllQuestions,
   };
 

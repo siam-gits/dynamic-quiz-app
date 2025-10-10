@@ -14,6 +14,7 @@ import {
   Tooltip,
   Legend,
 } from "recharts";
+import { fetchExplanation } from "../api/fetchExplanation";
 
 export default function Result({
   name,
@@ -76,7 +77,7 @@ export default function Result({
     return () => clearInterval(timer);
   }, [score, maxScore]);
 
-  // Build revision JSON (wrong + notAnswered)
+  // Build revision JSON
   const revisionData = {
     wrong: questions
       .map((q, i) => {
@@ -193,68 +194,80 @@ export default function Result({
     return true;
   });
 
-  // Handle PDF download
- // After calculating score, maxScore, percentage
-const handleDownloadPDF = () => {
-  const doc = new jsPDF("p", "pt", "a4");
+  // PDF download
+  const handleDownloadPDF = () => {
+    const doc = new jsPDF("p", "pt", "a4");
+    doc.addFileToVFS("NotoSansBengali-Regular.ttf", NotoSansBengaliRegular);
+    doc.addFont("NotoSansBengali-Regular.ttf", "NotoSansBengali", "normal");
+    doc.setFont("NotoSansBengali");
+    doc.setFontSize(16);
+    doc.text("Quiz Results", doc.internal.pageSize.getWidth() / 2, 30, { align: "center" });
+    doc.setFontSize(12);
+    let y = 50;
+    doc.text(`Name: ${name}`, 20, y);
+    y += 18;
+    doc.text(`Topic: ${topic}`, 20, y);
+    y += 18;
+    doc.text(`Score: ${score.toFixed(2)} / ${maxScore} (${percentage}%)`, 20, y);
 
-  // Embed Bangla font
-  doc.addFileToVFS("NotoSansBengali-Regular.ttf", NotoSansBengaliRegular);
-  doc.addFont("NotoSansBengali-Regular.ttf", "NotoSansBengali", "normal");
-  doc.setFont("NotoSansBengali");
+    const tableData = questions.map((q, i) => [
+      i + 1,
+      q.question,
+      q.options.join(", "),
+      answers[i] || "Not Answered",
+      q.correct,
+      answers[i] === q.correct ? "✅" : "❌"
+    ]);
 
-  // Header
-  doc.setFontSize(16);
-  doc.text("Quiz Results", doc.internal.pageSize.getWidth() / 2, 30, { align: "center" });
+    autoTable(doc, {
+      startY: y + 20,
+      head: [["#", "Question", "Options", "Your Answer", "Correct Answer"]],
+      body: tableData,
+      styles: { font: "NotoSansBengali", fontSize: 10, cellWidth: 'wrap', overflow: 'linebreak' },
+      headStyles: { fillColor: [66, 139, 202] },
+      columnStyles: { 0: { cellWidth: 30, halign: "center" }, 1: { cellWidth: 150 }, 2: { cellWidth: 140 }, 3: { cellWidth: 100 }, 4: { cellWidth: 100 } },
+      theme: "grid",
+      didDrawPage: (data) => {
+        const page = doc.internal.getNumberOfPages();
+        doc.setFontSize(10);
+        doc.text(`Page ${page}`, doc.internal.pageSize.getWidth() - 40, doc.internal.pageSize.getHeight() - 10);
+      },
+      margin: { top: y + 20, left: 20, right: 20 }
+    });
 
-  doc.setFontSize(12);
-  let y = 50;
-  doc.text(`Name: ${name}`, 20, y);
-  y += 18;
-  doc.text(`Topic: ${topic}`, 20, y);
-  y += 18;
-  doc.text(`Score: ${score.toFixed(2)} / ${maxScore} (${percentage}%)`, 20, y);
+    doc.save(`quiz_result_${topic}_${name}.pdf`);
+  };
 
-  // Table data
-  const tableData = questions.map((q, i) => [
-    i + 1,
-    q.question,
-    q.options.join(", "),
-    answers[i] || "Not Answered",
-    q.correct,
-    answers[i] === q.correct ? "✅" : "❌"
-  ]); 
+ function ExplainButton({ question, correctAnswer, userAnswer }) {
+  const [loading, setLoading] = useState(false);
+  const [explanation, setExplanation] = useState(null);
 
-  autoTable(doc, {
-    startY: y + 20,
-    head: [["#", "Question", "Options", "Your Answer", "Correct Answer"]],
-    body: tableData,
-    styles: {
-      font: "NotoSansBengali",
-      fontSize: 10,
-      cellWidth: 'wrap',
-      overflow: 'linebreak',
-    },
-    headStyles: { fillColor: [66, 139, 202] },
-    columnStyles: {
-      0: { cellWidth: 30, halign: "center" }, // Wider # column
-      1: { cellWidth: 150 }, // Question column
-      2: { cellWidth: 140 }, // Options column
-      3: { cellWidth: 100 }, // Your Answer
-      4: { cellWidth: 100 }, // Correct Answer
-    },
-    theme: "grid",
-    didDrawPage: (data) => {
-      const page = doc.internal.getNumberOfPages();
-      doc.setFontSize(10);
-      doc.text(`Page ${page}`, doc.internal.pageSize.getWidth() - 40, doc.internal.pageSize.getHeight() - 10);
-    },
-    margin: { top: y + 20, left: 20, right: 20 }
-  });
+  async function handleExplain() {
+    setLoading(true);
+    const text = await fetchExplanation(question, correctAnswer, userAnswer);
+    setExplanation(text);
+    setLoading(false);
+  }
 
-  doc.save(`quiz_result_${topic}_${name}.pdf`);
-};
+    return (
+      <div className="mt-2">
+        {!explanation ? (
+          <button
+            onClick={handleExplain}
+            className="bg-blue-500 hover:bg-blue-600 text-white px-3 py-1 rounded-md text-sm"
+          >
+            {loading ? "Explaining..." : "Explain"}
+          </button>
+        ) : (
+          <div className="bg-gray-100 p-3 rounded-lg text-sm text-gray-700">
+            <strong>Explanation:</strong> {explanation}
+          </div>
+        )}
+      </div>
+    );
+  }
 
+  // --- Render ---
   return (
     <div className="max-w-3xl mx-auto p-6 bg-white rounded-2xl shadow-lg mt-10 relative">
       {confetti && <Confetti numberOfPieces={150} recycle={false} />}
@@ -332,11 +345,12 @@ const handleDownloadPDF = () => {
         <button onClick={handleDownloadPDF} className="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition">Download PDF</button>
       </div>
 
-      {/* Filtered Questions */}
+      {/* Filtered Questions with Explain */}
       {filter!=="all" && filteredQuestions.length>0 && (
         <ul className="space-y-4 mb-6">
           {filteredQuestions.map((q,i)=>{
             const idx = questions.indexOf(q);
+            const isWrong = answers[idx] !== q.correct;
             return (
               <li key={i} className="p-4 rounded-lg border shadow-sm bg-gray-50">
                 <strong className="block mb-2">{idx+1}. {q.question}</strong>
@@ -353,6 +367,15 @@ const handleDownloadPDF = () => {
                       </div>
                     )
                   })}
+                 {answers[idx] !== q.correct && (
+  <ExplainButton 
+    question={q.question} 
+    correctAnswer={q.correct} 
+    userAnswer={answers[idx]} 
+    topic={topic} 
+  />
+)}
+
                 </div>
               </li>
             )
@@ -360,42 +383,40 @@ const handleDownloadPDF = () => {
         </ul>
       )}
 
-{/* Show History */}
-{showHistory && history.length > 0 && (
-  <div className="mt-6 bg-gray-50 p-4 rounded-xl shadow-inner overflow-x-auto">
-    <h3 className="text-xl font-bold mb-2 text-center">All Previous Attempts</h3>
-    <table className="min-w-full text-center border-collapse">
-      <thead>
-        <tr>
-          <th className="border px-2 py-1">Date</th>
-          <th className="border px-2 py-1">Topic</th>
-          <th className="border px-2 py-1">Expected Score</th>
-          <th className="border px-2 py-1">Score</th>
-          <th className="border px-2 py-1">Correct</th>
-          <th className="border px-2 py-1">Wrong</th>
-          <th className="border px-2 py-1">Not Answered</th>
-          <th className="border px-2 py-1">Percentage</th>
-        </tr>
-      </thead>
-      <tbody>
-        {history.map((h, idx) => (
-          <tr key={idx}>
-            <td className="border px-2 py-1">{h.timestamp || "—"}</td>
-            <td className="border px-2 py-1">{h.topic}</td>
-            <td className="border px-2 py-1">{Math.round(h.expectedScore)}</td> {/* Show integer only */}
-            <td className="border px-2 py-1">{parseFloat(h.score).toFixed(2)}</td>
-            <td className="border px-2 py-1 text-green-700 font-bold">{h.correct}</td>
-            <td className="border px-2 py-1 text-red-700 font-bold">{h.wrong}</td>
-            <td className="border px-2 py-1 text-gray-700 font-bold">{h.notAnswered}</td>
-            <td className="border px-2 py-1">{(parseFloat(h.percentage) * 100).toFixed(2)}%</td>
-          </tr>
-        ))}
-      </tbody>
-    </table>
-  </div>
-)}
-
-
+      {/* Show History */}
+      {showHistory && history.length > 0 && (
+        <div className="mt-6 bg-gray-50 p-4 rounded-xl shadow-inner overflow-x-auto">
+          <h3 className="text-xl font-bold mb-2 text-center">All Previous Attempts</h3>
+          <table className="min-w-full text-center border-collapse">
+            <thead>
+              <tr>
+                <th className="border px-2 py-1">Date</th>
+                <th className="border px-2 py-1">Topic</th>
+                <th className="border px-2 py-1">Expected Score</th>
+                <th className="border px-2 py-1">Score</th>
+                <th className="border px-2 py-1">Correct</th>
+                <th className="border px-2 py-1">Wrong</th>
+                <th className="border px-2 py-1">Not Answered</th>
+                <th className="border px-2 py-1">Percentage</th>
+              </tr>
+            </thead>
+            <tbody>
+              {history.map((h, idx) => (
+                <tr key={idx}>
+                  <td className="border px-2 py-1">{h.timestamp || "—"}</td>
+                  <td className="border px-2 py-1">{h.topic}</td>
+                  <td className="border px-2 py-1">{Math.round(h.expectedScore)}</td>
+                  <td className="border px-2 py-1">{parseFloat(h.score).toFixed(2)}</td>
+                  <td className="border px-2 py-1 text-green-700 font-bold">{h.correct}</td>
+                  <td className="border px-2 py-1 text-red-700 font-bold">{h.wrong}</td>
+                  <td className="border px-2 py-1 text-gray-700 font-bold">{h.notAnswered}</td>
+                  <td className="border px-2 py-1">{(parseFloat(h.percentage) * 100).toFixed(2)}%</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      )}
 
       {/* Submission Toast */}
       {submitted && (

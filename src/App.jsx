@@ -28,17 +28,17 @@ export default function App() {
   };
 
   // 🚀 Start Quiz
-  function handleStart(name, expectedScore, totalTime, topic, totalQuestions) {
-    const selectedQuestions = topicsData[topic] || [];
+// 🚀 Start Quiz
+function handleStart(name, expectedScore, totalTime, topic, totalQuestions) {
+  const selectedQuestions = topicsData[topic] || [];
 
-    // Shuffle questions for randomness
-    const shuffled = [...selectedQuestions].sort(() => Math.random() - 0.5);
+  // No shuffle — keep original order
+  setUser({ name, expectedScore, topic });
+  setQuestions(selectedQuestions.slice(0, totalQuestions)); // load correct number of questions
+  setTotalTime(totalTime);
+  setStep("quiz");
+}
 
-    setUser({ name, expectedScore, topic });
-    setQuestions(shuffled.slice(0, totalQuestions)); // load correct number of questions
-    setTotalTime(totalTime);
-    setStep("quiz");
-  }
 
   // 📝 Submit Answers
   function handleSubmit(ans) {
