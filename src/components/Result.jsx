@@ -1,9 +1,8 @@
 import React, { useState, useEffect } from "react";
 import Confetti from "react-confetti";
 import emreSound from "../Assets/emre_zdemir.mp3";
-import jsPDF from "jspdf";
-import autoTable from "jspdf-autotable";
-import { NotoSansBengaliRegular } from "../fonts/NotoSansBengali-Regular.js";
+import { downloadQuizPDF } from "../utils/pdf";
+
 import {
   ResponsiveContainer,
   LineChart,
@@ -195,48 +194,7 @@ export default function Result({
   });
 
   // PDF download
-  const handleDownloadPDF = () => {
-    const doc = new jsPDF("p", "pt", "a4");
-    doc.addFileToVFS("NotoSansBengali-Regular.ttf", NotoSansBengaliRegular);
-    doc.addFont("NotoSansBengali-Regular.ttf", "NotoSansBengali", "normal");
-    doc.setFont("NotoSansBengali");
-    doc.setFontSize(16);
-    doc.text("Quiz Results", doc.internal.pageSize.getWidth() / 2, 30, { align: "center" });
-    doc.setFontSize(12);
-    let y = 50;
-    doc.text(`Name: ${name}`, 20, y);
-    y += 18;
-    doc.text(`Topic: ${topic}`, 20, y);
-    y += 18;
-    doc.text(`Score: ${score.toFixed(2)} / ${maxScore} (${percentage}%)`, 20, y);
 
-    const tableData = questions.map((q, i) => [
-      i + 1,
-      q.question,
-      q.options.join(", "),
-      answers[i] || "Not Answered",
-      q.correct,
-      answers[i] === q.correct ? "✅" : "❌"
-    ]);
-
-    autoTable(doc, {
-      startY: y + 20,
-      head: [["#", "Question", "Options", "Your Answer", "Correct Answer"]],
-      body: tableData,
-      styles: { font: "NotoSansBengali", fontSize: 10, cellWidth: 'wrap', overflow: 'linebreak' },
-      headStyles: { fillColor: [66, 139, 202] },
-      columnStyles: { 0: { cellWidth: 30, halign: "center" }, 1: { cellWidth: 150 }, 2: { cellWidth: 140 }, 3: { cellWidth: 100 }, 4: { cellWidth: 100 } },
-      theme: "grid",
-      didDrawPage: (data) => {
-        const page = doc.internal.getNumberOfPages();
-        doc.setFontSize(10);
-        doc.text(`Page ${page}`, doc.internal.pageSize.getWidth() - 40, doc.internal.pageSize.getHeight() - 10);
-      },
-      margin: { top: y + 20, left: 20, right: 20 }
-    });
-
-    doc.save(`quiz_result_${topic}_${name}.pdf`);
-  };
 
  function ExplainButton({ question, correctAnswer, userAnswer }) {
   const [loading, setLoading] = useState(false);
@@ -252,12 +210,46 @@ export default function Result({
     return (
       <div className="mt-2">
         {!explanation ? (
-          <button
-            onClick={handleExplain}
-            className="bg-blue-500 hover:bg-blue-600 text-white px-3 py-1 rounded-md text-sm"
-          >
-            {loading ? "Explaining..." : "Explain"}
-          </button>
+        <button
+  onClick={handleExplain}
+  disabled={loading}
+  className={`relative flex items-center justify-center gap-2 px-4 py-2 rounded-xl text-sm font-medium text-white transition-all duration-300 
+    ${loading 
+      ? "bg-blue-400 cursor-not-allowed" 
+      : "bg-gradient-to-r from-blue-500 via-indigo-500 to-purple-500 hover:from-blue-600 hover:via-indigo-600 hover:to-purple-600 shadow-lg hover:shadow-xl"
+    }`}
+>
+  {loading ? (
+    <>
+      <svg
+        className="animate-spin h-4 w-4 text-white"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+      >
+        <circle
+          className="opacity-25"
+          cx="12"
+          cy="12"
+          r="10"
+          stroke="currentColor"
+          strokeWidth="4"
+        ></circle>
+        <path
+          className="opacity-75"
+          fill="currentColor"
+          d="M4 12a8 8 0 018-8v4a4 4 0 00-4 4H4z"
+        ></path>
+      </svg>
+      <span>Explaining...</span>
+    </>
+  ) : (
+    <>
+      <span>✨ Explain</span>
+    </>
+  )}
+</button>
+
         ) : (
           <div className="bg-gray-100 p-3 rounded-lg text-sm text-gray-700">
             <strong>Explanation:</strong> {explanation}
@@ -342,8 +334,12 @@ export default function Result({
         <button onClick={()=>onRestart(null,"normal")} className="px-4 py-2 bg-green-600 text-white rounded hover:bg-green-700 transition">Reattempt Full Quiz</button>
         {/* <button onClick={handleReviseMistakes} className="px-4 py-2 bg-orange-500 text-white rounded hover:bg-orange-600 transition">Revise Mistakes</button> */}
         <button onClick={()=>{setShowHistory(!showHistory); fetchHistory()}} className="px-4 py-2 bg-purple-600 text-white rounded hover:bg-purple-700 transition">{showHistory?"Hide Results":"Show Results"}</button>
-        <button onClick={handleDownloadPDF} className="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition">Download PDF</button>
-      </div>
+<button 
+  onClick={() => downloadQuizPDF({ name, topic, questions, answers, score, maxScore, percentage })}
+  className="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition"
+>
+  Download PDF
+</button>      </div>
 
       {/* Filtered Questions with Explain */}
       {filter!=="all" && filteredQuestions.length>0 && (

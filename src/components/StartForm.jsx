@@ -47,32 +47,33 @@ export default function StartForm({ onStart }) {
     }, 100);
     return () => clearInterval(interval);
   }, []);
+const selectedQuestions = topicsData[topic] || [];
+const totalQuestions = selectedQuestions.length;
 
-  const selectedQuestions = topicsData[topic] || [];
-  const totalQuestions = selectedQuestions.length;
-  const totalTimeMinutes = (totalQuestions / 2).toFixed(1); // rounded to 1 decimal
+// 🕒 1 minute per question for Math & IQ, 0.5 minute for others
+const timePerQuestionMinutes = topic === "Math & IQ" ? 1 : 0.5;
+const totalTimeMinutes = (totalQuestions * timePerQuestionMinutes).toFixed(1);
 
-  const handleStartClick = () => {
-    if (!name.trim() || !expectedScore.trim() || !topic) {
-      alert("Please enter your name, expected score, and select a topic!");
-      return;
-    }
+const handleStartClick = () => {
+  if (!name.trim() || !expectedScore.trim() || !topic) {
+    alert("Please enter your name, expected score, and select a topic!");
+    return;
+  }
 
-    if (totalQuestions === 0) {
-      alert(
-        "⚠️ This topic doesn't have any questions yet. Try another topic or check back later!"
-      );
-      return;
-    }
+  if (totalQuestions === 0) {
+    alert("⚠️ This topic doesn't have any questions yet. Try another topic or check back later!");
+    return;
+  }
 
-    if (Number(expectedScore) > totalQuestions) {
-      alert(`Your expected score cannot exceed total questions (${totalQuestions})`);
-      return;
-    }
+  if (Number(expectedScore) > totalQuestions) {
+    alert(`Your expected score cannot exceed total questions (${totalQuestions})`);
+    return;
+  }
 
-    const totalTimeSeconds = (totalQuestions / 2) * 60;
-    onStart(name, Number(expectedScore), totalTimeSeconds, topic, totalQuestions);
-  };
+  const totalTimeSeconds = totalQuestions * timePerQuestionMinutes * 60;
+  onStart(name, Number(expectedScore), totalTimeSeconds, topic, totalQuestions);
+};
+
 
   return (
     <div className="max-w-md mx-auto mt-10 p-6 bg-white rounded-2xl shadow-lg text-center space-y-4 transition-all duration-300">

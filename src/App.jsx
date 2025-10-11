@@ -25,7 +25,7 @@ export default function App() {
     Bangla: BanglaQuestions,
     "Bangladesh Affairs": BangladeshAffairs,
     "International Affairs": InternationalAffairs,
-    Math: MathAndIQQuestions,
+   "Math & IQ": MathAndIQQuestions,
     "Current Affairs": CurrentAffairs,
     All: AllQuestions,
     "Revision": Revision
