@@ -1,7 +1,9 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import Confetti from "react-confetti";
 import emreSound from "../Assets/emre_zdemir.mp3";
 import { downloadQuizPDF } from "../utils/pdf";
+import { fetchInsights } from "../api/fetchInsights";
+import { ArrowUp, ArrowDown } from "lucide-react";
 
 import {
   ResponsiveContainer,
@@ -27,6 +29,7 @@ export default function Result({
   const [submitted, setSubmitted] = useState(false);
   const [history, setHistory] = useState([]);
   const [showHistory, setShowHistory] = useState(false);
+  const [loadingHistory, setLoadingHistory] = useState(false);
   const [confetti, setConfetti] = useState(false);
   const [filter, setFilter] = useState("all");
   const [progress, setProgress] = useState(0);
@@ -56,6 +59,10 @@ export default function Result({
 
   const scriptURL =
     "https://script.google.com/macros/s/AKfycbzwRqxhJoOATh4Npm4DFLXqm53c9cMkt9zes27xD8i2REdg3XU_Q8u5mjl7LWW1NJn2Ng/exec";
+
+
+
+
 
   // Animate score circle
   useEffect(() => {
@@ -158,15 +165,36 @@ export default function Result({
     return () => clearTimeout(cleanupTimer);
   }, [score]);
 
+
+  //Analysis
+const [insights, setInsights] = useState("");
+const [loadingInsights, setLoadingInsights] = useState(false);
+
+async function handleGenerateInsights() {
+  setLoadingInsights(true);
+  const performanceData = questions.map((q, i) => ({
+    question: q.question,
+    correctAnswer: q.correct,
+    userAnswer: answers[i] || "No answer",
+    isCorrect: answers[i] === q.correct
+  }));
+
+  const text = await fetchInsights(topic, performanceData);
+  setInsights(text);
+  setLoadingInsights(false);
+}
+
   // Fetch history
-  const fetchHistory = () => {
-    fetch(`${scriptURL}?name=${encodeURIComponent(name)}`)
-      .then((res) => res.json())
-      .then((data) => {
-        setHistory(data.reverse());
-      })
-      .catch((err) => console.error(err));
-  };
+const fetchHistory = async () => {
+  try {
+    const res = await fetch(`${scriptURL}?name=${encodeURIComponent(name)}`);
+    const data = await res.json();
+    setHistory(data.reverse());
+  } catch (err) {
+    console.error(err);
+  }
+};
+
 
   // Revise Mistakes
   const handleReviseMistakes = () => {
@@ -308,21 +336,33 @@ export default function Result({
       <div className="flex justify-around mb-6 space-x-2">
         <div
           className="flex-1 bg-gradient-to-r from-green-400 to-green-600 text-white p-4 rounded-xl shadow-lg flex flex-col items-center cursor-pointer"
-          onClick={() => setFilter(filter==="correct"?"all":"correct")}
+          onClick={() => {
+    setFilter(prev => prev === "correct" ? "all" : "correct");
+    setShowHistory(false);
+    setInsights(""); // hide analysis
+  }}
         >
           <p className="font-bold text-2xl">{correct}</p>
           <p className="text-sm">Correct ✅</p>
         </div>
         <div
           className="flex-1 bg-gradient-to-r from-red-400 to-red-600 text-white p-4 rounded-xl shadow-lg flex flex-col items-center cursor-pointer"
-          onClick={() => setFilter(filter==="wrong"?"all":"wrong")}
+          onClick={() => {
+    setFilter(prev => prev === "wrong" ? "all" : "wrong");
+    setShowHistory(false);
+    setInsights("");
+  }}
         >
           <p className="font-bold text-2xl">{wrong}</p>
           <p className="text-sm">Wrong ❌</p>
         </div>
         <div
           className="flex-1 bg-gradient-to-r from-gray-400 to-gray-600 text-white p-4 rounded-xl shadow-lg flex flex-col items-center cursor-pointer"
-          onClick={() => setFilter(filter==="notAnswered"?"all":"notAnswered")}
+          onClick={() => {
+    setFilter(prev => prev === "notAnswered" ? "all" : "notAnswered");
+    setShowHistory(false);
+    setInsights("");
+  }}
         >
           <p className="font-bold text-2xl">{notAnswered}</p>
           <p className="text-sm">Not Answered ⚪</p>
@@ -331,15 +371,155 @@ export default function Result({
 
       {/* Action Buttons */}
       <div className="flex justify-center gap-4 mb-6">
-        <button onClick={()=>onRestart(null,"normal")} className="px-4 py-2 bg-green-600 text-white rounded hover:bg-green-700 transition">Reattempt Full Quiz</button>
+        <button onClick={()=>onRestart(null,"normal")} className="px-4 py-2 bg-green-600 text-white rounded hover:bg-green-700 transition">Reattempt Quiz</button>
+<button
+  onClick={async () => {
+    setFilter("all");       // hide correct/wrong/not answered
+    setShowHistory(false);  // hide history
+    await handleGenerateInsights(); // show analysis
+  }}
+  disabled={loadingInsights}
+  className="relative flex items-center justify-center gap-2 px-4 py-2 bg-pink-600 text-white rounded hover:bg-pink-700 transition disabled:opacity-50 disabled:cursor-not-allowed"
+>
+  {loadingInsights ? (
+    <>
+      <svg
+        className="animate-spin h-5 w-5 text-white"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+      >
+        <circle
+          className="opacity-25"
+          cx="12"
+          cy="12"
+          r="10"
+          stroke="currentColor"
+          strokeWidth="4"
+        ></circle>
+        <path
+          className="opacity-75"
+          fill="currentColor"
+          d="M4 12a8 8 0 018-8v4a4 4 0 00-4 4H4z"
+        ></path>
+      </svg>
+      <span>Analyzing...</span>
+    </>
+  ) : (
+    <span>Analyze Quiz</span>
+  )}
+</button>
+
+
+
         {/* <button onClick={handleReviseMistakes} className="px-4 py-2 bg-orange-500 text-white rounded hover:bg-orange-600 transition">Revise Mistakes</button> */}
-        <button onClick={()=>{setShowHistory(!showHistory); fetchHistory()}} className="px-4 py-2 bg-purple-600 text-white rounded hover:bg-purple-700 transition">{showHistory?"Hide Results":"Show Results"}</button>
+<button
+  onClick={async () => {
+    setFilter("all"); // hide any filter
+    setInsights("");  // hide analysis
+
+    if (!showHistory && history.length === 0) {
+      // First time loading, show spinner
+      setLoadingHistory(true);
+      await fetchHistory();
+      setLoadingHistory(false);
+    }
+
+    // Toggle visibility
+    setShowHistory(prev => !prev);
+  }}
+  disabled={loadingHistory}
+  className={`px-4 py-2 rounded text-white transition flex items-center justify-center gap-2
+    ${loadingHistory ? "bg-purple-400 cursor-not-allowed" : "bg-purple-600 hover:bg-purple-700"}
+  `}
+>
+  {loadingHistory ? (
+    <>
+      <svg
+        className="animate-spin h-4 w-4 text-white"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+      >
+        <circle
+          className="opacity-25"
+          cx="12"
+          cy="12"
+          r="10"
+          stroke="currentColor"
+          strokeWidth="4"
+        />
+        <path
+          className="opacity-75"
+          fill="currentColor"
+          d="M4 12a8 8 0 018-8v4a4 4 0 00-4 4H4z"
+        />
+      </svg>
+      <span>Loading...</span>
+    </>
+  ) : (
+    <span>{showHistory ? "Hide Results" : "Show Results"}</span>
+  )}
+</button>
+
+
 <button 
   onClick={() => downloadQuizPDF({ name, topic, questions, answers, score, maxScore, percentage })}
   className="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition"
 >
   Download PDF
 </button>      </div>
+
+
+{insights && (
+  <div className="mt-6 p-6 bg-gradient-to-br from-purple-50 to-indigo-100 rounded-2xl shadow-inner relative">
+    {/* Close Button */}
+    <button
+      onClick={() => setInsights("")}
+      className="absolute top-2 right-2 text-red-600 font-bold text-xl hover:text-red-800"
+      aria-label="Close Insights"
+    >
+      ×
+    </button>
+
+    {/* Centered main heading */}
+    <h3 className="text-xl font-bold mb-4 text-purple-800 text-center">
+      AI Quiz Analysis
+    </h3>
+    <hr className="border-purple-300 mb-4" />
+
+    {/* Split insights into sections */}
+    <div className="text-sm">
+      {insights.split("\n\n").map((block, idx) => {
+        const [heading, ...rest] = block.split("\n");
+
+        // Assign colors for each heading
+        let headingColor = "text-green-600"; // Strengths is green
+        if (heading.toLowerCase().includes("areas to improve")) headingColor = "text-red-600";
+        else if (heading.toLowerCase().includes("one suggestion")) headingColor = "text-blue-600";
+
+        return (
+          <div key={idx} className="mb-4">
+            <span className={`font-bold ${headingColor}`}>{heading}</span>
+            <br />
+            <span
+              className="whitespace-pre-line"
+              dangerouslySetInnerHTML={{
+                __html: rest.join("\n").replace(/\*\*(.*?)\*\*/g, "<strong>$1</strong>"),
+              }}
+            />
+          </div>
+        );
+      })}
+    </div>
+  </div>
+)}
+
+
+
+
+
+
 
       {/* Filtered Questions with Explain */}
       {filter!=="all" && filteredQuestions.length>0 && (
@@ -380,39 +560,94 @@ export default function Result({
       )}
 
       {/* Show History */}
-      {showHistory && history.length > 0 && (
-        <div className="mt-6 bg-gray-50 p-4 rounded-xl shadow-inner overflow-x-auto">
-          <h3 className="text-xl font-bold mb-2 text-center">All Previous Attempts</h3>
-          <table className="min-w-full text-center border-collapse">
-            <thead>
-              <tr>
-                <th className="border px-2 py-1">Date</th>
-                <th className="border px-2 py-1">Topic</th>
-                <th className="border px-2 py-1">Expected Score</th>
-                <th className="border px-2 py-1">Score</th>
-                <th className="border px-2 py-1">Correct</th>
-                <th className="border px-2 py-1">Wrong</th>
-                <th className="border px-2 py-1">Not Answered</th>
-                <th className="border px-2 py-1">Percentage</th>
-              </tr>
-            </thead>
-            <tbody>
-              {history.map((h, idx) => (
-                <tr key={idx}>
-                  <td className="border px-2 py-1">{h.timestamp || "—"}</td>
-                  <td className="border px-2 py-1">{h.topic}</td>
-                  <td className="border px-2 py-1">{Math.round(h.expectedScore)}</td>
-                  <td className="border px-2 py-1">{parseFloat(h.score).toFixed(2)}</td>
-                  <td className="border px-2 py-1 text-green-700 font-bold">{h.correct}</td>
-                  <td className="border px-2 py-1 text-red-700 font-bold">{h.wrong}</td>
-                  <td className="border px-2 py-1 text-gray-700 font-bold">{h.notAnswered}</td>
-                  <td className="border px-2 py-1">{(parseFloat(h.percentage) * 100).toFixed(2)}%</td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        </div>
-      )}
+{showHistory && history.length > 0 && (
+  <div className="mt-6 bg-gray-50 p-4 rounded-xl shadow-inner overflow-x-auto">
+    <h3 className="text-xl font-bold mb-4 text-center">All Previous Attempts</h3>
+
+    {/* Line Chart */}
+    <div className="mb-6 w-full h-64">
+      <ResponsiveContainer width="100%" height="100%">
+        <LineChart data={history}>
+          <CartesianGrid strokeDasharray="3 3" />
+          <XAxis 
+            dataKey="timestamp" 
+            tickFormatter={(str) => new Date(str).toLocaleDateString(undefined, { month: 'short', day: 'numeric' })}
+            interval="preserveStartEnd"
+          />
+         <YAxis 
+  domain={[0, 100]}
+  label={{ 
+    value: 'Percentage', 
+    angle: -90, 
+    position: 'insideLeft', 
+    style: { textAnchor: 'middle', fill: '#374151', fontWeight: 'bold' } 
+  }}
+/>
+
+          <Tooltip 
+            content={({ payload }) => {
+              if (!payload || payload.length === 0) return null;
+              const data = payload[0].payload;
+              return (
+                <div className="bg-white p-2 border rounded shadow text-sm">
+                  <div><strong>Date:</strong> {new Date(data.timestamp).toLocaleString()}</div>
+                  <div><strong>Topic:</strong> {data.topic}</div>
+                  <div><strong>Score:</strong> {data.correct + data.wrong + data.notAnswered ? `${data.score}/${data.correct + data.wrong + data.notAnswered}` : data.score}</div>
+                  <div><strong>Percentage:</strong> {(parseFloat(data.percentage) * 100).toFixed(2)}%</div>
+                </div>
+              );
+            }}
+          />
+          <Legend />
+          <Line 
+            type="monotone" 
+            dataKey={(h) => h.percentage * 100}           
+            stroke="#4f46e5" 
+            strokeWidth={2} 
+            dot={(props) => {
+              const { cx, cy, payload } = props;
+              if (parseFloat(payload.percentage) >= 0.80) {
+                return <circle key={`dot-${cx}`} cx={cx} cy={cy} r={6} fill="#34d399" stroke="#10b981" strokeWidth={2} />;
+              }
+              return <circle key={`dot-${cx}`} cx={cx} cy={cy} r={4} fill="#4f46e5" />;
+            }}
+            activeDot={{ r: 6 }} 
+            name="Score %" 
+          />
+        </LineChart>
+      </ResponsiveContainer>
+    </div>
+
+    {/* Table */}
+    <table className="min-w-full text-center border-collapse">
+      <thead>
+        <tr>
+          <th className="border px-2 py-1">Date</th>
+          <th className="border px-2 py-1">Topic</th>
+          <th className="border px-2 py-1">Score</th>
+          <th className="border px-2 py-1">Correct</th>
+          <th className="border px-2 py-1">Wrong</th>
+          <th className="border px-2 py-1">Not Answered</th>
+          <th className="border px-2 py-1">Percentage</th>
+        </tr>
+      </thead>
+      <tbody>
+        {history.map((h, idx) => (
+          <tr key={idx}>
+            <td className="border px-2 py-1">{new Date(h.timestamp).toLocaleDateString()}</td>
+            <td className="border px-2 py-1">{h.topic}</td>
+            <td className="border px-2 py-1">{`${parseFloat(h.score).toFixed(0)}/${h.correct + h.wrong + h.notAnswered}`}</td>
+            <td className="border px-2 py-1 text-green-700 font-bold">{h.correct}</td>
+            <td className="border px-2 py-1 text-red-700 font-bold">{h.wrong}</td>
+            <td className="border px-2 py-1 text-gray-700 font-bold">{h.notAnswered}</td>
+            <td className="border px-2 py-1">{(parseFloat(h.percentage) * 100).toFixed(2)}%</td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  </div>
+)}
+
 
       {/* Submission Toast */}
       {submitted && (

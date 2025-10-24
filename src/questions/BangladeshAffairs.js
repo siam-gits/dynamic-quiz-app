@@ -1,1157 +1,3175 @@
-const BangladeshAffairs =[
+const BangladeshAffairs = [
   {
     "id": 1,
-    "question": "'সুবা বাংলা' শব্দটি প্রথম ব্যবহার করা হয়",
-    "options": ["সম্রাট জাহাঙ্গীরের সময়ে", "সম্রাট শাহজাহানের সময়ে", "সম্রাট হুমায়ুনের সময়ে", "সম্রাট আকবরের সময়ে"],
-    "correct": "সম্রাট জাহাঙ্গীরের সময়ে"
+    "question": "What is the supreme law of Bangladesh?",
+    "options": [
+      "Penal Code 1860",
+      "Constitution",
+      "Civil Procedure Code",
+      "Bangla Academy Law"
+    ],
+    "correct": "Constitution"
   },
-  {
+{
     "id": 2,
-    "question": "বাংলার প্রথম সুবাদার কে ছিলেন?",
-    "options": ["মীর জুমলা", "ইসলাম খান", "মান সিংহ", "শায়েস্তা খান"],
-    "correct": "ইসলাম খান"
+    "question": "What kind of majority is needed to pass an ordinary bill in Parliament?",
+    "options": [
+      "Two-thirds majority(2/3)",
+      "Simple majority (50% + 1)",
+      "Three-fourths majority(3/4)",
+      "Unanimous vote"
+    ],
+    "correct": "Simple majority (50% + 1)"
   },
   {
     "id": 3,
-    "question": "ঢাকা শহরের গোড়াপত্তন হয়-",
-    "options": ["ব্রিটিশ আমলে", "সুলতানি আমলে", "মুঘল আমলে", "স্বাধীন নবাবী আমলে"],
-    "correct": "মুঘল আমলে"
+    "question": "What is the total number of Articles in the Constitution of Bangladesh?",
+    "options": [
+      "148",
+      "153",
+      "168",
+      "120"
+    ],
+    "correct": "153"
   },
   {
     "id": 4,
-    "question": "কোন নগরী মোঘল আমলে সুবা বাংলার রাজধানী ছিল?",
-    "options": ["গৌড়", "সোনারগাঁও", "ঢাকা", "হুগলী"],
-    "correct": "ঢাকা"
+    "question": "How many parts and schedules are there in the Constitution of Bangladesh?",
+    "options": [
+      "10 Parts, 7 Schedules",
+      "11 Parts, 5 Schedules",
+      "11 Parts, 7 Schedules",
+      "12 Parts, 7 Schedules"
+    ],
+    "correct": "11 Parts, 7 Schedules"
   },
   {
     "id": 5,
-    "question": "ঢাকা কখন সর্ব প্রথম বাংলার রাজধানী হয়েছিল?",
-    "options": ["১২৫৫ খ্রিস্টাব্দে", "১৬১০ খ্রিস্টাব্দে", "১৯০৫ খ্রিস্টাব্দে", "১৯৪৭ খ্রিস্টাব্দে"],
-    "correct": "১৬১০ খ্রিস্টাব্দে"
+    "question": "Who was the Chairman of the 34-member Constitution Drafting Committee?",
+    "options": [
+      "Sheikh Mujibur Rahman",
+      "Mahmudul Islam",
+      "Dr. Kamal Hossain",
+      "Justice A.S.M. Sayem"
+    ],
+    "correct": "Dr. Kamal Hossain"
   },
   {
     "id": 6,
-    "question": "ঢাকা শহর কোন সালে প্রতিষ্ঠিত হয়?",
-    "options": ["১৫০০ খ্রিস্টাব্দ", "১৫১০ খ্রিস্টাব্দ", "১৬১০ খ্রিস্টাব্দ", "১৬১২ খ্রিস্টাব্দ"],
-    "correct": "১৬১০ খ্রিস্টাব্দ"
+    "question": "On which date was the Constitution of Bangladesh adopted by the Constituent Assembly?",
+    "options": [
+      "December 16, 1971",
+      "March 26, 1971",
+      "November 4, 1972",
+      "December 16, 1972"
+    ],
+    "correct": "November 4, 1972"
   },
   {
     "id": 7,
-    "question": "নগর হিসেবে প্রতিষ্ঠিত হবার পর ঢাকা বর্তমানে এর কততম শতাব্দী অতিক্রম করেছে?",
-    "options": ["৫ম", "২য়", "৪র্থ", "৩য়"],
-    "correct": "৫ম"
+    "question": "When did the Constitution of Bangladesh come into effect?",
+    "options": [
+      "January 1, 1973",
+      "December 16, 1972",
+      "November 4, 1972",
+      "March 26, 1973"
+    ],
+    "correct": "December 16, 1972"
   },
   {
     "id": 8,
-    "question": "ঢাকায় বাংলার রাজধানী স্থাপনের সময় মোগল সুবেদার কে ছিলেন?",
-    "options": ["ইসলাম খান", "ইব্রাহীম খান", "শায়েস্তা খান", "মীর জুমলা"],
-    "correct": "ইসলাম খান"
+    "question": "In how many languages is the Constitution of Bangladesh written?",
+    "options": [
+      "1 (Bengali)",
+      "2 (Bengali and English)",
+      "3 (Bengali and Urdu)",
+      "4 (Bengali, English, Hindi, and Urdu)"
+    ],
+    "correct": "2 (Bengali and English)"
   },
   {
     "id": 9,
-    "question": "ঢাকায় প্রথম বাংলার রাজধানী স্থাপন করেন-",
-    "options": ["সম্রাট আকবর", "সম্রাট জাহাঙ্গীর", "ইসলাম খাঁ", "শায়েস্তা খান"],
-    "correct": "ইসলাম খাঁ"
+    "question": "Who was the writer (calligrapher) of the handwritten constitution of Bangladesh?",
+    "options": [
+      "Kamrul Hassan",
+      "Shilpacharya Zainul Abedin",
+      "Hashim Khan",
+      "AKM Abdur Rauf"
+    ],
+    "correct": "AKM Abdur Rauf"
   },
   {
     "id": 10,
-    "question": "বাংলায় মোঘল প্রদেশের রাজধানী স্থাপন করেন-",
-    "options": ["শাহ সুজা", "মীর জুমলা", "শায়েস্তা খাঁ", "ইসলাম খান"],
-    "correct": "ইসলাম খান"
+    "question": "Who was the first person to sign the handwritten constitution of Bangladesh?",
+    "options": [
+      "Dr. Kamal Hossain",
+      "Shah Abdul Hamid",
+      "Bangabandhu Sheikh Mujibur Rahman",
+      "Syed Nazrul Islam"
+    ],
+    "correct": "Bangabandhu Sheikh Mujibur Rahman"
   },
   {
     "id": 11,
-    "question": "কার সময় বাংলার রাজধানী ঢাকায় স্থাপন করা হয়?",
-    "options": ["বখতিয়ার খলজী", "মুর্শীদকুলি খাঁ", "সম্রাট জাহাঙ্গীর", "শেরশাহ"],
-    "correct": "সম্রাট জাহাঙ্গীর"
+    "question": "Which Article recognizes Bengali as the state language of the Republic?",
+    "options": [
+      "Article 1",
+      "Article 2A",
+      "Article 3",
+      "Article 4A"
+    ],
+    "correct": "Article 3"
   },
   {
     "id": 12,
-    "question": "ঢাকার নাম 'জাহাঙ্গীরনগর' রাখেন কে?",
-    "options": ["শায়েস্তা খান", "সুবাদার ইসলাম খান", "ইব্রাহিম খান", "মীর জুমলা"],
-    "correct": "সুবাদার ইসলাম খান"
+    "question": "Which Article establishes Dhaka as the capital of the Republic?",
+    "options": [
+      "Article 2",
+      "Article 5",
+      "Article 7",
+      "Article 10"
+    ],
+    "correct": "Article 5"
   },
   {
     "id": 13,
-    "question": "প্রাচীন জাহাঙ্গীরনগরের বর্তমান নাম কি?",
-    "options": ["ঢাকা", "চট্টগ্রাম", "খুলনা", "সোনারগাঁও"],
-    "correct": "ঢাকা"
+    "question": "Which Article states that 'All powers belong to the people'?",
+    "options": [
+      "Article 6(1)",
+      "Article 7(1)",
+      "Article 11",
+      "Article 27"
+    ],
+    "correct": "Article 7(1)"
   },
   {
     "id": 14,
-    "question": "মোঘল আমলে ঢাকার নাম কি ছিল?",
-    "options": ["ইসলামাবাদ", "পরীবাগ", "জাহাঙ্গীরনগর", "সোনারগাঁও"],
-    "correct": "জাহাঙ্গীরনগর"
+    "question": "Which of the following is NOT one of the four fundamental principles of state policy?",
+    "options": [
+      "Nationalism",
+      "Socialism",
+      "Democracy",
+      "Monarchy"
+    ],
+    "correct": "Monarchy"
   },
   {
     "id": 15,
-    "question": "ঢাকার প্রাচীন নাম কি?",
-    "options": ["জাহাঙ্গীরনগর", "ইসলামপুর", "সোনারগাঁও", "ঢাকা"],
-    "correct": "জাহাঙ্গীরনগর"
+    "question": "Which Article provides for the Republic to be a democracy?",
+    "options": [
+      "Article 9",
+      "Article 11",
+      "Article 13",
+      "Article 14"
+    ],
+    "correct": "Article 11"
   },
   {
     "id": 16,
-    "question": "সুবাদার ইসলাম খান ঢাকার নাম রাখেন-",
-    "options": ["জাহাঙ্গীরনগর", "জান্নাতাবাদ", "ইসলামাবাদ", "নাসিরাবাদ"],
-    "correct": "জাহাঙ্গীরনগর"
+    "question": "Which Article was controversially amended (and later restored) to ensure secularism?",
+    "options": [
+      "Article 9",
+      "Article 12",
+      "Article 14",
+      "Article 16"
+    ],
+    "correct": "Article 12"
   },
   {
     "id": 17,
-    "question": "বাংলাদেশের রাজধানী কোথায়?",
-    "options": ["ঢাকা উত্তর", "ঢাকা দক্ষিণ", "ঢাকা", "শেরে বাংলা নগর"],
-    "correct": "ঢাকা"
+    "question": "Which Article provides for the provision of basic necessities of life (Fundamental Principles)?",
+    "options": [
+      "Article 15",
+      "Article 17",
+      "Article 18A",
+      "Article 21"
+    ],
+    "correct": "Article 15"
   },
   {
     "id": 18,
-    "question": "স্বাধীন বাংলাদেশের রাজধানী হওয়ার পূর্বে ঢাকা বাংলার রাজধানী ছিল-",
-    "options": ["তিনবার", "চারবার", "দুইবার", "একবার"],
-    "correct": "চারবার"
+    "question": "Which Article requires the preservation and display of the portrait of Bangabandhu Sheikh Mujibur Rahman?",
+    "options": [
+      "Article 4",
+      "Article 4A",
+      "Article 6",
+      "Article 7A"
+    ],
+    "correct": "Article 4A"
   },
   {
     "id": 19,
-    "question": "ঢাকার 'ধোলাই খাল' কে খনন করেন?",
-    "options": ["পরিবিবি", "ইসলাম খান", "শায়েস্তা খান", "ঈশা খান"],
-    "correct": "ইসলাম খান"
+    "question": "Part III of the Constitution deals with which subject?",
+    "options": [
+      "Fundamental Principles of State Policy",
+      "Fundamental Rights",
+      "The Executive",
+      "The Legislature"
+    ],
+    "correct": "Fundamental Rights"
   },
   {
     "id": 20,
-    "question": "কোন সম্রাটের আমলে পর্তুগিজদের হুগলি থেকে উচ্ছেদ করা হয়?",
-    "options": ["আকবর", "শাহজাহান", "বাবর", "জাহাঙ্গীর"],
-    "correct": "শাহজাহান"
+    "question": "Which Article ensures 'Equality before the law'?",
+    "options": [
+      "Article 26",
+      "Article 27",
+      "Article 28",
+      "Article 29"
+    ],
+    "correct": "Article 27"
   },
   {
     "id": 21,
-    "question": "কোন মুঘল সুবেদার পর্তুগিজদের চট্টগ্রাম থেকে বিতাড়িত করেন?",
-    "options": ["কাসিম খান", "ইসলাম খান", "মীরজুমলা", "শায়েস্তা খান"],
-    "correct": "শায়েস্তা খান"
+    "question": "'Men and Women are equal' which Article of our Constitution refers it?",
+    "options": [
+      "Art-26",
+      "Art-27",
+      "Art-28 (1)",
+      "Art-28 (2)"
+    ],
+    "correct": "Art-28 (2)"
   },
   {
     "id": 22,
-    "question": "বাংলার দক্ষিণ অঞ্চলের মানুষকে পর্তুগিজ ও মগ জলদস্যুদের অত্যাচার থেকে কে রক্ষা করেন?",
-    "options": ["মুর্শিদকুলী খান", "ইসলাম খান", "শায়েস্তা খান", "ঈসা খান"],
-    "correct": "শায়েস্তা খান"
+    "question": "Which Article deals with the 'Protection of right to life and personal liberty'?",
+    "options": [
+      "Article 30",
+      "Article 31",
+      "Article 32",
+      "Article 33"
+    ],
+    "correct": "Article 32"
   },
   {
     "id": 23,
-    "question": "কোন মুঘল সুবেদার চট্টগ্রাম দখল করে এর নাম রাখেন ইসলামাবাদ?",
-    "options": ["ইসলাম খান", "রাজা মানসিংহ", "মীর জুমলা", "শায়েস্তা খান"],
-    "correct": "শায়েস্তা খান"
+    "question": "Which Article guarantees 'Freedom of thought and conscience, and of speech'?",
+    "options": [
+      "Article 38",
+      "Article 39",
+      "Article 40",
+      "Article 41"
+    ],
+    "correct": "Article 39"
   },
   {
     "id": 24,
-    "question": "কার শাসনামলে চট্টগ্রাম প্রথমবারের মত পূর্ণভাবে বাংলার সাথে যুক্ত হয়?",
-    "options": ["মুর্শিদকুলি খান", "আলীবর্দী খান", "শায়েস্তা খান", "উপরের কোনটিই সত্য নয়"],
-    "correct": "শায়েস্তা খান"
+    "question": "Which Article provides for 'Freedom of religion'?",
+    "options": [
+      "Article 40",
+      "Article 41",
+      "Article 42",
+      "Article 43"
+    ],
+    "correct": "Article 41"
   },
   {
     "id": 25,
-    "question": "The geographical area now constituting Bangladesh was ruled by Muslims:/ বাংলাদেশের বর্তমান ভৌগলিক এলাকা মুসলমান কর্তৃক শাসিত হয়-",
-    "options": ["From 14 to 18th century A.D (চতুর্দশ থেকে অষ্টাদশ শতাব্দী পর্যন্ত)", "In 15th century A.D (পঞ্চদশ শতাব্দীতে)", "During Mughal period (মুঘল শাসনামলে)", "Before 14 century A.D (চতুর্দশ শতাব্দীর পূর্বে)"],
-    "correct": "During Mughal period (মুঘল শাসনামলে)"
+    "question": "Which Article deals with the enforcement of Fundamental Rights (by High Court Division)?",
+    "options": [
+      "Article 42",
+      "Article 43",
+      "Article 44",
+      "Article 45"
+    ],
+    "correct": "Article 44"
   },
   {
     "id": 26,
-    "question": "ঢাকার বড় কাটরা ও ছোট কাটরা শহরের নিম্নোক্ত এলাকায় অবস্থিত-",
-    "options": ["চকবাজারে", "সদরঘাটে", "লালবাগ", "ইসলামপুর"],
-    "correct": "চকবাজারে"
+    "question": "Which Article provides for the separation of the judiciary from the executive organs of the State?",
+    "options": [
+      "Article 20",
+      "Article 21",
+      "Article 22",
+      "Article 27"
+    ],
+    "correct": "Article 22"
   },
   {
     "id": 27,
-    "question": "ঢাকার বড় কাটরা নির্মাণ করেছেন",
-    "options": ["সম্রাট আওরঙ্গজেব", "শাহ সুজা", "শাহ আলম", "শায়েস্তা খান"],
-    "correct": "শাহ সুজা"
+    "question": "How is the President of Bangladesh elected?",
+    "options": [
+      "Direct popular vote",
+      "By a joint session of the Cabinet and Parliament",
+      "By Parliament members (All MPs)",
+      "By the Supreme Court"
+    ],
+    "correct": "By Parliament members (All MPs)"
   },
   {
     "id": 28,
-    "question": "ঢাকার বিখ্যাত ছোট কাটরা নির্মাণ করেন কে?",
-    "options": ["নবাব সিরাজউদ্দৌলা", "শায়েস্তা খাঁ", "ঈসা খাঁ", "সুবেদার ইসলাম"],
-    "correct": "শায়েস্তা খাঁ"
+    "question": "What is the minimum age to become the President according to the Constitution?",
+    "options": [
+      "25 years",
+      "30 years",
+      "35 years",
+      "40 years"
+    ],
+    "correct": "35 years"
   },
   {
     "id": 29,
-    "question": "ঢাকার চকের মসজিদের নির্মাতা-",
-    "options": ["মীর জুমলা", "ইসলাম খান", "শায়েস্তা খান", "মুরশীদ কুলি খান"],
-    "correct": "শায়েস্তা খান"
+    "question": "The courts of Bangladesh have no jurisdiction over-",
+    "options": [
+      "The Prime Minister",
+      "The President",
+      "The Speaker",
+      "The Chief Justice"
+    ],
+    "correct": "The President"
   },
   {
     "id": 30,
-    "question": "বাংলাদেশের প্রথম স্বাধীন নবাব কে?",
-    "options": ["নবাব সিরাজউদ্দৌলা", "মুর্শিদ কুলী খান", "ইলিয়াস শাহ", "আলাউদ্দিন হুসেন শাহ"],
-    "correct": "মুর্শিদ কুলী খান"
+    "question": "To whom does the President submit his resignation?",
+    "options": [
+      "Prime Minister",
+      "Chief Justice",
+      "Speaker",
+      "Chief Election Commissioner"
+    ],
+    "correct": "Speaker"
   },
   {
     "id": 31,
-    "question": "বাংলার নবাবী শাসন কোন সুবাদারের সময় থেকে শুরু হয়?",
-    "options": ["ইসলাম খান", "মুর্শিদকুলী খান", "শায়েস্তা খান", "আলীবর্দী খান"],
-    "correct": "মুর্শিদকুলী খান"
+    "question": "Who performs the duties of the President if the President's office is vacant?",
+    "options": [
+      "Prime Minister",
+      "The Speaker of the National Parliament",
+      "Chief Justice",
+      "Vice President"
+    ],
+    "correct": "The Speaker of the National Parliament"
   },
   {
     "id": 32,
-    "question": "কোন মোঘল সুবেদার বাংলার রাজধানী ঢাকা হইতে মুর্শিদাবাদে স্থানান্তর করেন?",
-    "options": ["ইসলাম খান", "শায়েস্তা খান", "মুর্শিদকুলি খান", "আলীবর্দী খান"],
-    "correct": "মুর্শিদকুলি খান"
+    "question": "Which Article grants the President the power to grant pardon, reprieve and respite?",
+    "options": [
+      "Article 48",
+      "Article 49",
+      "Article 51",
+      "Article 52"
+    ],
+    "correct": "Article 49"
   },
   {
     "id": 33,
-    "question": "মুসলমান শাসনামলে এদেশে এসে অত্যাচার ও লুট করেছে কারা?",
-    "options": ["জলদস্যুরা", "পর্তুগিজরা", "বর্গীরা", "ইংরেজরা"],
-    "correct": "বর্গীরা"
+    "question": "Which Article deals with the impeachment of the President?",
+    "options": [
+      "Article 50",
+      "Article 51",
+      "Article 52",
+      "Article 53"
+    ],
+    "correct": "Article 52"
   },
   {
     "id": 34,
-    "question": "নবাব সিরাজ-উ-দ্দৌলার পিতার নাম কি?",
-    "options": ["জয়েন উদ্দিন", "আলীবর্দী খাঁ", "শওকত জং", "হায়দার আলী"],
-    "correct": "জয়েন উদ্দিন"
+    "question": "In whom is the executive power of the Republic vested in practice (de-facto)?",
+    "options": [
+      "President",
+      "Prime Minister",
+      "Chief Justice",
+      "Speaker"
+    ],
+    "correct": "Prime Minister"
   },
   {
     "id": 35,
-    "question": "সিরাজউদ্দৌলার প্রকৃত নাম কী ছিল?",
-    "options": ["মির্জা মোহম্মাদ", "মির্জা আলম", "মির্জা খলিল", "মির্জ আজম"],
-    "correct": "মির্জা মোহম্মাদ"
+    "question": "Who appoints the Prime Minister of the Government of the People's Republic of Bangladesh?",
+    "options": [
+      "Speaker",
+      "The President",
+      "Chief Justice",
+      "Chief Election Commissioner"
+    ],
+    "correct": "The President"
   },
   {
     "id": 36,
-    "question": "কত সালে নবাব সিরাজ-উদ-দৌলা বাংলার সিংহাসনে বসেন?",
-    "options": ["১৭৫৬", "১৮৫৬", "১৭৫৭", "১৮৫৭"],
-    "correct": "১৭৫৬"
+    "question": "To whom is the Cabinet collectively responsible?",
+    "options": [
+      "President",
+      "Prime Minister",
+      "Speaker",
+      "Parliament"
+    ],
+    "correct": "Parliament"
   },
   {
     "id": 37,
-    "question": "বাংলার শেষ স্বাধীন নবাব কে?",
-    "options": ["নবাব আলিবর্দী খাঁ", "আলাউদ্দিন হুসেন শাহ", "নবাব সিরাজউদ্দৌলা", "ফকির মজনু শাহ"],
-    "correct": "নবাব সিরাজউদ্দৌলা"
+    "question": "What is the maximum percentage of technocrat ministers allowed in the Cabinet?",
+    "options": [
+      "1/5th",
+      "1/10th (10%)",
+      "1/3rd",
+      "1/4th"
+    ],
+    "correct": "1/10th (10%)"
   },
   {
     "id": 38,
-    "question": "'অন্ধকূপ হত্যা' কাহিনী কার তৈরি?",
-    "options": ["হলওয়েল", "মীর জাফর", "ক্লাইভ", "কর্নওয়ালিস"],
-    "correct": "হলওয়েল"
+    "question": "Which Article deals with the declaration of a state of emergency?",
+    "options": [
+      "Article 141",
+      "Article 141A",
+      "Article 142",
+      "Article 143"
+    ],
+    "correct": "Article 141A"
   },
   {
     "id": 39,
-    "question": "কোনটি ভারতের ইতিহাসে নতুন যুগের সূচনা করে?",
-    "options": ["পলাশীর যুদ্ধ", "পানিপথের যুদ্ধ", "বক্সারের যুদ্ধ", "১৮৫৭ সালের সিপাহি বিদ্রোহ"],
-    "correct": "পলাশীর যুদ্ধ"
+    "question": "The President of Bangladesh can declare a State of Emergency for a maximum of how many days (without parliamentary approval)?",
+    "options": [
+      "১২০ (120)",
+      "৯০ (90)",
+      "৬০ (60)",
+      "৩০ (30)"
+    ],
+    "correct": "১২০ (120)"
   },
   {
     "id": 40,
-    "question": "পলাশীর যুদ্ধ হয় কত সালে?",
-    "options": ["১৭৭০ সালে", "১৭৫৭ সালে", "১৮৮৭ সালে", "১৮৮০ সালে"],
-    "correct": "১৭৫৭ সালে"
+    "question": "What is the name of the legislature of Bangladesh?",
+    "options": [
+      "Jatiya Sabha",
+      "House of Representatives",
+      "National Parliament",
+      "People's Council"
+    ],
+    "correct": "National Parliament"
   },
   {
     "id": 41,
-    "question": "পলাশীর যুদ্ধ কখন হয়েছিল?",
-    "options": ["২৩ জুন, ১৭৫৭", "২৫ জুলাই, ১৭৫৭", "১৫ আগস্ট, ১৮৫৮", "২৫ আগস্ট, ১৮৫৮"],
-    "correct": "২৩ জুন, ১৭৫৭"
+    "question": "How many houses does the National Parliament of Bangladesh have?",
+    "options": [
+      "এক কক্ষ (One House/Unicameral)",
+      "দ্বি-কক্ষ (Two Houses/Bicameral)",
+      "ত্রি-কক্ষ (Three Houses)",
+      "নির্দিষ্ট নয় (Not specified)"
+    ],
+    "correct": "এক কক্ষ (One House/Unicameral)"
   },
   {
     "id": 42,
-    "question": "বক্সারের যুদ্ধ কত সালে সংঘটিত হয়?",
-    "options": ["১৬৬০", "১৭০৭", "১৭৫৭", "১৭৬৪"],
-    "correct": "১৭৬৪"
+    "question": "Which Article of the Constitution establishes the Parliament?",
+    "options": [
+      "Article 64",
+      "Article 65",
+      "Article 66",
+      "Article 67"
+    ],
+    "correct": "Article 65"
   },
   {
     "id": 43,
-    "question": "মীর কাসিম বাংলার রাজধানী কোথায় স্থানান্তর করেন?",
-    "options": ["ঢাকা", "মুঙ্গের", "মুর্শিদাবাদ"],
-    "correct": "মুঙ্গের"
+    "question": "What is the total number of members in the Parliament of Bangladesh?",
+    "options": [
+      "300",
+      "330",
+      "350",
+      "400"
+    ],
+    "correct": "350"
   },
   {
     "id": 44,
-    "question": "কত সালে ইউরোপ হতে আফ্রিকার উত্তমাশা অন্তরীপ হয়ে সমুদ্রপথে পূর্বদিকে আসার জলপথ আবিষ্কৃত হয়?",
-    "options": ["১৪৮৭ সালে", "১৪৯০ সালে", "১৪৯৮ সালে", "১৫০২ সালে"],
-    "correct": "১৪৮৭ সালে"
+    "question": "How many seats are currently reserved for women in the Parliament (excluding directly elected seats)?",
+    "options": [
+      "30",
+      "45",
+      "50",
+      "60"
+    ],
+    "correct": "50"
   },
   {
     "id": 45,
-    "question": "ইউরোপ থেকে সমুদ্রপথে ভারতবর্ষে আসার পথ আবিষ্কৃত হয় কোন সালে?",
-    "options": ["১৪৮৭ সালে", "১৩৮৭ সালে", "১৫৮৭ সালে", "১৬৮৭ সালে"],
-    "correct": "১৪৮৭ সালে"
+    "question": "What is the minimum age required to be elected as a Member of Parliament (MP)?",
+    "options": [
+      "21 years",
+      "25 years",
+      "30 years",
+      "35 years"
+    ],
+    "correct": "25 years"
   },
   {
     "id": 46,
-    "question": "পর্তুগিজ নাবিক ভাস্কো দা গামা কত সালে ভারতে পৌছেন?",
-    "options": ["১৪৯৮ সালে", "১৪৯২ সালে", "১৫১৭ সালে", "১৬৪৮ সালে"],
-    "correct": "১৪৯৮ সালে"
+    "question": "What is the term of a Member of Parliament?",
+    "options": [
+      "4 years",
+      "5 years",
+      "6 years",
+      "Indefinite"
+    ],
+    "correct": "5 years"
   },
   {
     "id": 47,
-    "question": "কারা সর্বপ্রথম ভারতে আসার সমুদ্র পথ আবিষ্কার করেন?",
-    "options": ["ওলন্দাজ", "ব্রিটিশ", "পর্তুগিজ", "ফরাসি"],
-    "correct": "পর্তুগিজ"
+    "question": "Which Article addresses floor crossing and restricts the vote of an MP against their party?",
+    "options": [
+      "Article 67",
+      "Article 70",
+      "Article 72",
+      "Article 77"
+    ],
+    "correct": "Article 70"
   },
   {
     "id": 48,
-    "question": "Who discovered the ocean route from Europe to Indian Subcontinent?/ইউরোপ থেকে ভারতে আসার জলপথ কে আবিষ্কার করেন?",
-    "options": ["Colombus","Alexandar","Vasco Da Gama","Francis Drek"],
-    "correct": "Vasco Da Gama"
+    "question": "What is the quorum required for a session of Parliament?",
+    "options": [
+      "One-third of the total members",
+      "One-tenth of the total members",
+      "60 members",
+      "100 members"
+    ],
+    "correct": "60 members"
   },
   {
     "id": 49,
-    "question": "কোন ইউরোপীয় নাবিক সর্বপ্রথম সমুদ্রপথে ভারতে আসেন?",
-    "options": ["ফার্ডিন্যান্ড ম্যাগেলান", "ফ্রান্সিস ড্রেক", "ভাস্কো ডা গামা", "ক্রিস্টেফার কলম্বাস"],
-    "correct": "ভাস্কো ডা গামা"
+    "question": "What is the minimum period after the end of a session that another session of the Parliament must be called?",
+    "options": [
+      "৪০ দিন (40 days)",
+      "৬০ দিন (60 days)",
+      "৯০ দিন (90 days)",
+      "১২০ দিন (120 days)"
+    ],
+    "correct": "৬০ দিন (60 days)"
   },
   {
     "id": 50,
-    "question": "ভাস্কো-দা-গামা ছিলেন-",
-    "options": ["পর্তুগিজ", "ওলন্দাজ", "ফরাসি", "ব্রিটিশ"],
-    "correct": "পর্তুগিজ"
+    "question": "Who has the 'casting vote' in Parliament in the case of an equality of votes?",
+    "options": [
+      "President",
+      "Prime Minister",
+      "Speaker",
+      "Deputy Speaker"
+    ],
+    "correct": "Speaker"
   },
   {
     "id": 51,
-    "question": "Who were the first European traders to arrive in India?/কোন ইউরোপীয় জাতি সর্বপ্রথম ভারতবর্ষে আসে?",
-    "options": ["Dutch", "English", "French", "Portugese"],
-    "correct": "Portugese"
+    "question": "Which Article allows the President to issue an Ordinance when Parliament is not in session?",
+    "options": [
+      "Article 88",
+      "Article 93",
+      "Article 94",
+      "Article 102"
+    ],
+    "correct": "Article 93"
   },
   {
     "id": 52,
-    "question": "কোন ইউরোপীয় জাতি প্রথম বাংলায় আগমন করে?",
-    "options": ["ইংরেজরা", "ওলন্দাজরা", "ফরাসিরা", "পর্তুগিজরা"],
-    "correct": "পর্তুগিজরা"
+    "question": "What is the highest court in Bangladesh?",
+    "options": [
+      "High Court Division",
+      "Appellate Division",
+      "Supreme Court",
+      "District Court"
+    ],
+    "correct": "Supreme Court"
   },
   {
     "id": 53,
-    "question": "In which year did the Portuguese arrive at Chittagong and receive trade permit for the first time?/ পর্তুগিজরা কত খ্রিষ্টাব্দে প্রথম চট্টগ্রাম আসে এবং বাণিজ্য করার অনুমতি পায়?",
-    "options": ["1498", "1534", "1650", "1757", "None of these"],
-    "correct": "None of these"
+    "question": "Which Article of the Constitution establishes the Supreme Court?",
+    "options": [
+      "Article 92",
+      "Article 94",
+      "Article 102",
+      "Article 104"
+    ],
+    "correct": "Article 94"
   },
   {
     "id": 54,
-    "question": "দিল্লির কোন সম্রাট বাংলা থেকে পর্তুগিজদের বিতাড়িত করেন?",
-    "options": ["শেরশাহ", "জাহাঙ্গীর", "আকবর", "আরওঙ্গজেব"],
-    "correct": "শেরশাহ"
+    "question": "Who appoints the Chief Justice of Bangladesh?",
+    "options": [
+      "Prime Minister",
+      "The President",
+      "Speaker of the Parliament",
+      "Law Minister"
+    ],
+    "correct": "The President"
   },
   {
     "id": 55,
-    "question": "'হার্মাদ' শব্দটি কোন ভাষা থেকে আগত?",
-    "options": ["স্পেনীয়", "বার্মিজ", "পর্তুগিজ", "আরাকানী"],
-    "correct": "পর্তুগিজ"
+    "question": "What is the retirement age of Supreme Court judges?",
+    "options": [
+      "62 years",
+      "65 years",
+      "67 years",
+      "70 years"
+    ],
+    "correct": "67 years"
   },
   {
     "id": 56,
-    "question": "ওলন্দাজরা কোন দেশের নাগরিক?",
-    "options": ["হল্যান্ড", "পর্তুগাল", "ফ্রান্স", "ডেনমার্ক"],
-    "correct": "হল্যান্ড"
+    "question": "Which Article empowers the High Court Division to enforce Fundamental Rights (issue writs)?",
+    "options": [
+      "Article 101",
+      "Article 102",
+      "Article 104",
+      "Article 110"
+    ],
+    "correct": "Article 102"
   },
   {
     "id": 57,
-    "question": "ইউরোপের কোন দেশের অধিবাসীদের 'ডাচ' বলা হয়?",
-    "options": ["নেদারল্যান্ড", "ডেনমার্ক", "পর্তুগাল", "স্পেন"],
-    "correct": "নেদারল্যান্ড"
+    "question": "Which Article empowers the Appellate Division to do 'complete justice' (inherent power)?",
+    "options": [
+      "Article 103",
+      "Article 104",
+      "Article 105",
+      "Article 106"
+    ],
+    "correct": "Article 104"
   },
   {
     "id": 58,
-    "question": "কত খ্রিষ্টাব্দে ইংল্যান্ডে দি ব্রিটিশ ইস্ট ইন্ডিয়া কোম্পানি স্থাপিত হয়?",
-    "options": ["১৬০৮ সালে", "১৭৫৭ সালে", "১৬০০ সালে", "১৬৫২ সালে"],
-    "correct": "১৬০০ সালে"
+    "question": "Which Article allows the President to seek an Advisory Opinion from the Supreme Court?",
+    "options": [
+      "Article 102",
+      "Article 106",
+      "Article 109",
+      "Article 111"
+    ],
+    "correct": "Article 106"
   },
   {
     "id": 59,
-    "question": "সম্রাট জাহাঙ্গীরের দরবারের প্রথম ইংরেজ দূত-",
-    "options": ["ক্যাপ্টেন হাকিন্স", "এডওয়ার্ডস", "স্যার টমাস রো", "উইলিয়াম কেরি"],
-    "correct": "ক্যাপ্টেন হাকিন্স"
+    "question": "Which institution is considered the guardian and interpreter of the Constitution?",
+    "options": [
+      "Parliament",
+      "Supreme Court",
+      "President",
+      "Cabinet"
+    ],
+    "correct": "Supreme Court"
   },
   {
     "id": 60,
-    "question": "কোন সম্রাট সর্বপ্রথম ইস্ট ইন্ডিয়া কোম্পানিকে সুরাটে বাণিজ্য কুঠি স্থাপনের অনুমতি দেন?",
-    "options": ["আকবর", "শাহবাজ খান", "মুর্শিদকুলি খান", "জাহাঙ্গীর"],
-    "correct": "জাহাঙ্গীর"
+    "question": "Which Article provides for the establishment of the Election Commission?",
+    "options": [
+      "Article 116",
+      "Article 117",
+      "Article 118",
+      "Article 121"
+    ],
+    "correct": "Article 118"
   },
   {
     "id": 61,
-    "question": "ইংরেজরা বাংলাদেশে আগমন করে-",
-    "options": ["১৫৯৯", "১৭৫৭", "১৪৭৫", "১৬৫৮"],
-    "correct": "১৬৫৮"
+    "question": "Under which Article must a general election be held within 90 days after the dissolution of Parliament?",
+    "options": [
+      "Article 121",
+      "Article 123",
+      "Article 125",
+      "Article 126"
+    ],
+    "correct": "Article 123"
   },
   {
     "id": 62,
-    "question": "ইংরেজ বণিকগণ সরাসরিভাবে বঙ্গদেশে বাণিজ্য কেন্দ্র স্থাপন করেন-",
-    "options": ["আকবরের আমলে", "জাহাঙ্গীরের আমলে", "শাহজাহানের আমলে", "আলমগীরের আমলে"],
-    "correct": "শাহজাহানের আমলে"
+    "question": "What is the minimum voting age in Bangladesh?",
+    "options": [
+      "16 years",
+      "18 years",
+      "21 years",
+      "25 years"
+    ],
+    "correct": "18 years"
   },
   {
     "id": 63,
-    "question": "ইস্ট ইন্ডিয়া কোম্পনির শাসনকেন্দ্র ছিল -",
-    "options": ["কলকাতা", "দিল্লি", "পাঞ্জাব", "ঢাকা"],
-    "correct": "কলকাতা"
+    "question": "Which Article provides for the appointment of the Comptroller and Auditor General (CAG)?",
+    "options": [
+      "Article 127",
+      "Article 137",
+      "Article 142",
+      "Article 145"
+    ],
+    "correct": "Article 127"
   },
   {
     "id": 64,
-    "question": "কলকাতা নগরীর প্রতিষ্ঠাতা কে?",
-    "options": ["ক্লাইভ", "ভালহৌসি", "ওয়েলেসলি", "জব চার্নক"],
-    "correct": "জব চার্নক"
+    "question": "The public service commission (PSC) is established under which Article?",
+    "options": [
+      "Article 135",
+      "Article 137",
+      "Article 140",
+      "Article 141"
+    ],
+    "correct": "Article 137"
   },
   {
     "id": 65,
-    "question": "কোন দেশের বাণিজ্যিক কোম্পানি ফোর্ট উইলিয়াম দুর্গ নির্মাণ করে?",
-    "options": ["ইংল্যান্ড", "ডেনমার্ক", "ফ্রান্স", "ইতালি", "হল্যান্ড"],
-    "correct": "ইংল্যান্ড"
+    "question": "The power to amend the Constitution of Bangladesh is given in which Article?",
+    "options": [
+      "১৪০ (Article 140)",
+      "১৪১ (Article 141)",
+      "১৪২ (Article 142)",
+      "১৪৩ (Article 143)"
+    ],
+    "correct": "১৪২ (Article 142)"
   },
   {
     "id": 66,
-    "question": "ফোর্ট উইলিয়াম দুর্গ কোথায় অবস্থিত ছিল?",
-    "options": ["ঢাকা", "মুর্শিদাবাদ", "কলকাতা", "আগ্রা"],
-    "correct": "কলকাতা"
+    "question": "What majority is required for any constitutional amendment?",
+    "options": [
+      "Simple majority",
+      "Two-thirds (2/3) majority",
+      "Three-fourths (3/4) majority",
+      "Unanimous vote"
+    ],
+    "correct": "Two-thirds (2/3) majority"
   },
   {
     "id": 67,
-    "question": "চন্দননগর (পশ্চিমবঙ্গ) একসময় কোন দেশের উপনিবেশ ছিল?",
-    "options": ["হল্যান্ড", "ফ্রান্স", "ইংল্যান্ড", "পর্তুগাল"],
-    "correct": "ফ্রান্স"
+    "question": "How many times is the constitution of the People's Republic of Bangladesh amended (latest count)?",
+    "options": [
+      "17",
+      "16",
+      "15",
+      "14"
+    ],
+    "correct": "17"
   },
   {
     "id": 68,
-    "question": "ইংরেজ ইস্ট ইন্ডিয়া কোম্পানি কখন বাংলা, বিহার ও উড়িষ্যার দেওয়ানি লাভ করেন?",
-    "options": ["১৬৯০", "১৭৬৫", "১৭৯৩", "১৮২৯"],
-    "correct": "১৭৬৫"
+    "question": "Which Amendment introduced the One-Party System (BAKSAL)?",
+    "options": [
+      "First Amendment (1973)",
+      "Second Amendment (1973)",
+      "Third Amendment (1974)",
+      "Fourth Amendment (1975)"
+    ],
+    "correct": "Fourth Amendment (1975)"
   },
   {
     "id": 69,
-    "question": "ইস্ট ইন্ডিয়া কোম্পানিকে বাংলা, বিহার ও উড়িষ্যার দেওয়ানি প্রদান করেন-",
-    "options": ["শাহ সুজা", "ফররুখ শিয়ার", "মীর জাফর", "দ্বিতীয় শাহ আলম"],
-    "correct": "দ্বিতীয় শাহ আলম"
+    "question": "Through which constitutional amendment was the parliamentary system of Bangladesh reintroduced?",
+    "options": [
+      "একাদশ (11th)",
+      "ত্রয়োদশ (13th)",
+      "দশম (10th)",
+      "দ্বাদশ (12th)"
+    ],
+    "correct": "দ্বাদশ (12th)"
   },
   {
     "id": 70,
-    "question": "বাংলাদেশে দ্বৈত শাসন কে প্রবর্তন করেন?",
-    "options": ["লর্ড কর্নওয়ালিস", "লর্ড ক্লাইভ", "নবাব মীর কাশেম", "ওয়ারেন হেস্টিংস"],
-    "correct": "লর্ড ক্লাইভ"
+    "question": "Which Amendment introduced the Caretaker Government system?",
+    "options": [
+      "11th Amendment",
+      "12th Amendment",
+      "13th Amendment",
+      "14th Amendment"
+    ],
+    "correct": "13th Amendment"
   },
   {
     "id": 71,
-    "question": "'ছিয়াত্তরের মন্বন্তর' নামক ভয়াবহ দুর্ভিক্ষ হয়েছিল ইংরেজি কত সালে?",
-    "options": ["১৭৬৮ সালে", "১৭৬৯ সালে", "১৭৭০ সালে", "১৭৭২ সালে"],
-    "correct": "১৭৭০ সালে"
+    "question": "Which Amendment abolished the Caretaker Government system and restored secularism?",
+    "options": [
+      "14th Amendment",
+      "15th Amendment",
+      "16th Amendment",
+      "17th Amendment"
+    ],
+    "correct": "15th Amendment"
   },
   {
     "id": 72,
-    "question": "'ছিয়াত্তরের মন্বন্তর' বাংলা কোন সনে হয়েছিল?",
-    "options": ["১০৭৬ সনে", "১৩৭৬ সনে", "১১৭৬ সনে", "১২৭৬ সনে"],
-    "correct": "১১৭৬ সনে"
+    "question": "What was the objective of the Sixteenth Amendment (later declared void) of the Bangladesh Constitution?",
+    "options": [
+      "Reservation of seats for women",
+      "Abolition of the Caretaker Government",
+      "Impeachment of Supreme Court Judges by Parliament",
+      "Addition of Bangabandhu's speech"
+    ],
+    "correct": "Impeachment of Supreme Court Judges by Parliament"
   },
   {
     "id": 73,
-    "question": "ব্রিটিশ পার্লামেন্টে 'ভারত শাসন আইন' পাস হয়-",
-    "options": ["১৭৮৪", "১৭৮৬", "১৭৭৩", "১৭৯০"],
-    "correct": "১৭৮৪"
+    "question": "Which constitutional amendment replaced 'Dacca' as 'Dhaka'?",
+    "options": [
+      "The Fourth Amendment, 1975",
+      "The Sixth Amendment, 1981",
+      "The Eighth Amendment, 1988",
+      "The Tenth Amendment, 1990"
+    ],
+    "correct": "The Eighth Amendment, 1988"
   },
   {
     "id": 74,
-    "question": "ভারতবর্ষে সর্বপ্রথম রাজস্ব বোর্ড স্থাপন করেন",
-    "options": ["লর্ড ক্লাইভ", "শের শাহ", "সম্রাট আকবর", "ওয়ারেন হেস্টিংস"],
-    "correct": "ওয়ারেন হেস্টিংস"
+    "question": "Bangabandhu's Declaration of Independence is mentioned in which Schedule of the Constitution?",
+    "options": [
+      "Fifth",
+      "Fourth",
+      "Sixth",
+      "Seventh"
+    ],
+    "correct": "Sixth"
   },
   {
     "id": 75,
-    "question": "বাংলায় চিরস্থায়ী ভূমি ব্যবস্থা কে প্রবর্তন করেন?",
-    "options": ["লর্ড কর্নওয়ালিস", "লর্ড বেন্টিংক", "লর্ড ক্লাইভ", "লর্ড ওয়াভেল"],
-    "correct": "লর্ড কর্নওয়ালিস"
+    "question": "Which Schedule contains the Proclamation of Independence (1971)?",
+    "options": [
+      "Third Schedule",
+      "Fourth Schedule",
+      "Fifth Schedule",
+      "Seventh Schedule"
+    ],
+    "correct": "Seventh Schedule"
   },
   {
     "id": 76,
-    "question": "'বাংলার চিরস্থায়ী বন্দোবস্তু' প্রবর্তন করা হয় কোন সালে?",
-    "options": ["১৭০০", "১৭৬২", "১৯৬৫", "১৭৯৩"],
-    "correct": "১৭৯৩"
+    "question": "Which Schedule contains the forms of Oaths and Affirmations?",
+    "options": [
+      "First Schedule",
+      "Second Schedule",
+      "Third Schedule",
+      "Fourth Schedule"
+    ],
+    "correct": "Third Schedule"
   },
   {
     "id": 77,
-    "question": "চিরস্থায়ী বন্দোবস্ত কবে প্রবর্তন করা হয়?",
-    "options": ["২২-৩-১৮৯৩", "২২-৩-১৮০৫", "২২-৩-১৭৯৩", "১৬-৩-১৭৯৬"],
-    "correct": "২২-৩-১৭৯৩"
+    "question": "Which Schedule contains the list of temporary and transitory provisions?",
+    "options": [
+      "Fourth Schedule",
+      "Fifth Schedule",
+      "Sixth Schedule",
+      "Seventh Schedule"
+    ],
+    "correct": "Fourth Schedule"
   },
   {
     "id": 78,
-    "question": "অধীনতামূলক মিত্রতা নীতির প্রবর্তক-",
-    "options": ["লর্ড ক্লাইভ", "লর্ড ওয়েলেসলি", "লর্ড মিন্টো", "লর্ড বেন্টিঙ্ক"],
-    "correct": "লর্ড ওয়েলেসলি"
-  },
-  {
-    "id": 79,
-    "question": "টিপু সুলতান কে ছিলেন?",
-    "options": ["ব্যাঙ্গোলারের শাসনকর্তা", "মহীশূরের শাসনকর্তা", "অযোধ্যার শাসনকর্তা", "মীরাটের নবাব"],
-    "correct": "মহীশূরের শাসনকর্তা"
-  },
-  {
-    "id": 80,
-    "question": "মহীশূরের টিপু সুলতান সর্বশেষ কোন ইংরেজ সেনাপতির সঙ্গে যুদ্ধ করেন?",
-    "options": ["ওয়েলেসলি", "ওয়ারেন হেস্টিংস", "কর্নওয়ালিস", "ডালহৌসি"],
-    "correct": "ওয়েলেসলি"
-  },
-  {
-    "id": 81,
-    "question": "সতীদাহ প্রথা রহিতকরণ আইন পাস করেন কে?",
-    "options": ["লর্ড কর্নওয়ালিস", "রাজা রামমোহন রায়", "ঈশ্বরচন্দ্র বিদ্যাসাগর", "লর্ড বেন্টিঙ্ক"],
-    "correct": "লর্ড বেন্টিঙ্ক"
-  },
-  {
-    "id": 82,
-    "question": "সতীদাহ প্রথা বিলুপ্ত হয় কার উদ্দ্যোগে?",
-    "options": ["রামমোহন রায়", "ঈশ্বরচন্দ্র বিদ্যাসাগর", "হান্টার", "লর্ড বেন্টিং"],
-    "correct": "রামমোহন রায়"
-  },
-  {
-    "id": 83,
-    "question": "সতীদাহ প্রথা কত সালে রহিত হয়?",
-    "options": ["১৮১৯", "১৮২৯", "১৮৩৯", "১৮৪৯"],
-    "correct": "১৮২৯"
-  },
-  {
-    "id": 84,
-    "question": "স্বত্ববিলোপ নীতি প্রয়োগ করে লর্ড ডালহৌসি কোন রাজ্যটি অধিকার করেন?",
-    "options": ["অযোধ্যা", "পাঞ্জাব", "নাগপুর", "হায়দ্রাবাদ"],
-    "correct": "নাগপুর"
-  },
-  {
-    "id": 85,
-    "question": "ভারতে সর্বপ্রথম কার সময় রেলপথ ও টেলিগ্রাফ লাইন স্থাপিত হয়?",
-    "options": ["লর্ড ওয়েলেসলি", "লর্ড বেন্টিংক", "লর্ড ক্যানিং", "লর্ড ডালহৌসি"],
-    "correct": "লর্ড ডালহৌসি"
-  },
-  {
-    "id": 86,
-    "question": "ভারতে টেলিগ্রাফ কত বছর চালু ছিল?",
-    "options": ["১৪৫ বছর", "১৫০ বছর", "১৫৫ বছর", "১৬২ বছর"],
-    "correct": "১৬২ বছর"
-  },
-  {
-    "id": 87,
-    "question": "এ উপমহাদেশে প্রথম রেল যোগাযোগ চালু করেন কে?",
-    "options": ["লর্ড রিপন", "লর্ড হ্যান্ডি ট্রপার", "লর্ড কার্জন", "লর্ড ডালহৌসি"],
-    "correct": "লর্ড ডালহৌসি"
-  },
-  {
-    "id": 88,
-    "question": "ইস্ট ইন্ডিয়া কোম্পানির শাসন কাল-",
-    "options": ["১৭৫৭-১৯৪৭", "১৮৭৫-১৯৪৭", "১৭৫৭-১৮৫৭", "১৭৬৫-১৮৮৫"],
-    "correct": "১৭৫৭-১৮৫৭"
-  },
-  {
-    "id": 89,
-    "question": "ভারতীয় উপমহাদেশে ইস্ট ইন্ডিয়া কোম্পানির শাসনের অবসান হয় কোন সালে?",
-    "options": ["১৮৫৭", "১৮৫৮", "১৮৫৯", "১৮৬০"],
-    "correct": "১৮৫৮"
-  },
-  {
-    "id": 90,
-    "question": "ভারতের শাসনভার ইংল্যান্ডের রানী ও পার্লামেন্টের হাতে অর্পিত হয়-",
-    "options": ["১৭৫৮ সালে", "১৮৫৮ সালে", "১৭৯২ সালে", "১৮৬২ সালে"],
-    "correct": "১৮৫৮ সালে"
-  },
-  {
-    "id": 91,
-    "question": "বঙ্গ-ভারত উপমহাদেশের প্রথম পুলিশ ব্যবস্থা কে চালু করেন?",
-    "options": ["মিবার্ত", "সম্রাট আকবর", "লর্ড ক্যানিং", "সম্রাট শাহজাহান"],
-    "correct": "লর্ড ক্যানিং"
-  },
-  {
-    "id": 92,
-    "question": "লর্ড ক্যানিং তারত উপমহাদেশে প্রথম কোন ব্যবস্থা চালু করেন?",
-    "options": ["চিরস্থায়ী বন্দোবস্ত ব্যবস্থা", "দ্বৈত শাসন ব্যবস্থা", "সতীদাহ নিবারণ ব্যাবস্থা", "পুলিশ ব্যবস্থা"],
-    "correct": "পুলিশ ব্যবস্থা"
-  },
-  {
-    "id": 93,
-    "question": "ভারতবর্ষে প্রথম আদমশুমারি হয় কোন সালে?",
-    "options": ["১৯৭২", "১৮৫০", "১৮৭২", "১৯০১"],
-    "correct": "১৮৭২"
-  },
-  {
-    "id": 94,
-    "question": "ভারতে প্রথম স্থানীয় শাসন ব্যবস্থার প্রবর্তক-",
-    "options": ["লর্ড কার্জন", "লর্ড রিপন", "লর্ড ডাফরিন", "লর্ড লিটন"],
-    "correct": "লর্ড রিপন"
-  },
-  {
-    "id": 95,
-    "question": "লর্ড লিটন কতসালে 'আর্মস অ্যাক্ট' প্রবর্তন করেন?",
-    "options": ["১৮৭৬ সালে", "১৮৭৮ সালে", "১৮৮০ সালে", "১৮৮২ সালে"],
-    "correct": "১৮৭৮ সালে"
-  },
-  {
-    "id": 96,
-    "question": "Banga bhanga was done in which year?/বঙ্গভঙ্গ আইন পাস করা হয় কত সালে?",
-    "options": ["1905", "1906", "1911", "1947", "None of these"],
-    "correct": "1905"
-  },
-  {
-    "id": 97,
-    "question": "১৯০৫ সাল কোন ঘটনার সঙ্গে জড়িত?",
-    "options": ["মুসলিম লীগ প্রতিষ্ঠা", "বঙ্গভঙ্গ", "গান্ধী হত্যা", "ভারত বিভক্তি"],
-    "correct": "বঙ্গভঙ্গ"
-  },
-  {
-    "id": 98,
-    "question": "Bengal was first partitioned in -/প্রথম কত সালে বঙ্গভঙ্গ (বাংলা বিভক্ত) হয়?",
-    "options": ["1971", "1947", "1905", "1857", "1757"],
-    "correct": "1905"
-  },
-  {
-    "id": 99,
-    "question": "দ্বিতীয়বার বাংলা দ্বিখণ্ডিত হয়েছে কোন সালে?",
-    "options": ["১৮৫৭", "১৯০৫", "১৯৭১", "১৯৪৭"],
-    "correct": "১৯৪৭"
-  },
-  {
-    "id": 100,
-    "question": "বঙ্গভঙ্গের কারণে কোন নতুন প্রদেশ সৃষ্টি হয়েছিল?",
-    "options": ["পূর্ব বাংলা ও বিহার", "পূর্ববঙ্গ ও আসাম", "পূর্ববঙ্গ"],
-    "correct": "পূর্ববঙ্গ ও আসাম"
-  },
-  {
-    "id": 101,
-    "question": "১৯০৫ সালে ঢাকা যে নতুন প্রদেশটির রাজধানী হয়েছিল, সে প্রদেশটির নাম কি?",
-    "options": ["পূর্ব পাকিস্তান", "বঙ্গপ্রদেশ", "পূর্ববঙ্গ ও আসাম", "পূর্ববঙ্গ"],
-    "correct": "পূর্ববঙ্গ ও আসাম"
-  },
-  {
-    "id": 102,
-    "question": "বঙ্গ প্রদেশকে বঙ্গ ও আসাম প্রদেশে বিভক্ত করেন",
-    "options": ["লর্ড হার্ডিঞ্জ", "লর্ড কার্জন", "লর্ড ক্যানিং", "সম্রাট পঞ্চম জর্জ"],
-    "correct": "লর্ড কার্জন"
-  },
-  {
-    "id": 103,
-    "question": "পূর্ববঙ্গ ও আসাম প্রদেশ গঠনকালে ব্রিটিশ ভারতের গভর্নর জেনারেল ও ভাইসরয় ছিলেন-",
-    "options": ["লর্ড রিপন", "লর্ড কার্জন", "লর্ড মিন্টো", "লর্ড হার্ডিঞ্জ"],
-    "correct": "লর্ড কার্জন"
-  },
-  {
-    "id": 104,
-    "question": "বঙ্গভঙ্গের সময় ভারতের ভাইসরয় (গভর্নর জেনারেল) কে ছিলেন?",
-    "options": ["লর্ড মিন্টো", "লর্ড চেমসফোর্ড", "লর্ড কার্জন", "লর্ড মাউন্টব্যাটেন"],
-    "correct": "লর্ড কার্জন"
-  },
-  {
-    "id": 105,
-    "question": "প্রথম বঙ্গভঙ্গ আন্দোলনের সময় ভারতের গভর্নর জেনারেল কে ছিলেন?",
-    "options": ["হেস্টিংস", "কার্জন", "কর্নওয়ালিস", "ডালহৌসি"],
-    "correct": "কার্জন"
-  },
-  {
-    "id": 106,
-    "question": "১৯০৫ সালে নবগঠিত প্রদেশের প্রথম লেফটেনেন্ট গভর্নর কে ছিলেন?",
-    "options": ["ব্যামফিল্ড ফুলার", "লর্ড মিন্টো", "লর্ড কার্জন", "ওয়ারেন হেস্টিংস"],
-    "correct": "ব্যামফিল্ড ফুলার"
-  },
-  {
-    "id": 107,
-    "question": "পূর্ব বাংলার ও আসামের প্রথম লেফটেন্যান্ট গভর্নর কে ছিলেন?",
-    "options": ["ফুলার", "কার্জন", "মিন্টো", "হেসটিংস"],
-    "correct": "ফুলার"
-  },
-  {
-    "id": 108,
-    "question": "ব্রিটিশ শাসনামলে কোন সালে ঢাকাকে প্রাদেশিক রাজধানী করা হয়?",
-    "options": ["১৭৫৭", "১৯০৫", "১৮৭৫"],
-    "correct": "১৯০৫"
-  },
-  {
-    "id": 109,
-    "question": "বঙ্গভঙ্গের পরেই ঢাকায় কি নির্মিত হয়?",
-    "options": ["সুরম্য অট্টালিকা", "কার্জন হল", "হাইকোর্ট", "এর সবগুলিই"],
-    "correct": "এর সবগুলিই"
-  },
-  {
-    "id": 110,
-    "question": "বঙ্গভঙ্গ রদ (রহিত) হয় কোন সালে?",
-    "options": ["১৯০৫", "১৯৪৫", "১৯১৬", "১৯১১"],
-    "correct": "১৯১১"
-  },
-  {
-    "id": 111,
-    "question": "ব্রিটিশ ভারতীয় রাজধানী কলকাতা থেকে দিল্লিতে হস্তান্তর করা হয়-",
-    "options": ["১৯১২ সালে", "১৮১২ সালে", "১৮৫৭ সালে", "১৮৬৫ সালে"],
-    "correct": "১৯১২ সালে"
-  },
-  {
-    "id": 112,
-    "question": "Who is the last Viceroy of British India?/ব্রিটিশ ভারতের শেষ ভাইসরয় (বড়লাট বা গভর্নর জেনারেল) কে ছিলেন?",
-    "options": ["Lord Wavel", "Lord Linlintgo", "Lord Mountbatten", "None of them", "Lord Curzon"],
-    "correct": "Lord Mountbatten"
-  },
-  {
-    "id": 113,
-    "question": "কোন ব্রিটিশ শাসকের সময়ে ভারত উপমহাদেশ স্বাধীন হয়?",
-    "options": ["লর্ড মাউন্টব্যাটেন", "লর্ড কর্নওয়ালিস", "লর্ড বেন্টিং", "লর্ড ডালহৌসি"],
-    "correct": "লর্ড মাউন্টব্যাটেন"
-  },
-  {
-    "id": 114,
-    "question": "ভারত বিভাজনের সময় ইংল্যান্ডের প্রধানমন্ত্রী কে ছিলেন?",
-    "options": ["এটলি", "চার্চিল", "ডিজরেইলি", "গ্লান্ডস্টোন"],
-    "correct": "এটলি"
-  },
-  {
-    "id": 115,
-    "question": "১৯৪৭ সালের সীমানা কমিশন যে নামে পরিচিত-",
-    "options": ["ব্যাডক্লিফ কমিশন", "সাইমন কমিশন", "লরেন্স কমিশন", "ম্যাকডোনাল্ড কমিশন"],
-    "correct": "ব্যাডক্লিফ কমিশন"
-  },
-  {
-    "id": 116,
-    "question": "অবিভক্ত বাংলার সর্বশেষ গভর্নর ছিলেন-",
-    "options": ["স্যার জন হাবার্ট", "এন্ডারসন", "স্যার এফ বারোজ", "আর জি কেসি"],
-    "correct": "স্যার এফ বারোজ"
-  },
-  {
-    "id": 117,
-    "question": "The British ruled the Indian Sub-Continent for about ___ years.",
-    "options": ["500", "450", "400", "300", "200", "150", "100"],
-    "correct": "200"
-  },
-  {
-    "id": 118,
-    "question": "ব্রিটিশ শাসনের বিরুদ্ধে বাঙালিদের প্রথম বিদ্রোহ-",
-    "options": ["ফকির ও সন্ন্যাসী বিদ্রোহ", "নীল বিদ্রোহ", "আগস্ট (১৯৪২) বিদ্রোহ", "সিপাহি বিদ্রোহ"],
-    "correct": "ফকির ও সন্ন্যাসী বিদ্রোহ"
-  },
-  {
-    "id": 119,
-    "question": "ফকিররা কত সাল থেকে কত সাল পর্যন্ত বাংলার বিভিন্ন স্থানে বিদ্রোহ করেছিল?",
-    "options": ["১৭৮১ থেকে ১৮৪০ পর্যন্ত", "১৭৬০ থেকে ১৮৪০ পর্যন্ত", "১৭৫৭ থেকে ১৮৫৭ পর্যন্ত", "১৮১৯ থেকে ১৮৬২ পর্যন্ত"],
-    "correct": "১৭৬০ থেকে ১৮৪০ পর্যন্ত"
-  },
-  {
-    "id": 120,
-    "question": "ফকির আন্দোলন সংঘটিত হয় কোন শতাব্দীতে?",
-    "options": ["সপ্তদশ শতাব্দীতে", "অষ্টদশ শতাব্দীতে", "উনবিংশ শতাব্দীতে", "বিংশ শতাব্দীতে"],
-    "correct": "অষ্টদশ শতাব্দীতে"
-  },
-  {
-    "id": 121,
-    "question": "ফকির আন্দোলনের নেতা কে?",
-    "options": ["সিরাজ শাহ", "মজনু শাহ", "মোহসীন আলী", "জহীর শাহ"],
-    "correct": "মজনু শাহ"
-  },
-  {
-    "id": 122,
-    "question": "ইস্ট ইন্ডিয়া কোম্পানি চট্টগ্রামের শাসনভার লাভ করে-",
-    "options": ["১৭৬০ খ্রিস্টাব্দে", "১৬০০ খ্রিস্টাব্দে", "১৮৬০ খ্রিস্টাব্দে", "১৬৮৫ খ্রিস্টাব্দে"],
-    "correct": "১৭৬০ খ্রিস্টাব্দে"
-  },
-  {
-    "id": 123,
-    "question": "ব্রিটিশ বণিকদের বিরুদ্ধে একজন চাকমা জুমিয়া নেতা বিদ্রোহের পতাকা উড়িয়েছিলেন, তাঁর নাম-",
-    "options": ["রাজা ত্রিদিব রায়", "রাজা ত্রিভুবন চাকমা", "জুম্মা খান", "জোয়ান বকস খাঁ"],
-    "correct": "জোয়ান বকস খাঁ"
-  },
-  {
-    "id": 124,
-    "question": "বাঁশের কেল্লাখ্যাত স্বাধীনতা সংগ্রামী কে?",
-    "options": ["ফকির মজনু শাহ", "দুদু মিয়া", "তিতুমীর", "মীর কাসিম"],
-    "correct": "তিতুমীর"
-  },
-  {
-    "id": 125,
-    "question": "তিতুমীরের দুর্গের মূল উপাদান কি ছিল?",
-    "options": ["ইট", "পাথর", "বাঁশ"],
-    "correct": "বাঁশ"
-  },
-  {
-    "id": 126,
-    "question": "তিতুমীরের বাঁশের কেল্লা কোথায় অবস্থিত ছিল?",
-    "options": ["বারাসাত", "নারিকেলবাড়িয়া", "চাঁদপুর", "হায়দারপুর"],
-    "correct": "নারিকেলবাড়িয়া"
-  },
-  {
-    "id": 127,
-    "question": "ব্রিটিশ আমলে বাংলাদেশে যে সব আন্দোলন হয়েছিল তার মধ্যে কোনটি প্রধান?",
-    "options": ["হাসেমী আন্দোলন", "কোরায়েশী আন্দোলন", "ফরায়েজী আন্দোলন", "সৈয়দী আন্দোলন"],
-    "correct": "ফরায়েজী আন্দোলন"
-  },
-  {
-    "id": 128,
-    "question": "ফরায়েজী আন্দোলনের প্রধান কেন্দ্র ছিল-",
-    "options": ["ফরিদপুর", "শরীয়তপুর", "খুলনা", "যশোর"],
-    "correct": "ফরিদপুর"
-  },
-  {
-    "id": 129,
-    "question": "বাংলায় ফরায়েজী আন্দোলনের উদ্যোক্তা (সূচনাকারী) কে ছিলেন?",
-    "options": ["শাহ ওয়ালীউল্লাহ", "হাজী শরীয়তুল্লাহ", "পীর মহসীন", "তিতুমীর"],
-    "correct": "হাজী শরীয়তুল্লাহ"
-  },
-  {
-    "id": 130,
-    "question": "ফরায়েজী আন্দোলনের নেতা কে ছিলেন?",
-    "options": ["তিতুমীর", "হাজী শরীয়তউল্লাহ", "ইসমাইল হোসেন সিরাজী", "কেরামত আলী"],
-    "correct": "হাজী শরীয়তউল্লাহ"
-  },
-  {
-    "id": 131,
-    "question": "হাজী শরীয়তউল্লাহ কোন জেলায় জন্মগ্রহণ করেন?",
-    "options": ["শরীয়তপুর", "মাদারীপুর", "ফরিদপুর", "যশোর"],
-    "correct": "মাদারীপুর"
-  },
-  {
-    "id": 132,
-    "question": "'ভূমি থেকে খাজনা আদায় আল্লাহর আইনের পরিপন্থী' এটি কার ঘোষণা?",
-    "options": ["তিতুমীর", "ফকির মজনু শাহ", "দুদু মিয়া", "হাজী শরীয়তুল্লাহ"],
-    "correct": "দুদু মিয়া"
-  },
-  {
-    "id": 133,
-    "question": "ফরায়েজী আন্দোলনকে কোন নেতা রাজনৈতিক আন্দোলনে রূপদান করেন?",
-    "options": ["হাজী শরীয়তউল্লাহ", "তিতুমীর", "দুদু মিয়া", "নবাব সলিমুল্লাহ"],
-    "correct": "দুদু মিয়া"
-  },
-  {
-    "id": 134,
-    "question": "দুদু মিয়া কোন আন্দোলনের সাথে জড়িত?",
-    "options": ["তেভাগা", "স্বদেশি", "ফরায়েজী", "ওয়াহাবী"],
-    "correct": "ফরায়েজী"
-  },
-  {
-    "id": 135,
-    "question": "চিরস্থায়ী বন্দোবস্তের ফলে বাংলার কৃষকরা ভূমিদাসে পরিণত হয়। এ অবস্থা দীর্ঘকাল চলার বিরুদ্ধে প্রধানত বাংলায় গড়ে ওঠে শক্তিশালী-",
-    "options": ["ওয়াহাবি আন্দোলন", "ফরায়েজী আন্দোলন", "প্রজা আন্দোলন", "স্বদেশি আন্দোলন"],
-    "correct": "ফরায়েজী আন্দোলন"
-  },
-  {
-    "id": 136,
-    "question": "প্রথম স্বাধীনতা সংগ্রাম কোনটি?",
-    "options": ["তিতুমীরের বাঁশের কেল্লা", "জালিয়ানওয়ালাবাগের সংগ্রাম", "অসহযোগ আন্দোলন", "সিপাহি বিপ্লব"],
-    "correct": "সিপাহি বিপ্লব"
-  },
-  {
-    "id": 137,
-    "question": "পাক-ভারত-বাংলা এই উপমহাদেশের প্রথম স্বাধীনতা যুদ্ধ কোন সনে শুরু হয়?",
-    "options": ["১৭৫১", "১৮৫৭", "১৯৫২", "১৯৭১"],
-    "correct": "১৮৫৭"
-  },
-  {
-    "id": 138,
-    "question": "উপমহাদেশে সিপাহি বিদ্রোহ শুরু হয় কোন সালে?",
-    "options": ["১৭৫০", "১৭৫৭", "১৮৫০", "১৮৫৭"],
-    "correct": "১৮৫৭"
-  },
-  {
-    "id": 139,
-    "question": "ভারতবর্ষে কোন সনে সিপাহি বিদ্রোহ হয়?",
-    "options": ["১৭৫৭", "১৮৫০", "১৮৫৭", "১৭৯৩"],
-    "correct": "১৮৫৭"
-  },
-  {
-    "id": 140,
-    "question": "ঢাকায় ১৮৫৭ সালে সিপাহি বিদ্রোহের স্মৃতিজড়িত স্থানের নাম-",
-    "options": ["ন্যাশনাল পার্ক", "সোহরাওয়ার্দী উদ্যান", "বাহাদুর শাহ পার্ক", "রমনা পার্ক"],
-    "correct": "বাহাদুর শাহ পার্ক"
-  },
-  {
-    "id": 141,
-    "question": "নীল বিদ্রোহ কখন সংঘটিত হয়?",
-    "options": ["১৪৪২-৪৪ সালে", "১৮৫৯-৬২ সালে", "১৮৯৪-৯৬ সালে", "১৯১৭-২০ সালে"],
-    "correct": "১৮৫৯-৬২ সালে"
-  },
-  {
-    "id": 142,
-    "question": "বাংলাদেশে নীল বিদ্রোহের অবসান হয়-",
-    "options": ["১৮৫৮ সালে", "১৮৫৬ সালে", "১৮৬০ সালে", "১৮৬২ সালে"],
-    "correct": "১৮৬২ সালে"
-  },
-  {
-    "id": 143,
-    "question": "কি কারণে বাংলাদেশ হতে নীলচাষ বিলুপ্ত হয়?",
-    "options": ["নীলচাষ নিষিদ্ধ করার ফলে", "নীলকরদের অত্যাচারের ফলে", "নীলচাষীদের বিদ্রোহের ফলে", "কৃত্রিম নীল আবিষ্কারের ফলে"],
-    "correct": "নীলচাষীদের বিদ্রোহের ফলে"
-  },
-  {
-    "id": 144,
-    "question": "ভারতীয় জাতীয় কংগ্রেস প্রতিষ্ঠিত হয় -",
-    "options": ["১৭৮৫", "১৮৮৫", "১৯০৬", "১৯০৫"],
-    "correct": "১৮৮৫"
-  },
-  {
-    "id": 145,
-    "question": "ভারতীয় জাতীয় কংগ্রেস প্রতিষ্ঠা করেন-",
-    "options": ["জওহরলাল নেহেরু", "মহাত্মা গান্ধী", "অক্টোভিয়ান হিউম", "ইন্দিরা গান্ধী"],
-    "correct": "অক্টোভিয়ান হিউম"
-  },
-  {
-    "id": 146,
-    "question": "সর্বভারতীয় জাতীয় কংগ্রেসের প্রথম সভাপতি-",
-    "options": ["এ্যালান অক্টোভিয়ান হিউম", "আনন্দমোহন বসু", "মতিলাল নেহেরু", "উমেশচন্দ্র বন্দ্যোপাধ্যায়"],
-    "correct": "উমেশচন্দ্র বন্দ্যোপাধ্যায়"
-  },
-  {
-    "id": 147,
-    "question": "কত সালে মুসলিম লীগ প্রতিষ্ঠিত হয়?",
-    "options": ["১৯০৩ সালে", "১৯০৪ সালে", "১৯০৫ সালে", "১৯০৬ সালে"],
-    "correct": "১৯০৬ সালে"
-  },
-  {
-    "id": 148,
-    "question": "নিখিল ভারত মুসলিম লীগ প্রতিষ্ঠিত হয় কোন শহরে-",
-    "options": ["ফরিদপুরে", "করাচিতে", "ঢাকায়", "কোলকাতায়"],
-    "correct": "ঢাকায়"
-  },
-  {
-    "id": 149,
-    "question": "কে মুসলিম লীগ প্রতিষ্ঠা করেন?",
-    "options": ["মাওলানা ভাসানী", "নবাব সলিমুল্লাহ", "সৈয়দ আমীর আলী", "হাজী মুহম্মদ মহসীন"],
-    "correct": "নবাব সলিমুল্লাহ"
-  },
-  {
-    "id": 150,
-    "question": "বঙ্গভঙ্গের বিরুদ্ধে স্বদেশী আন্দোলনের নেতৃত্ব দান করেন কে?",
-    "options": ["বলভভাই প্যাটেল", "অরবিন্দ ঘোষ", "হাজী শরীয়তউল্লাহ", "সুরেন্দ্রনাথ বন্দ্যোপাধ্যায়"],
-    "correct": "সুরেন্দ্রনাথ বন্দ্যোপাধ্যায়"
-  },
-  {
-    "id": 151,
-    "question": "স্বদেশী আন্দোলন কি?",
-    "options": ["কুটির শিল্পের পুনরুজ্জীবনের আন্দোলন", "ইংরেজ বিরোধী স্বাধীনতা আন্দোলন", "পাকিস্তানিদের বিরুদ্ধে পরিচালিত স্বাধীনতা আন্দোলন", "মুঘলবিরোধী স্বাধিকার আন্দোলন"],
-    "correct": "ইংরেজ বিরোধী স্বাধীনতা আন্দোলন"
-  },
-  {
-    "id": 152,
-    "question": "কে বাংলার গ্রামে গ্রামে ঘুরে 'পড়ো না রেশমী চুড়ি বঙ্গনারী' গান গেয়ে জনগণের মধ্যে স্বদেশী আন্দোলনের পক্ষে তীব্র আবেগ সৃষ্টি করেন?",
-    "options": ["কবি মুকুন্দ দাস", "সৈয়দ আমীর আলী", "বঙ্কিম চন্দ্র", "সুভাষ চন্দ্র বসু"],
-    "correct": "কবি মুকুন্দ দাস"
-  },
-  {
-    "id": 153,
-    "question": "নিশাত বুদ্ধিমতী। তার খাদ্য তালিকায়, পোশাক পরিচ্ছদে সব সময় ব্যবহৃত হয় দেশীয় পণ্য। নিশাত আমাদের মনে করিয়ে দেয়",
-    "options": ["অসহযোগ আন্দোলন", "ফারায়েজি আন্দোলন", "খিলাফত আন্দোলন", "স্বদেশী আন্দোলন"],
-    "correct": "স্বদেশী আন্দোলন"
-  },
-  {
-    "id": 154,
-    "question": "ইংরেজ ম্যাজিস্ট্রেট কিংস ফোর্ডকে হত্যার জন্য কে বোমা নিক্ষেপ করে?",
-    "options": ["ক্ষুদিরাম", "তিতুমীর", "মাস্টার দা সূর্যসেন", "আসাদুজ্জামান আসাদ"],
-    "correct": "ক্ষুদিরাম"
-  },
-  {
-    "id": 155,
-    "question": "যে ইংরেজকে হত্যার অভিযোগে ক্ষুদিরামকে ফাঁসি দেয়া হয় তার নাম-",
-    "options": ["কিংসফোর্ড", "লর্ড হার্ডিঞ্জ", "হাডসন", "সিম্পসন"],
-    "correct": "কিংসফোর্ড"
-  },
-  {
-    "id": 156,
-    "question": "চট্টগ্রামের অস্ত্রাগার লুষ্ঠিত হয় কোন সালে?",
-    "options": ["১৯১১ সালে", "১৯১৫ সালে", "১৯২১ সালে", "১৯৩০ সালে"],
-    "correct": "১৯৩০ সালে"
-  },
-  {
-    "id": 157,
-    "question": "কে ব্রিটিশ বিরোধী স্বাধীনতা যুদ্ধের নেতা?",
-    "options": ["বল্লাল সেন", "অমর্ত্য সেন", "সূর্যসেন", "বনলতা সেন"],
-    "correct": "সূর্যসেন"
-  },
-  {
-    "id": 158,
-    "question": "মাস্টারদা সূর্যসেনের ফাঁসি কার্যকর হয়েছিল?",
-    "options": ["মেদিনীপুরে", "ব্যারাকপুরে", "চট্টগ্রামে", "আন্দামানে", "কুমিল্লায়"],
-    "correct": "চট্টগ্রামে"
-  },
-  {
-    "id": 159,
-    "question": "প্রীতিলতা ওয়াদ্দেদার সম্পৃক্ত ছিলেন-",
-    "options": ["তেভাগা আন্দোলনে", "ব্রিটিশ বিরোধী সন্ত্রাসী আন্দোলন", "১৯৭১-এর মুক্তিযুদ্ধে", "সত্যাগ্রহ আন্দোলন"],
-    "correct": "ব্রিটিশ বিরোধী সন্ত্রাসী আন্দোলন"
-  },
-  {
-    "id": 160,
-    "question": "প্রীতিলতা ওয়াদ্দেদার কার শিষ্য ছিলেন?",
-    "options": ["দেশবন্ধু চিত্তরঞ্জন দাসের", "মাস্টারদা সূর্যসেনের", "নেতাজী সুভাস চন্দ্র বসুর", "মহাত্মা গান্ধীজীর"],
-    "correct": "মাস্টারদা সূর্যসেনের"
-  },
-  {
-    "id": 161,
-    "question": "কে অসহযোগ আন্দোলনে নেতৃত্ব দেন?",
-    "options": ["গান্ধীজি", "মওলানা শওকত আলী", "জহরলাল নেহেরু", "বিপিনচন্দ্র পাল"],
-    "correct": "গান্ধীজি"
-  },
-  {
-    "id": 162,
-    "question": "খিলাফত আন্দোলনের অন্যতম নেতা-",
-    "options": ["খাজা নাজিমউদ্দীন", "মোহাম্মদ আলী বিল্লাহ", "মওলানা মোহাম্মদ আলী", "এ.কে ফজলুল হক"],
-    "correct": "মওলানা মোহাম্মদ আলী"
-  },
-  {
-    "id": 163,
-    "question": "অসহযোগ এবং খেলাফত আন্দোলনের সঙ্গে জড়িত স্মরণীয় নায়ক কে?",
-    "options": ["মোহাম্মদ আলী জিন্নাহ", "মাওলানা মোহাম্মদ আলী", "আগা খান", "আবদুর রহিম"],
-    "correct": "মাওলানা মোহাম্মদ আলী"
-  },
-  {
-    "id": 164,
-    "question": "১৯০৫ ও ১৯২৩ সাল আমাদের জাতীয় জীবনের কোন দুটি ঐতিহাসিক ঘটনার সাথে সম্পৃক্ত?",
-    "options": ["বঙ্গভঙ্গ, বেঙ্গল প্যাক্ট চুক্তি সম্পাদিত হয়", "খেলাফত আন্দোলন, বিপ্লবী আন্দোলন", "বঙ্গভঙ্গ রদ, গান্ধীর অসহযোগ আন্দোলন", "গান্ধীর ভারত আগমন, বিপ্লবী আন্দোলন"],
-    "correct": "বঙ্গভঙ্গ, বেঙ্গল প্যাক্ট চুক্তি সম্পাদিত হয়"
-  },
-  {
-    "id": 165,
-    "question": "'বেঙ্গল প্যাক্ট' কার উদ্যোগে স্বাক্ষরিত হয়?",
-    "options": ["এ. কে ফজলুল হক", "সুভাস চন্দ্র বসু", "খাজা নাজিমউদ্দীন", "চিত্তরঞ্জন দাশ"],
-    "correct": "চিত্তরঞ্জন দাশ"
-  },
-  {
-    "id": 166,
-    "question": "কৃষক প্রজা পার্টির প্রতিষ্ঠাতা-",
-    "options": ["মাওলানা ভাসানী", "এ.কে ফজলুল হক", "আবুল হাশিম", "সোহরাওয়ার্দী"],
-    "correct": "এ.কে ফজলুল হক"
-  },
-  {
-    "id": 167,
-    "question": "Who was the first Chief Minister of the undivided Bengal?/অবিভক্ত বাংলার প্রথম মুখ্যমন্ত্রী",
-    "options": ["Syed Mahmud", "Syed Amir Ali", "Nawab Abdul Latif", "A.K. Fazlul Huq"],
-    "correct": "A.K. Fazlul Huq"
-  },
-  {
-    "id": 168,
-    "question": "বাংলায় 'ঋণ সালিশি আইন' কার আমলে প্রণীত হয়?",
-    "options": ["এ. কে ফজলুল হক", "এইচ, এস, সোহরাওয়ার্দী", "খাজা নাজিমউদ্দীন", "নুরুল আমিন"],
-    "correct": "এ. কে ফজলুল হক"
-  },
-  {
-    "id": 169,
-    "question": "কোন নেতা জমিদারি প্রথা রদে প্রধান ভূমিকা পালন করেন?",
-    "options": ["হোসেন শহীদ সোহরাওয়ার্দী", "মাওলানা আবদুল হামিদ খান ভাসানী", "এ কে ফজলুল হক", "আতাউর রহমান খান"],
-    "correct": "এ কে ফজলুল হক"
-  },
-  {
-    "id": 170,
-    "question": "অবিভক্ত বাংলার দ্বিতীয় মুখ্যমন্ত্রী-",
-    "options": ["আবুল হাসেম", "এ কে ফজলুল হক", "শহীদ সোহরাওয়ার্দী", "খাজা নাজিমউদ্দীন"],
-    "correct": "খাজা নাজিমউদ্দীন"
-  },
-  {
-    "id": 171,
-    "question": "দ্বি-জাতি তত্ত্বের প্রবক্তা কে ছিলেন?",
-    "options": ["আল্লামা ইকবাল", "মোহাম্মদ আলী জিন্নাহ", "স্যার সৈয়দ আহম্মদ", "স্যার সলিমুল্লাহ"],
-    "correct": "মোহাম্মদ আলী জিন্নাহ"
-  },
-  {
-    "id": 172,
-    "question": "১৯৪০ সালের লাহোর প্রস্তাবের উত্থাপক কে ছিলেন?",
-    "options": ["লিয়াকত আলী খান", "খাজা নাজিমউদ্দীন", "এ.কে ফজলুল হক", "মোহাম্মদ আলী জিন্নাহ", "হোসেন শহীদ সোহরাওয়ার্দী"],
-    "correct": "এ.কে ফজলুল হক"
-  },
-  {
-    "id": 173,
-    "question": "ঐতিহাসিক লাহোর প্রস্তাব কত তারিখে উত্থাপিত হয়?",
-    "options": ["১৩ ফেব্রুয়ারি, ১৯৪০", "১৩ মার্চ, ১৯৪০", "২৩ মার্চ, ১৯৪০", "২৩ মার্চ, ১৯৪২"],
-    "correct": "২৩ মার্চ, ১৯৪০"
-  },
-  {
-    "id": 174,
-    "question": "'লাহোর প্রস্থাব' কত সালে উত্থাপিত (গৃহীত) হয়?",
-    "options": ["১৯৩৫", "১৯৪০", "১৮৪০", "১৯৪৫"],
-    "correct": "১৯৪০"
-  },
-  {
-    "id": 175,
-    "question": "লাহোর প্রস্তাব ছিল-",
-    "options": ["স্বাধীন বাংলা প্রস্তাব", "পাকিস্তান প্রস্তাব", "ভারত বিভাগের প্রস্তাব", "ভারতে মুসলিম সংখ্যাগরিষ্ঠ এলাকার জন্য স্বাধীন রাষ্ট্রসমূহ গঠনের প্রস্তাব"],
-    "correct": "ভারতে মুসলিম সংখ্যাগরিষ্ঠ এলাকার জন্য স্বাধীন রাষ্ট্রসমূহ গঠনের প্রস্তাব"
-  },
-  {
-    "id": 176,
-    "question": "ক্রীপস মিশন কোন উদ্দেশ্যে এদেশে আগমন করে?",
-    "options": ["অর্থনৈতিক", "রাজনৈতিক", "সামাজিক", "সাংস্কৃতিক"],
-    "correct": "রাজনৈতিক"
-  },
-  {
-    "id": 177,
-    "question": "'পঞ্চাশের মন্বন্তর' হয়েছিল ইংরেজি কত সালে?",
-    "options": ["১৯৪৩ সালে", "১৮৫০ সালে", "১৯২১ সালে", "১৯৫০ সালে"],
-    "correct": "১৯৪৩ সালে"
-  },
-  {
-    "id": 178,
-    "question": "ইলা মিত্র অংশগ্রহণ করেন-",
-    "options": ["ওয়াহাবী আন্দোলনে", "তেভাগা আন্দোলনে", "নীল বিদ্রোহে", "সিপাহি বিদ্রোহে"],
-    "correct": "তেভাগা আন্দোলনে"
-  },
-  {
-    "id": 179,
-    "question": "Who was the leader of 'Tebhaga Andolon' of Bangladesh?/তেভাগা আন্দোলনের নেত্রী-",
-    "options": ["Ila Mitra", "Taramon Bibi", "Sumitra Devi", "Pritilata Waddedar"],
-    "correct": "Ila Mitra"
-  },
-  {
-    "id": 180,
-    "question": "ভারতে ক্যাবিনেট মিশন কখন এসেছিল?",
-    "options": ["১৯৪০ সালে", "১৯৪৬ সালে", "১৯৪২ সালে", "১৯৪৭ সালে"],
-    "correct": "১৯৪৬ সালে"
-  },
-  {
-    "id": 181,
-    "question": "Who is the last chief Minister of undivided Bengal?/অবিভক্ত বাংলার শেষ মুখ্যমন্ত্রী কে ছিলেন?",
-    "options": ["A.K. Fazlul Haque", "Huseyen Shahid Shurwardy", "Abul Hashem", "Khaja Nazim Uddin", "None of them"],
-    "correct": "Huseyen Shahid Shurwardy"
-  },
-  {
-    "id": 182,
-    "question": "মহাত্মা গান্ধী বাংলাদেশের কোন জেলা সফর করেছিলেন?",
-    "options": ["নোয়াখালী", "বরিশাল", "ঢাকা", "খুলনা"],
-    "correct": "নোয়াখালী"
-  },
-  {
-    "id": 183,
-    "question": "১৯৪৭ সালে পূর্ব বাংলার মুখ্যমন্ত্রী ছিলেন-",
-    "options": ["নুরুল আমিন", "আতাউর রহমান", "খাজা নাজিমউদ্দীন", "আবু হোসেন সরকার"],
-    "correct": "খাজা নাজিমউদ্দীন"
-  },
-  {
-    "id": 184,
-    "question": "পূর্ব বাংলার প্রথম গভর্নর কে ছিলেন?",
-    "options": ["ইস্কান্দার মীর্জা", "চৌধুরী খালেকুজ্জামান", "ফ্রেডেরিক চালমার্স বোর্ন", "এ কে ফজলুল হক"],
-    "correct": "ফ্রেডেরিক চালমার্স বোর্ন"
-  },
-  {
-    "id": 185,
-    "question": "আওয়ামী লীগের মূল বা আদি নাম কি?",
-    "options": ["আওয়ামী পার্টি", "আওয়ামী জাতীয় পার্টি", "আওয়ামী মুসলিম লীগ", "আওয়ামী লীগ"],
-    "correct": "আওয়ামী মুসলিম লীগ"
-  },
-  {
-    "id": 186,
-    "question": "আওয়ামী মুসলীগ লীগের প্রতিষ্ঠাতা সভাপতি",
-    "options": ["মাওলানা ভাসানী", "শেখ মজিবুর রহমান", "শামসুল হক", "সোহরাওয়ার্দী"],
-    "correct": "মাওলানা ভাসানী"
-  },
-  {
-    "id": 187,
-    "question": "আওয়ামী মুসলিম লীগের প্রতিষ্ঠাতা সাধারণ সম্পাদক কে ছিলেন?",
-    "options": ["শেখ মুজিবুর রহমান", "মাওলানা আব্দুল হামিদ খান ভাসানী", "শামসুল হক", "আবুল হাশিম"],
-    "correct": "শামসুল হক"
-  },
-  {
-    "id": 188,
-    "question": "আওয়ামী মুসলিম লীগের প্রতিষ্ঠাকালীন সময়ে শেখ মুজিবুর রহমান নিচের কি ছিলেন?",
-    "options": ["যুগ্ম সম্পাদক", "সহ-সভাপতি", "সম্পাদক", "সাংগঠনিক সম্পাদক"],
-    "correct": "যুগ্ম সম্পাদক"
-  },
-  {
-    "id": 189,
-    "question": "বাংলাদেশের ইতিহাসে যে ঘটনাটি আগে ঘটেছিল-",
-    "options": ["যুক্তফ্রন্ট গঠন", "আগরতলা ষড়যন্ত্র মামলা", "ভাষা আন্দোলন", "আওয়ামী মুসলিম লীগের প্রতিষ্ঠা"],
-    "correct": "আওয়ামী মুসলিম লীগের প্রতিষ্ঠা"
-  },
-  {
-    "id": 190,
-    "question": "বাংলাদেশের গৃহীত এস্টেট একুইজিশন এন্ড টেনান্সী এ্যাক্ট কোন সনে পাস হয়?",
-    "options": ["১৯৫০", "১৯৫১", "১৯৫২", "১৯৬১"],
-    "correct": "১৯৫০"
-  },
-  {
-    "id": 191,
-    "question": "পূর্ববঙ্গ জমিদারী দখল ও প্রজাস্বত্ব আইন কবে প্রণীত হয়?",
-    "options": ["১৯৫০", "১৯৪৮", "১৯৪৭", "১৯৫৪"],
-    "correct": "১৯৫০"
-  },
-  {
-    "id": 192,
-    "question": "জমিদারি প্রথা বিলুপ্ত হয়?",
-    "options": ["১৯৪৭ সালে", "১৯৫০ সালে", "১৯৫২ সালে", "১৯৬৪ সালে"],
-    "correct": "১৯৫০ সালে"
+    "question": "The identity of the citizens of Bangladesh, as per the Constitution (Nationality), is:",
+    "options": [
+      "Bengali",
+      "Bangladeshi",
+      "Sovereign",
+      "Secular"
+    ],
+    "correct": "Bangladeshi"
   }
 ]
+// [
+//   {
+//     "id": 1,
+//     "question": "The first general election in the independent Bangladesh was held on?",
+//     "options": [
+//       "7 March, 1973",
+//       "5 April, 1973",
+//       "3 March, 1973",
+//       "10 March, 1973"
+//     ],
+//     "correct": "7 March, 1973"
+//   },
+//   {
+//     "id": 2,
+//     "question": "The VIP (Very Important Person) in Bangladesh is-",
+//     "options": [
+//       "The Prime Minister",
+//       "The President",
+//       "The Speaker",
+//       "The Chief Justice"
+//     ],
+//     "correct": "The Prime Minister"
+//   },
+//   {
+//     "id": 3,
+//     "question": "The courts of Bangladesh have no jurisdiction over-",
+//     "options": [
+//       "The Prime Minister",
+//       "The President",
+//       "The Speaker",
+//       "The Chief Justice"
+//     ],
+//     "correct": "The President"
+//   },
+//   {
+//     "id": 4,
+//     "question": "For which National Parliament election is the next general election scheduled?",
+//     "options": [
+//       "দশম (10th)",
+//       "একাদশ (11th)",
+//       "দ্বাদশ (12th)",
+//       "ত্রয়োদশ (13th)"
+//     ],
+//     "correct": "ত্রয়োদশ (13th)"
+//   },
+//   {
+//     "id": 5,
+//     "question": "Who elects the President of Bangladesh?",
+//     "options": [
+//       "Prime Minister",
+//       "Ministers",
+//       "All MPs",
+//       "MPs of the ruling party"
+//     ],
+//     "correct": "All MPs"
+//   },
+//   {
+//     "id": 6,
+//     "question": "The President of Bangladesh can declare a State of Emergency for a maximum of how many days?",
+//     "options": [
+//       "১২০ (120)",
+//       "৯০ (90)",
+//       "৬০ (60)",
+//       "৩০ (30)"
+//     ],
+//     "correct": "১২০ (120)"
+//   },
+//   {
+//     "id": 7,
+//     "question": "What is the name of the President's official residence?",
+//     "options": [
+//       "গণভবন (Gonobhaban)",
+//       "সুগন্ধা (Sugandha)",
+//       "বঙ্গভবন (Bangabhaban)",
+//       "শাপলা (Shapla)"
+//     ],
+//     "correct": "বঙ্গভবন (Bangabhaban)"
+//   },
+//   {
+//     "id": 8,
+//     "question": "Who appoints the Chief Justice of Bangladesh?",
+//     "options": [
+//       "Prime Minister",
+//       "The President",
+//       "Speaker of the Parliament",
+//       "Law Minister"
+//     ],
+//     "correct": "The President"
+//   },
+//   {
+//     "id": 9,
+//     "question": "When was the first election held under a Caretaker Government in Bangladesh?",
+//     "options": [
+//       "১৯৯১ (1991)",
+//       "১৯৯৪ (1994)",
+//       "১৯৯৬ (1996)",
+//       "২০০১ (2001)"
+//     ],
+//     "correct": "১৯৯৬ (1996)"
+//   },
+//   {
+//     "id": 10,
+//     "question": "Executive power in Bangladesh is exercised under the authority of whom?",
+//     "options": [
+//       "Prime Minister",
+//       "Speaker",
+//       "Chief Justice",
+//       "The President"
+//     ],
+//     "correct": "Prime Minister"
+//   },
+//   {
+//     "id": 11,
+//     "question": "Who appoints the Prime Minister of the Government of the People's Republic of Bangladesh?",
+//     "options": [
+//       "Speaker",
+//       "The President",
+//       "Chief Justice",
+//       "Chief Election Commissioner"
+//     ],
+//     "correct": "The President"
+//   },
+//   {
+//     "id": 12,
+//     "question": "Who performs the duties of the President if the President's office is vacant?",
+//     "options": [
+//       "Prime Minister",
+//       "The Speaker of the National Parliament",
+//       "Chief Justice",
+//       "Vice President"
+//     ],
+//     "correct": "The Speaker of the National Parliament"
+//   },
+//   {
+//     "id": 13,
+//     "question": "What is the minimum period after the end of a session that another session of the Parliament must be called?",
+//     "options": [
+//       "৪০ দিন (40 days)",
+//       "৬০ দিন (60 days)",
+//       "৯০ দিন (90 days)",
+//       "১২০ দিন (120 days)"
+//     ],
+//     "correct": "৬০ দিন (60 days)"
+//   },
+//   {
+//     "id": 14,
+//     "question": "How many houses does the National Parliament of Bangladesh have?",
+//     "options": [
+//       "এক কক্ষ (One House/Unicameral)",
+//       "দ্বি-কক্ষ (Two Houses/Bicameral)",
+//       "ত্রি-কক্ষ (Three Houses)",
+//       "নির্দিষ্ট নয় (Not specified)"
+//     ],
+//     "correct": "এক কক্ষ (One House/Unicameral)"
+//   },
+//   {
+//     "id": 15,
+//     "question": "What is the minimum age to become the Prime Minister of Bangladesh?",
+//     "options": [
+//       "২১ বছর (21 years)",
+//       "২৫ বছর (25 years)",
+//       "৩০ বছর (30 years)",
+//       "৩৫ বছর (35 years)"
+//     ],
+//     "correct": "২৫ বছর (25 years)"
+//   },
+//   {
+//     "id": 16,
+//     "question": "Which is not a function of the National Parliament?",
+//     "options": [
+//       "Law Making",
+//       "Cabinet formation",
+//       "Amendment of the Constitution",
+//       "Oversight of the Executive"
+//     ],
+//     "correct": "Cabinet formation"
+//   },
+//   {
+//     "id": 17,
+//     "question": "The national anthem of Bangladesh has been translated into English by...",
+//     "options": [
+//       "Syed Ali Ahsan",
+//       "Professor Zillur Rahman Siddiqui",
+//       "Kaiser Haq",
+//       "Syed Mujtaba Ali"
+//     ],
+//     "correct": "Syed Ali Ahsan"
+//   },
+//   {
+//     "id": 18,
+//     "question": "Which famous movement first used the term 'Jatiya Sangsad' (National Assembly) in its demand?",
+//     "options": [
+//       "Language Movement (1952)",
+//       "Education Movement (1962)",
+//       "Six-Point Movement (1966)",
+//       "Mass Upsurge (1969)"
+//     ],
+//     "correct": "Six-Point Movement (1966)"
+//   },
+//   {
+//     "id": 19,
+//     "question": "Who was the first person to read the Proclamation of Independence on April 10, 1971?",
+//     "options": [
+//       "Sheikh Mujibur Rahman",
+//       "Tajuddin Ahmad",
+//       "Professor Yusuf Ali",
+//       "M. A. G. Osmani"
+//     ],
+//     "correct": "Professor Yusuf Ali"
+//   },
+//   {
+//     "id": 20,
+//     "question": "The 'Birangana' title, given to the women freedom fighters, was declared by Bangabandhu Sheikh Mujibur Rahman in which year?",
+//     "options": [
+//       "1971",
+//       "1972",
+//       "1973",
+//       "1974"
+//     ],
+//     "correct": "1972"
+//   },
+//   {
+//     "id": 21,
+//     "question": "The Deep Sea Port being constructed at Matarbari is primarily funded by which country?",
+//     "options": [
+//       "China",
+//       "Japan",
+//       "India",
+//       "South Korea"
+//     ],
+//     "correct": "Japan"
+//   },
+//   {
+//     "id": 22,
+//     "question": "Which division of Bangladesh has the lowest population density?",
+//     "options": [
+//       "Sylhet",
+//       "Barisal",
+//       "Chattogram",
+//       "Rangpur"
+//     ],
+//     "correct": "Barisal"
+//   },
+//   {
+//     "id": 23,
+//     "question": "How many members can the President nominate to the Jatiya Sangsad (Parliament) in addition to the directly elected and reserved women seats?",
+//     "options": [
+//       "0",
+//       "5",
+//       "10",
+//       "15"
+//     ],
+//     "correct": "0"
+//   },
+//   {
+//     "id": 24,
+//     "question": "The Ganges (Padma) River enters Bangladesh near which district?",
+//     "options": [
+//       "Rajshahi",
+//       "Chapai Nawabganj",
+//       "Kushtia",
+//       "Pabna"
+//     ],
+//     "correct": "Chapai Nawabganj"
+//   },
+//   {
+//     "id": 25,
+//     "question": "Which sector was responsible for the Naval Command during the Liberation War?",
+//     "options": [
+//       "Sector 9",
+//       "Sector 10",
+//       "Sector 11",
+//       "Coastal Sector"
+//     ],
+//     "correct": "Sector 10"
+//   },
+//   {
+//     "id": 26,
+//     "question": "Which article of the Constitution establishes Dhaka as the capital of the Republic?",
+//     "options": [
+//       "Article 2",
+//       "Article 5",
+//       "Article 7",
+//       "Article 10"
+//     ],
+//     "correct": "Article 5"
+//   },
+//   {
+//     "id": 27,
+//     "question": "What date is officially recognized as the National Flag hoisting day in Bangladesh?",
+//     "options": [
+//       "March 1, 1971",
+//       "March 2, 1971",
+//       "March 7, 1971",
+//       "March 26, 1971"
+//     ],
+//     "correct": "March 2, 1971"
+//   },
+//   {
+//     "id": 28,
+//     "question": "The Constitution of Bangladesh came into effect on:",
+//     "options": [
+//       "November 4, 1972",
+//       "December 16, 1972",
+//       "March 26, 1973",
+//       "January 1, 1973"
+//     ],
+//     "correct": "December 16, 1972"
+//   },
+//   {
+//     "id": 29,
+//     "question": "What is the official ratio of the national flag (length to width)?",
+//     "options": [
+//       "10:6",
+//       "5:4",
+//       "3:2",
+//       "7:5"
+//     ],
+//     "correct": "10:6"
+//   },
+//   {
+//     "id": 30,
+//     "question": "Who is widely regarded as the first martyr of the Liberation War in 1971?",
+//     "options": [
+//       "Asaduzzaman Noor",
+//       "Shankar Samadder",
+//       "Sergeant Zahurul Haq",
+//       "Motiur Rahman"
+//     ],
+//     "correct": "Shankar Samadder"
+//   },
+//   {
+//     "id": 31,
+//     "question": "The Fundamental Rights in the Constitution of Bangladesh are described in which Part?",
+//     "options": [
+//       "২য় ভাগে (Part II)",
+//       "৩য় ভাগে (Part III)",
+//       "৪র্থ ভাগে (Part IV)",
+//       "৫ম ভাগে (Part V)"
+//     ],
+//     "correct": "৩য় ভাগে (Part III)"
+//   },
+//   {
+//     "id": 32,
+//     "question": "Through which constitutional amendment was the parliamentary system of Bangladesh reintroduced?",
+//     "options": [
+//       "একাদশ (11th)",
+//       "ত্রয়োদশ (13th)",
+//       "দশম (10th)",
+//       "দ্বাদশ (12th)"
+//     ],
+//     "correct": "দ্বাদশ (12th)"
+//   },
+//   {
+//     "id": 33,
+//     "question": "What was the objective of the Sixteenth Amendment of the Bangladesh Constitution?",
+//     "options": [
+//       "Reservation of seats for women",
+//       "Abolition of the Caretaker Government",
+//       "Impeachment of Supreme Court Judges",
+//       "Addition of Bangabandhu's speech"
+//     ],
+//     "correct": "Impeachment of Supreme Court Judges"
+//   },
+//   {
+//     "id": 34,
+//     "question": "Which of the following is called the 'Nerve Centre' of the administration?",
+//     "options": [
+//       "Supreme Court",
+//       "Parliament",
+//       "PM's Office",
+//       "Secretariat"
+//     ],
+//     "correct": "Secretariat"
+//   },
+//   {
+//     "id": 35,
+//     "question": "Bangabandhu's Declaration of Independence is mentioned in which Schedule of the Constitution?",
+//     "options": [
+//       "Fifth",
+//       "Fourth",
+//       "Sixth",
+//       "Seventh"
+//     ],
+//     "correct": "Sixth"
+//   },
+//   {
+//     "id": 36,
+//     "question": "The power to amend the Constitution of Bangladesh is given in which Article?",
+//     "options": [
+//       "১৪০ (Article 140)",
+//       "১৪১ (Article 141)",
+//       "১৪২ (Article 142)",
+//       "১৪৩ (Article 143)"
+//     ],
+//     "correct": "১৪২ (Article 142)"
+//   },
+//   {
+//     "id": 37,
+//     "question": "What does 'Amicus Curiae' mean?",
+//     "options": [
+//       "Highest Court",
+//       "Chief Justice",
+//       "Friend of the court",
+//       "Supreme Law"
+//     ],
+//     "correct": "Friend of the court"
+//   },
+//   {
+//     "id": 38,
+//     "question": "The right to grant pardon to the President is provided in which Article of the Constitution?",
+//     "options": [
+//       "৪৭ (Article 47)",
+//       "৪৯ (Article 49)",
+//       "৫১ (Article 51)",
+//       "৫২ (Article 52)"
+//     ],
+//     "correct": "৪৯ (Article 49)"
+//   },
+//   {
+//     "id": 39,
+//     "question": "What is the name of the Constitution of Bangladesh?",
+//     "options": [
+//       "People's Constitution of Bangladesh",
+//       "Constitution of Bangladesh",
+//       "Bangladesh Constitution",
+//       "The Constitution of the People's Republic of Bangladesh"
+//     ],
+//     "correct": "The Constitution of the People's Republic of Bangladesh"
+//   },
+//   {
+//     "id": 40,
+//     "question": "'All citizens are equal before law and entitled to the protection of law' is in which Article?",
+//     "options": [
+//       "২৭ (Article 27)",
+//       "২৮ (Article 28)",
+//       "২৯ (Article 29)",
+//       "৩০ (Article 30)"
+//     ],
+//     "correct": "২৭ (Article 27)"
+//   },
+//   {
+//     "id": 41,
+//     "question": "Where are the Fundamental Principles of State Policy stipulated in Bangladesh?",
+//     "options": [
+//       "In the Parliament Act",
+//       "In the Penal Code",
+//       "In the Administrative Act",
+//       "In the Constitution"
+//     ],
+//     "correct": "In the Constitution"
+//   },
+//   {
+//     "id": 42,
+//     "question": "When was the Constitution of Bangladesh enacted?",
+//     "options": [
+//       "November 1971",
+//       "December 1971",
+//       "November 1972",
+//       "December 1972"
+//     ],
+//     "correct": "November 1972"
+//   },
+//   {
+//     "id": 43,
+//     "question": "What is the total number of Articles in the Constitution of Bangladesh?",
+//     "options": [
+//       "১৪৮ (148)",
+//       "১৫৩ (153)",
+//       "১১০ (110)",
+//       "১০৫ (105)"
+//     ],
+//     "correct": "১৫৩ (153)"
+//   },
+//   {
+//     "id": 44,
+//     "question": "How many parts and articles are there in the Constitution of Bangladesh?",
+//     "options": [
+//       "10, 150",
+//       "11, 150",
+//       "11, 153",
+//       "12, 153"
+//     ],
+//     "correct": "11, 153"
+//   },
+//   {
+//     "id": 45,
+//     "question": "Who was the writer of the handwritten constitution of Bangladesh?",
+//     "options": [
+//       "Kamrul Hassan",
+//       "Shilpacharya Zainul Abedin",
+//       "Hashim Khan",
+//       "AKM Abdur Rauf"
+//     ],
+//     "correct": "AKM Abdur Rauf"
+//   },
+//   {
+//     "id": 46,
+//     "question": "How many principles are there in the constitution of Bangladesh?",
+//     "options": [
+//       "3",
+//       "4",
+//       "5",
+//       "6"
+//     ],
+//     "correct": "4"
+//   },
+//   {
+//     "id": 47,
+//     "question": "Which is the supreme law of Bangladesh?",
+//     "options": [
+//       "The Penal Code",
+//       "Constitution",
+//       "The Civil Code",
+//       "The Administrative Code"
+//     ],
+//     "correct": "Constitution"
+//   },
+//   {
+//     "id": 48,
+//     "question": "How many times is the constitution of the People's Republic of Bangladesh amended?",
+//     "options": [
+//       "17",
+//       "16",
+//       "15",
+//       "14"
+//     ],
+//     "correct": "17"
+//   },
+//   {
+//     "id": 49,
+//     "question": "'Men and Women are equal' which Article of our Constitution refers it?",
+//     "options": [
+//       "Art-26",
+//       "Art-27",
+//       "Art-28 (1)",
+//       "Art-28 (2)"
+//     ],
+//     "correct": "Art-28 (2)"
+//   },
+//   {
+//     "id": 50,
+//     "question": "Which article of the constitution of Bangladesh ensures the Separation of Judiciary from the Executive?",
+//     "options": [
+//       "21",
+//       "22",
+//       "23",
+//       "24"
+//     ],
+//     "correct": "22"
+//   },
+//   {
+//     "id": 51,
+//     "question": "The maximum tenure of a Supreme Court Judge in Bangladesh is...",
+//     "options": [
+//       "৬৫ (65 years)",
+//       "৬৭ (67 years)",
+//       "৬৮ (68 years)",
+//       "৬৯ (69 years)"
+//     ],
+//     "correct": "৬৭ (67 years)"
+//   },
+//   {
+//     "id": 52,
+//     "question": "According to Article 141A of the Constitution, the declaration of 'Emergency' can be for a maximum term of?",
+//     "options": [
+//       "১২০ (120 days)",
+//       "৯০ (90 days)",
+//       "৬০ (60 days)",
+//       "৪৫ (45 days)"
+//     ],
+//     "correct": "১২০ (120 days)"
+//   },
+//   {
+//     "id": 53,
+//     "question": "What is the minimum age to become the President according to the Constitution?",
+//     "options": [
+//       "২৫ বছর (25 years)",
+//       "৩০ বছর (30 years)",
+//       "৪০ বছর (40 years)",
+//       "৩৫ বছর (35 years)"
+//     ],
+//     "correct": "৩৫ বছর (35 years)"
+//   },
+//   {
+//     "id": 54,
+//     "question": "Who was the first person to sign the handwritten constitution of Bangladesh?",
+//     "options": [
+//       "Dr. Kamal Hossain",
+//       "Shah Abdul Hamid",
+//       "Bangabandhu Sheikh Mujibur Rahman",
+//       "Syed Nazrul Islam"
+//     ],
+//     "correct": "Bangabandhu Sheikh Mujibur Rahman"
+//   },
+//   {
+//     "id": 55,
+//     "question": "The Election Commission is formed according to which Article of the Constitution?",
+//     "options": [
+//       "অনুচ্ছেদ-১১৭ (Article 117)",
+//       "অনুচ্ছেদ-১১৮ (Article 118)",
+//       "অনুচ্ছেদ-১১৯ (Article 119)",
+//       "অনুচ্ছেদ-১২০ (Article 120)"
+//     ],
+//     "correct": "অনুচ্ছেদ-১১৮ (Article 118)"
+//   },
+//   {
+//     "id": 56,
+//     "question": "Which amendment to the Constitution increased the reserved seats for women to 50?",
+//     "options": [
+//       "১৪তম (14th)",
+//       "১৫তম (15th)",
+//       "১৬তম (16th)",
+//       "১৭তম (17th)"
+//     ],
+//     "correct": "১৫তম (15th)"
+//   },
+//   {
+//     "id": 57,
+//     "question": "Which is not a function of the Judiciary?",
+//     "options": [
+//       "Interpretation of laws",
+//       "Protecting Fundamental Rights",
+//       "Protecting the Constitution",
+//       "Drafting the Constitution"
+//     ],
+//     "correct": "Drafting the Constitution"
+//   },
+//   {
+//     "id": 58,
+//     "question": "Mujibnagar Government was formed in-",
+//     "options": [
+//       "10 April 1971",
+//       "26 March 1971",
+//       "17 April 1971",
+//       "16 December 1971"
+//     ],
+//     "correct": "10 April 1971"
+//   },
+//   {
+//     "id": 59,
+//     "question": "Who is the author of 'Chorompotro' (চরমপত্র)?",
+//     "options": [
+//       "Sukh Ranjan",
+//       "Gaffar Chowdhury",
+//       "Tajuddin Ahmed",
+//       "M R Akther Mukul"
+//     ],
+//     "correct": "M R Akther Mukul"
+//   },
+//   {
+//     "id": 60,
+//     "question": "Which two countries got their independence through declaration?",
+//     "options": [
+//       "India and Pakistan",
+//       "India and Nepal",
+//       "The USA and Bangladesh",
+//       "France and Germany"
+//     ],
+//     "correct": "The USA and Bangladesh"
+//   },
+//   {
+//     "id": 61,
+//     "question": "Who read the Declaration of Independence on April 10, 1971?",
+//     "options": [
+//       "Bangabandhu Sheikh Mujibur Rahman",
+//       "Major Ziaur Rahman",
+//       "Tajuddin Ahmed",
+//       "Professor Yusuf Ali"
+//     ],
+//     "correct": "Professor Yusuf Ali"
+//   },
+//   {
+//     "id": 62,
+//     "question": "What was the rank of Bir Sreshtha Hamidur Rahman?",
+//     "options": [
+//       "Havildar",
+//       "Sepoy",
+//       "Lieutenant",
+//       "Captain"
+//     ],
+//     "correct": "Sepoy"
+//   },
+//   {
+//     "id": 63,
+//     "question": "Which Arab country first recognized Bangladesh?",
+//     "options": [
+//       "Egypt",
+//       "Iraq",
+//       "Kuwait",
+//       "Jordan"
+//     ],
+//     "correct": "Iraq"
+//   },
+//   {
+//     "id": 64,
+//     "question": "Who is the author of 'Bangladesh: A Legacy of Blood'?",
+//     "options": [
+//       "Mark Taylor",
+//       "Anthony Mascarenhas",
+//       "Mark Twain",
+//       "Rober Frost"
+//     ],
+//     "correct": "Anthony Mascarenhas"
+//   },
+//   {
+//     "id": 65,
+//     "question": "Among the seven Bir Sreshthas, who was the first to be martyred?",
+//     "options": [
+//       "Mohammad Ruhul Amin",
+//       "Mohammad Mostafa Kamal",
+//       "Munshi Abdur Rouf",
+//       "Matiur Rahman"
+//     ],
+//     "correct": "Munshi Abdur Rouf"
+//   },
+//   {
+//     "id": 66,
+//     "question": "Where is the 'Gonohattya Jadughar' (Genocide Museum) located?",
+//     "options": [
+//       "Dhaka",
+//       "Khulna",
+//       "Chattogram",
+//       "Barishal"
+//     ],
+//     "correct": "Khulna"
+//   },
+//   {
+//     "id": 67,
+//     "question": "Who was in charge of the Ministry of Home Affairs in the Mujibnagar Government?",
+//     "options": [
+//       "Syed Nazrul Islam",
+//       "Tajuddin Ahmed",
+//       "M Mansur Ali",
+//       "A H M Kamaruzzaman"
+//     ],
+//     "correct": "A H M Kamaruzzaman"
+//   },
+//   {
+//     "id": 68,
+//     "question": "The first African country to recognize Bangladesh was-",
+//     "options": [
+//       "Sudan",
+//       "Senegal",
+//       "Egypt",
+//       "Ghana"
+//     ],
+//     "correct": "Senegal"
+//   },
+//   {
+//     "id": 69,
+//     "question": "Where is the 'Shongshoptok' (সংশপ্তক) sculpture located?",
+//     "options": [
+//       "Charukola Institute",
+//       "Dhaka University Arts Building",
+//       "Jahangirnagar University",
+//       "Islamic University"
+//     ],
+//     "correct": "Jahangirnagar University"
+//   },
+//   {
+//     "id": 70,
+//     "question": "Who was the first martyred intellectual (শহিদ বুদ্ধিজীবী) of Bangladesh?",
+//     "options": [
+//       "Dr. Shamsuzzoha",
+//       "Zahir Raihan",
+//       "Gobinda Chandra Deb",
+//       "Shahidullah Kaiser"
+//     ],
+//     "correct": "Dr. Shamsuzzoha"
+//   },
+//   {
+//     "id": 71,
+//     "question": "Where is 'Shikha Chironton' (শিখা চিরন্তন) located?",
+//     "options": [
+//       "Dhaka Cantonment",
+//       "Cumilla Cantonment",
+//       "Dhaka University",
+//       "Suhrawardy Udyan"
+//     ],
+//     "correct": "Suhrawardy Udyan"
+//   },
+//   {
+//     "id": 72,
+//     "question": "Who is the architect of the National Memorial Monument (জাতীয় স্মৃতি সৌধ)?",
+//     "options": [
+//       "Mostofa Monowar",
+//       "Hamiduzzaman Khan",
+//       "Nitun Kundu",
+//       "Syed Mainul Hossain"
+//     ],
+//     "correct": "Syed Mainul Hossain"
+//   },
+//   {
+//     "id": 73,
+//     "question": "Where was the first Provisional Government of Bangladesh formed?",
+//     "options": [
+//       "Dhaka",
+//       "Meherpur",
+//       "Gopalganj",
+//       "Kolkata"
+//     ],
+//     "correct": "Meherpur"
+//   },
+//   {
+//     "id": 74,
+//     "question": "'Ekattorer Chithi' (একাত্তরের চিঠি) is what kind of composition?",
+//     "options": [
+//       "Description of the Liberation War",
+//       "Novel about the Liberation War",
+//       "Collection of Liberation War letters",
+//       "Diary about the Liberation War"
+//     ],
+//     "correct": "Collection of Liberation War letters"
+//   },
+//   {
+//     "id": 75,
+//     "question": "Which foreign journalist first exposed the atrocities of the Pakistan Army?",
+//     "options": [
+//       "William Mark Tully",
+//       "Simon Dring",
+//       "John Pilger",
+//       "James Harrison"
+//     ],
+//     "correct": "Simon Dring"
+//   },
+//   {
+//     "id": 76,
+//     "question": "Who was the Finance Minister of the Mujibnagar Government?",
+//     "options": [
+//       "Kamal Hossain",
+//       "Monsur Ali",
+//       "Taj Uddin Ahmed",
+//       "AHM Kamaruzzaman"
+//     ],
+//     "correct": "Monsur Ali"
+//   },
+//   {
+//     "id": 77,
+//     "question": "Which sector had no specific Commander during the Liberation War?",
+//     "options": [
+//       "Sector-1",
+//       "Sector-11",
+//       "Sector-6",
+//       "Sector-10"
+//     ],
+//     "correct": "Sector-10"
+//   },
+//   {
+//     "id": 78,
+//     "question": "The 'Concert for Bangladesh' was held in-",
+//     "options": [
+//       "Lords Cricket Ground",
+//       "Madison Square Garden",
+//       "New York Botanical Garden",
+//       "Georgetown"
+//     ],
+//     "correct": "Madison Square Garden"
+//   },
+//   {
+//     "id": 79,
+//     "question": "Which is the smallest district by area in Bangladesh?",
+//     "options": [
+//       "Panchagarh",
+//       "Rangamati",
+//       "Satkhira",
+//       "Narayanganj"
+//     ],
+//     "correct": "Narayanganj"
+//   },
+//   {
+//     "id": 80,
+//     "question": "Which Himalayan peak can be seen from the northernmost district of Bangladesh?",
+//     "options": [
+//       "Kanchenjunga",
+//       "Chimbuk",
+//       "Everest",
+//       "Keokaradong"
+//     ],
+//     "correct": "Kanchenjunga"
+//   },
+//   {
+//     "id": 81,
+//     "question": "Which constitutional amendment replaced 'Dacca' as 'Dhaka'?",
+//     "options": [
+//       "The Fourth Amendment, 1975",
+//       "The Sixth Amendment, 1981",
+//       "The Eighth Amendment, 1988",
+//       "The Tenth Amendment, 1990"
+//     ],
+//     "correct": "The Eighth Amendment, 1988"
+//   },
+//   {
+//     "id": 82,
+//     "question": "The Time difference of Bangladesh with Greenwich Meantime is-",
+//     "options": [
+//       "5 hours",
+//       "6 hours",
+//       "7 hours",
+//       "8 hours"
+//     ],
+//     "correct": "6 hours"
+//   },
+//   {
+//     "id": 83,
+//     "question": "When was Dhaka first established as the capital?",
+//     "options": [
+//       "1210 AD",
+//       "1310 AD",
+//       "1520 AD",
+//       "1610 AD"
+//     ],
+//     "correct": "1610 AD"
+//   },
+//   {
+//     "id": 84,
+//     "question": "Where is the largest district of Bangladesh?",
+//     "options": [
+//       "Dhaka",
+//       "Narayanganj",
+//       "Rangamati",
+//       "Sylhet"
+//     ],
+//     "correct": "Rangamati"
+//   },
+//   {
+//     "id": 85,
+//     "question": "The correct measurement of Bangladesh's Territorial Sea is?",
+//     "options": [
+//       "12NM (Nautical Miles)",
+//       "20NM",
+//       "210NM",
+//       "250NM"
+//     ],
+//     "correct": "12NM (Nautical Miles)"
+//   },
+//   {
+//     "id": 86,
+//     "question": "Which Tropic line passes through Bangladesh?",
+//     "options": [
+//       "Tropic of Capricorn",
+//       "Tropic of Cancer",
+//       "Equator",
+//       "Prime Meridian"
+//     ],
+//     "correct": "Tropic of Cancer"
+//   },
+//   {
+//     "id": 87,
+//     "question": "Which two countries share a border with Bangladesh?",
+//     "options": [
+//       "India and Bhutan",
+//       "India and Nepal",
+//       "India and Sri Lanka",
+//       "India and Myanmar"
+//     ],
+//     "correct": "India and Myanmar"
+//   },
+//   {
+//     "id": 88,
+//     "question": "The number of common rivers between Bangladesh and India is-",
+//     "options": [
+//       "50",
+//       "52",
+//       "53",
+//       "54"
+//     ],
+//     "correct": "54"
+//   },
+//   {
+//     "id": 89,
+//     "question": "Which is the largest tribe (ethnic group) in Bangladesh?",
+//     "options": [
+//       "Chakma",
+//       "Tripura",
+//       "Marma",
+//       "Khiang"
+//     ],
+//     "correct": "Chakma"
+//   },
+//   {
+//     "id": 90,
+//     "question": "To which community does Bir Protik Kakan Bibi belong?",
+//     "options": [
+//       "Rakhine",
+//       "Khasia",
+//       "Santal",
+//       "Garo"
+//     ],
+//     "correct": "Khasia"
+//   },
+//   {
+//     "id": 91,
+//     "question": "Which district is inhabited by the Garo tribe?",
+//     "options": [
+//       "Chittagong Hill Tracts",
+//       "Sylhet",
+//       "Mymensingh",
+//       "Rajshahi"
+//     ],
+//     "correct": "Mymensingh"
+//   },
+//   {
+//     "id": 92,
+//     "question": "'Wangala' (ওয়ানগালা) is the agricultural cultural festival of which group?",
+//     "options": [
+//       "Garo",
+//       "Marma",
+//       "Rakhine",
+//       "Chakma"
+//     ],
+//     "correct": "Garo"
+//   },
+//   {
+//     "id": 93,
+//     "question": "The Rakhine community primarily resides in which district?",
+//     "options": [
+//       "Cox's Bazar",
+//       "Rangamati",
+//       "Sylhet",
+//       "Mymensingh"
+//     ],
+//     "correct": "Cox's Bazar"
+//   },
+//   {
+//     "id": 94,
+//     "question": "When was the first census (আদমশুমারি) held in Bangladesh?",
+//     "options": [
+//       "1972",
+//       "1973",
+//       "1974",
+//       "1975"
+//     ],
+//     "correct": "1974"
+//   },
+//   {
+//     "id": 95,
+//     "question": "Who was the Chief Minister of East Bengal during the Language Movement in 1952?",
+//     "options": [
+//       "Khwaja Nazimuddin",
+//       "A K Fazlul Huq",
+//       "Huseyn Shaheed Suhrawardy",
+//       "Nurul Amin"
+//     ],
+//     "correct": "Nurul Amin"
+//   },
+//   {
+//     "id": 96,
+//     "question": "In which year did UNESCO recognize Ekushe February as International Mother Language Day?",
+//     "options": [
+//       "1999",
+//       "1998",
+//       "1997",
+//       "None of these"
+//     ],
+//     "correct": "1999"
+//   },
+//   {
+//     "id": 97,
+//     "question": "What was the Bangla year and date of February 21, 1952?",
+//     "options": [
+//       "10 Falgun, 1360 BS",
+//       "8 Falgun, 1358 BS",
+//       "8 Falgun, 1350 BS",
+//       "10 Falgun, 1350 BS"
+//     ],
+//     "correct": "8 Falgun, 1358 BS"
+//   },
+//   {
+//     "id": 98,
+//     "question": "Who is the author of the first poem on Ekushe?",
+//     "options": [
+//       "Alauddin Al Azad",
+//       "Abdul Latif",
+//       "Zahir Raihan",
+//       "Mahbub Ul Alam Chowdhury"
+//     ],
+//     "correct": "Mahbub Ul Alam Chowdhury"
+//   },
+//   {
+//     "id": 99,
+//     "question": "Where was the historic 'Six-Point' program announced?",
+//     "options": [
+//       "Karachi",
+//       "Lahore",
+//       "Islamabad",
+//       "Dhaka"
+//     ],
+//     "correct": "Lahore"
+//   },
+//   {
+//     "id": 100,
+//     "question": "How many of the Six Points are related to the economy?",
+//     "options": [
+//       "2",
+//       "1",
+//       "4",
+//       "3"
+//     ],
+//     "correct": "3"
+//   },
+//   {
+//     "id": 101,
+//     "question": "Who is the architect of the Central Shaheed Minar (জাতীয় শহিদ মিনারের স্থপতি)?",
+//     "options": [
+//       "M A G Osmani",
+//       "Hamidur Rahman",
+//       "Tajuddin Ahmed",
+//       "Kader Siddiqui"
+//     ],
+//     "correct": "Hamidur Rahman"
+//   },
+//   {
+//     "id": 102,
+//     "question": "In which year was the first International Mother Language Day observed?",
+//     "options": [
+//       "1998",
+//       "1999",
+//       "2000",
+//       "2001"
+//     ],
+//     "correct": "2000"
+//   },
+//   {
+//     "id": 103,
+//     "question": "Which country has given Bangla the status of its second state language?",
+//     "options": [
+//       "Liberia",
+//       "Sierra Leone",
+//       "Portugal",
+//       "None of these"
+//     ],
+//     "correct": "Sierra Leone"
+//   },
+//   {
+//     "id": 104,
+//     "question": "Who was the founder of the 'Tamaddun Majlish' (তমদ্দুন মজলিস)?",
+//     "options": [
+//       "Haji Shariatullah",
+//       "Sher-e-Bangla A K Fazlul Huq",
+//       "Professor Abul Kashem",
+//       "Titumir"
+//     ],
+//     "correct": "Professor Abul Kashem"
+//   },
+  
+//   {
+//     "id": 106,
+//     "question": "How many freedom fighters were awarded the 'Bir Bikrom' title?",
+//     "options": [
+//       "175",
+//       "165",
+//       "155",
+//       "185"
+//     ],
+//     "correct": "175"
+//   }
+// ]
+// [
+//   {
+//     "id": 1,
+//     "question": "'সুবা বাংলা' শব্দটি প্রথম ব্যবহার করা হয়",
+//     "options": ["সম্রাট জাহাঙ্গীরের সময়ে", "সম্রাট শাহজাহানের সময়ে", "সম্রাট হুমায়ুনের সময়ে", "সম্রাট আকবরের সময়ে"],
+//     "correct": "সম্রাট জাহাঙ্গীরের সময়ে"
+//   },
+//   {
+//     "id": 2,
+//     "question": "বাংলার প্রথম সুবাদার কে ছিলেন?",
+//     "options": ["মীর জুমলা", "ইসলাম খান", "মান সিংহ", "শায়েস্তা খান"],
+//     "correct": "ইসলাম খান"
+//   },
+//   {
+//     "id": 3,
+//     "question": "ঢাকা শহরের গোড়াপত্তন হয়-",
+//     "options": ["ব্রিটিশ আমলে", "সুলতানি আমলে", "মুঘল আমলে", "স্বাধীন নবাবী আমলে"],
+//     "correct": "মুঘল আমলে"
+//   },
+//   {
+//     "id": 4,
+//     "question": "কোন নগরী মোঘল আমলে সুবা বাংলার রাজধানী ছিল?",
+//     "options": ["গৌড়", "সোনারগাঁও", "ঢাকা", "হুগলী"],
+//     "correct": "ঢাকা"
+//   },
+//   {
+//     "id": 5,
+//     "question": "ঢাকা কখন সর্ব প্রথম বাংলার রাজধানী হয়েছিল?",
+//     "options": ["১২৫৫ খ্রিস্টাব্দে", "১৬১০ খ্রিস্টাব্দে", "১৯০৫ খ্রিস্টাব্দে", "১৯৪৭ খ্রিস্টাব্দে"],
+//     "correct": "১৬১০ খ্রিস্টাব্দে"
+//   },
+//   {
+//     "id": 6,
+//     "question": "ঢাকা শহর কোন সালে প্রতিষ্ঠিত হয়?",
+//     "options": ["১৫০০ খ্রিস্টাব্দ", "১৫১০ খ্রিস্টাব্দ", "১৬১০ খ্রিস্টাব্দ", "১৬১২ খ্রিস্টাব্দ"],
+//     "correct": "১৬১০ খ্রিস্টাব্দ"
+//   },
+//   {
+//     "id": 7,
+//     "question": "নগর হিসেবে প্রতিষ্ঠিত হবার পর ঢাকা বর্তমানে এর কততম শতাব্দী অতিক্রম করেছে?",
+//     "options": ["৫ম", "২য়", "৪র্থ", "৩য়"],
+//     "correct": "৫ম"
+//   },
+//   {
+//     "id": 8,
+//     "question": "ঢাকায় বাংলার রাজধানী স্থাপনের সময় মোগল সুবেদার কে ছিলেন?",
+//     "options": ["ইসলাম খান", "ইব্রাহীম খান", "শায়েস্তা খান", "মীর জুমলা"],
+//     "correct": "ইসলাম খান"
+//   },
+//   {
+//     "id": 9,
+//     "question": "ঢাকায় প্রথম বাংলার রাজধানী স্থাপন করেন-",
+//     "options": ["সম্রাট আকবর", "সম্রাট জাহাঙ্গীর", "ইসলাম খাঁ", "শায়েস্তা খান"],
+//     "correct": "ইসলাম খাঁ"
+//   },
+//   {
+//     "id": 10,
+//     "question": "বাংলায় মোঘল প্রদেশের রাজধানী স্থাপন করেন-",
+//     "options": ["শাহ সুজা", "মীর জুমলা", "শায়েস্তা খাঁ", "ইসলাম খান"],
+//     "correct": "ইসলাম খান"
+//   },
+//   {
+//     "id": 11,
+//     "question": "কার সময় বাংলার রাজধানী ঢাকায় স্থাপন করা হয়?",
+//     "options": ["বখতিয়ার খলজী", "মুর্শীদকুলি খাঁ", "সম্রাট জাহাঙ্গীর", "শেরশাহ"],
+//     "correct": "সম্রাট জাহাঙ্গীর"
+//   },
+//   {
+//     "id": 12,
+//     "question": "ঢাকার নাম 'জাহাঙ্গীরনগর' রাখেন কে?",
+//     "options": ["শায়েস্তা খান", "সুবাদার ইসলাম খান", "ইব্রাহিম খান", "মীর জুমলা"],
+//     "correct": "সুবাদার ইসলাম খান"
+//   },
+//   {
+//     "id": 13,
+//     "question": "প্রাচীন জাহাঙ্গীরনগরের বর্তমান নাম কি?",
+//     "options": ["ঢাকা", "চট্টগ্রাম", "খুলনা", "সোনারগাঁও"],
+//     "correct": "ঢাকা"
+//   },
+//   {
+//     "id": 14,
+//     "question": "মোঘল আমলে ঢাকার নাম কি ছিল?",
+//     "options": ["ইসলামাবাদ", "পরীবাগ", "জাহাঙ্গীরনগর", "সোনারগাঁও"],
+//     "correct": "জাহাঙ্গীরনগর"
+//   },
+//   {
+//     "id": 15,
+//     "question": "ঢাকার প্রাচীন নাম কি?",
+//     "options": ["জাহাঙ্গীরনগর", "ইসলামপুর", "সোনারগাঁও", "ঢাকা"],
+//     "correct": "জাহাঙ্গীরনগর"
+//   },
+//   {
+//     "id": 16,
+//     "question": "সুবাদার ইসলাম খান ঢাকার নাম রাখেন-",
+//     "options": ["জাহাঙ্গীরনগর", "জান্নাতাবাদ", "ইসলামাবাদ", "নাসিরাবাদ"],
+//     "correct": "জাহাঙ্গীরনগর"
+//   },
+//   {
+//     "id": 17,
+//     "question": "বাংলাদেশের রাজধানী কোথায়?",
+//     "options": ["ঢাকা উত্তর", "ঢাকা দক্ষিণ", "ঢাকা", "শেরে বাংলা নগর"],
+//     "correct": "ঢাকা"
+//   },
+//   {
+//     "id": 18,
+//     "question": "স্বাধীন বাংলাদেশের রাজধানী হওয়ার পূর্বে ঢাকা বাংলার রাজধানী ছিল-",
+//     "options": ["তিনবার", "চারবার", "দুইবার", "একবার"],
+//     "correct": "চারবার"
+//   },
+//   {
+//     "id": 19,
+//     "question": "ঢাকার 'ধোলাই খাল' কে খনন করেন?",
+//     "options": ["পরিবিবি", "ইসলাম খান", "শায়েস্তা খান", "ঈশা খান"],
+//     "correct": "ইসলাম খান"
+//   },
+//   {
+//     "id": 20,
+//     "question": "কোন সম্রাটের আমলে পর্তুগিজদের হুগলি থেকে উচ্ছেদ করা হয়?",
+//     "options": ["আকবর", "শাহজাহান", "বাবর", "জাহাঙ্গীর"],
+//     "correct": "শাহজাহান"
+//   },
+//   {
+//     "id": 21,
+//     "question": "কোন মুঘল সুবেদার পর্তুগিজদের চট্টগ্রাম থেকে বিতাড়িত করেন?",
+//     "options": ["কাসিম খান", "ইসলাম খান", "মীরজুমলা", "শায়েস্তা খান"],
+//     "correct": "শায়েস্তা খান"
+//   },
+//   {
+//     "id": 22,
+//     "question": "বাংলার দক্ষিণ অঞ্চলের মানুষকে পর্তুগিজ ও মগ জলদস্যুদের অত্যাচার থেকে কে রক্ষা করেন?",
+//     "options": ["মুর্শিদকুলী খান", "ইসলাম খান", "শায়েস্তা খান", "ঈসা খান"],
+//     "correct": "শায়েস্তা খান"
+//   },
+//   {
+//     "id": 23,
+//     "question": "কোন মুঘল সুবেদার চট্টগ্রাম দখল করে এর নাম রাখেন ইসলামাবাদ?",
+//     "options": ["ইসলাম খান", "রাজা মানসিংহ", "মীর জুমলা", "শায়েস্তা খান"],
+//     "correct": "শায়েস্তা খান"
+//   },
+//   {
+//     "id": 24,
+//     "question": "কার শাসনামলে চট্টগ্রাম প্রথমবারের মত পূর্ণভাবে বাংলার সাথে যুক্ত হয়?",
+//     "options": ["মুর্শিদকুলি খান", "আলীবর্দী খান", "শায়েস্তা খান", "উপরের কোনটিই সত্য নয়"],
+//     "correct": "শায়েস্তা খান"
+//   },
+//   {
+//     "id": 25,
+//     "question": "The geographical area now constituting Bangladesh was ruled by Muslims:/ বাংলাদেশের বর্তমান ভৌগলিক এলাকা মুসলমান কর্তৃক শাসিত হয়-",
+//     "options": ["From 14 to 18th century A.D (চতুর্দশ থেকে অষ্টাদশ শতাব্দী পর্যন্ত)", "In 15th century A.D (পঞ্চদশ শতাব্দীতে)", "During Mughal period (মুঘল শাসনামলে)", "Before 14 century A.D (চতুর্দশ শতাব্দীর পূর্বে)"],
+//     "correct": "During Mughal period (মুঘল শাসনামলে)"
+//   },
+//   {
+//     "id": 26,
+//     "question": "ঢাকার বড় কাটরা ও ছোট কাটরা শহরের নিম্নোক্ত এলাকায় অবস্থিত-",
+//     "options": ["চকবাজারে", "সদরঘাটে", "লালবাগ", "ইসলামপুর"],
+//     "correct": "চকবাজারে"
+//   },
+//   {
+//     "id": 27,
+//     "question": "ঢাকার বড় কাটরা নির্মাণ করেছেন",
+//     "options": ["সম্রাট আওরঙ্গজেব", "শাহ সুজা", "শাহ আলম", "শায়েস্তা খান"],
+//     "correct": "শাহ সুজা"
+//   },
+//   {
+//     "id": 28,
+//     "question": "ঢাকার বিখ্যাত ছোট কাটরা নির্মাণ করেন কে?",
+//     "options": ["নবাব সিরাজউদ্দৌলা", "শায়েস্তা খাঁ", "ঈসা খাঁ", "সুবেদার ইসলাম"],
+//     "correct": "শায়েস্তা খাঁ"
+//   },
+//   {
+//     "id": 29,
+//     "question": "ঢাকার চকের মসজিদের নির্মাতা-",
+//     "options": ["মীর জুমলা", "ইসলাম খান", "শায়েস্তা খান", "মুরশীদ কুলি খান"],
+//     "correct": "শায়েস্তা খান"
+//   },
+//   {
+//     "id": 30,
+//     "question": "বাংলাদেশের প্রথম স্বাধীন নবাব কে?",
+//     "options": ["নবাব সিরাজউদ্দৌলা", "মুর্শিদ কুলী খান", "ইলিয়াস শাহ", "আলাউদ্দিন হুসেন শাহ"],
+//     "correct": "মুর্শিদ কুলী খান"
+//   },
+//   {
+//     "id": 31,
+//     "question": "বাংলার নবাবী শাসন কোন সুবাদারের সময় থেকে শুরু হয়?",
+//     "options": ["ইসলাম খান", "মুর্শিদকুলী খান", "শায়েস্তা খান", "আলীবর্দী খান"],
+//     "correct": "মুর্শিদকুলী খান"
+//   },
+//   {
+//     "id": 32,
+//     "question": "কোন মোঘল সুবেদার বাংলার রাজধানী ঢাকা হইতে মুর্শিদাবাদে স্থানান্তর করেন?",
+//     "options": ["ইসলাম খান", "শায়েস্তা খান", "মুর্শিদকুলি খান", "আলীবর্দী খান"],
+//     "correct": "মুর্শিদকুলি খান"
+//   },
+//   {
+//     "id": 33,
+//     "question": "মুসলমান শাসনামলে এদেশে এসে অত্যাচার ও লুট করেছে কারা?",
+//     "options": ["জলদস্যুরা", "পর্তুগিজরা", "বর্গীরা", "ইংরেজরা"],
+//     "correct": "বর্গীরা"
+//   },
+//   {
+//     "id": 34,
+//     "question": "নবাব সিরাজ-উ-দ্দৌলার পিতার নাম কি?",
+//     "options": ["জয়েন উদ্দিন", "আলীবর্দী খাঁ", "শওকত জং", "হায়দার আলী"],
+//     "correct": "জয়েন উদ্দিন"
+//   },
+//   {
+//     "id": 35,
+//     "question": "সিরাজউদ্দৌলার প্রকৃত নাম কী ছিল?",
+//     "options": ["মির্জা মোহম্মাদ", "মির্জা আলম", "মির্জা খলিল", "মির্জ আজম"],
+//     "correct": "মির্জা মোহম্মাদ"
+//   },
+//   {
+//     "id": 36,
+//     "question": "কত সালে নবাব সিরাজ-উদ-দৌলা বাংলার সিংহাসনে বসেন?",
+//     "options": ["১৭৫৬", "১৮৫৬", "১৭৫৭", "১৮৫৭"],
+//     "correct": "১৭৫৬"
+//   },
+//   {
+//     "id": 37,
+//     "question": "বাংলার শেষ স্বাধীন নবাব কে?",
+//     "options": ["নবাব আলিবর্দী খাঁ", "আলাউদ্দিন হুসেন শাহ", "নবাব সিরাজউদ্দৌলা", "ফকির মজনু শাহ"],
+//     "correct": "নবাব সিরাজউদ্দৌলা"
+//   },
+//   {
+//     "id": 38,
+//     "question": "'অন্ধকূপ হত্যা' কাহিনী কার তৈরি?",
+//     "options": ["হলওয়েল", "মীর জাফর", "ক্লাইভ", "কর্নওয়ালিস"],
+//     "correct": "হলওয়েল"
+//   },
+//   {
+//     "id": 39,
+//     "question": "কোনটি ভারতের ইতিহাসে নতুন যুগের সূচনা করে?",
+//     "options": ["পলাশীর যুদ্ধ", "পানিপথের যুদ্ধ", "বক্সারের যুদ্ধ", "১৮৫৭ সালের সিপাহি বিদ্রোহ"],
+//     "correct": "পলাশীর যুদ্ধ"
+//   },
+//   {
+//     "id": 40,
+//     "question": "পলাশীর যুদ্ধ হয় কত সালে?",
+//     "options": ["১৭৭০ সালে", "১৭৫৭ সালে", "১৮৮৭ সালে", "১৮৮০ সালে"],
+//     "correct": "১৭৫৭ সালে"
+//   },
+//   {
+//     "id": 41,
+//     "question": "পলাশীর যুদ্ধ কখন হয়েছিল?",
+//     "options": ["২৩ জুন, ১৭৫৭", "২৫ জুলাই, ১৭৫৭", "১৫ আগস্ট, ১৮৫৮", "২৫ আগস্ট, ১৮৫৮"],
+//     "correct": "২৩ জুন, ১৭৫৭"
+//   },
+//   {
+//     "id": 42,
+//     "question": "বক্সারের যুদ্ধ কত সালে সংঘটিত হয়?",
+//     "options": ["১৬৬০", "১৭০৭", "১৭৫৭", "১৭৬৪"],
+//     "correct": "১৭৬৪"
+//   },
+//   {
+//     "id": 43,
+//     "question": "মীর কাসিম বাংলার রাজধানী কোথায় স্থানান্তর করেন?",
+//     "options": ["ঢাকা", "মুঙ্গের", "মুর্শিদাবাদ"],
+//     "correct": "মুঙ্গের"
+//   },
+//   {
+//     "id": 44,
+//     "question": "কত সালে ইউরোপ হতে আফ্রিকার উত্তমাশা অন্তরীপ হয়ে সমুদ্রপথে পূর্বদিকে আসার জলপথ আবিষ্কৃত হয়?",
+//     "options": ["১৪৮৭ সালে", "১৪৯০ সালে", "১৪৯৮ সালে", "১৫০২ সালে"],
+//     "correct": "১৪৮৭ সালে"
+//   },
+//   {
+//     "id": 45,
+//     "question": "ইউরোপ থেকে সমুদ্রপথে ভারতবর্ষে আসার পথ আবিষ্কৃত হয় কোন সালে?",
+//     "options": ["১৪৮৭ সালে", "১৩৮৭ সালে", "১৫৮৭ সালে", "১৬৮৭ সালে"],
+//     "correct": "১৪৮৭ সালে"
+//   },
+//   {
+//     "id": 46,
+//     "question": "পর্তুগিজ নাবিক ভাস্কো দা গামা কত সালে ভারতে পৌছেন?",
+//     "options": ["১৪৯৮ সালে", "১৪৯২ সালে", "১৫১৭ সালে", "১৬৪৮ সালে"],
+//     "correct": "১৪৯৮ সালে"
+//   },
+//   {
+//     "id": 47,
+//     "question": "কারা সর্বপ্রথম ভারতে আসার সমুদ্র পথ আবিষ্কার করেন?",
+//     "options": ["ওলন্দাজ", "ব্রিটিশ", "পর্তুগিজ", "ফরাসি"],
+//     "correct": "পর্তুগিজ"
+//   },
+//   {
+//     "id": 48,
+//     "question": "Who discovered the ocean route from Europe to Indian Subcontinent?/ইউরোপ থেকে ভারতে আসার জলপথ কে আবিষ্কার করেন?",
+//     "options": ["Colombus","Alexandar","Vasco Da Gama","Francis Drek"],
+//     "correct": "Vasco Da Gama"
+//   },
+//   {
+//     "id": 49,
+//     "question": "কোন ইউরোপীয় নাবিক সর্বপ্রথম সমুদ্রপথে ভারতে আসেন?",
+//     "options": ["ফার্ডিন্যান্ড ম্যাগেলান", "ফ্রান্সিস ড্রেক", "ভাস্কো ডা গামা", "ক্রিস্টেফার কলম্বাস"],
+//     "correct": "ভাস্কো ডা গামা"
+//   },
+//   {
+//     "id": 50,
+//     "question": "ভাস্কো-দা-গামা ছিলেন-",
+//     "options": ["পর্তুগিজ", "ওলন্দাজ", "ফরাসি", "ব্রিটিশ"],
+//     "correct": "পর্তুগিজ"
+//   },
+//   {
+//     "id": 51,
+//     "question": "Who were the first European traders to arrive in India?/কোন ইউরোপীয় জাতি সর্বপ্রথম ভারতবর্ষে আসে?",
+//     "options": ["Dutch", "English", "French", "Portugese"],
+//     "correct": "Portugese"
+//   },
+//   {
+//     "id": 52,
+//     "question": "কোন ইউরোপীয় জাতি প্রথম বাংলায় আগমন করে?",
+//     "options": ["ইংরেজরা", "ওলন্দাজরা", "ফরাসিরা", "পর্তুগিজরা"],
+//     "correct": "পর্তুগিজরা"
+//   },
+//   {
+//     "id": 53,
+//     "question": "In which year did the Portuguese arrive at Chittagong and receive trade permit for the first time?/ পর্তুগিজরা কত খ্রিষ্টাব্দে প্রথম চট্টগ্রাম আসে এবং বাণিজ্য করার অনুমতি পায়?",
+//     "options": ["1498", "1534", "1650", "1757", "None of these"],
+//     "correct": "None of these"
+//   },
+//   {
+//     "id": 54,
+//     "question": "দিল্লির কোন সম্রাট বাংলা থেকে পর্তুগিজদের বিতাড়িত করেন?",
+//     "options": ["শেরশাহ", "জাহাঙ্গীর", "আকবর", "আরওঙ্গজেব"],
+//     "correct": "শেরশাহ"
+//   },
+//   {
+//     "id": 55,
+//     "question": "'হার্মাদ' শব্দটি কোন ভাষা থেকে আগত?",
+//     "options": ["স্পেনীয়", "বার্মিজ", "পর্তুগিজ", "আরাকানী"],
+//     "correct": "পর্তুগিজ"
+//   },
+//   {
+//     "id": 56,
+//     "question": "ওলন্দাজরা কোন দেশের নাগরিক?",
+//     "options": ["হল্যান্ড", "পর্তুগাল", "ফ্রান্স", "ডেনমার্ক"],
+//     "correct": "হল্যান্ড"
+//   },
+//   {
+//     "id": 57,
+//     "question": "ইউরোপের কোন দেশের অধিবাসীদের 'ডাচ' বলা হয়?",
+//     "options": ["নেদারল্যান্ড", "ডেনমার্ক", "পর্তুগাল", "স্পেন"],
+//     "correct": "নেদারল্যান্ড"
+//   },
+//   {
+//     "id": 58,
+//     "question": "কত খ্রিষ্টাব্দে ইংল্যান্ডে দি ব্রিটিশ ইস্ট ইন্ডিয়া কোম্পানি স্থাপিত হয়?",
+//     "options": ["১৬০৮ সালে", "১৭৫৭ সালে", "১৬০০ সালে", "১৬৫২ সালে"],
+//     "correct": "১৬০০ সালে"
+//   },
+//   {
+//     "id": 59,
+//     "question": "সম্রাট জাহাঙ্গীরের দরবারের প্রথম ইংরেজ দূত-",
+//     "options": ["ক্যাপ্টেন হাকিন্স", "এডওয়ার্ডস", "স্যার টমাস রো", "উইলিয়াম কেরি"],
+//     "correct": "ক্যাপ্টেন হাকিন্স"
+//   },
+//   {
+//     "id": 60,
+//     "question": "কোন সম্রাট সর্বপ্রথম ইস্ট ইন্ডিয়া কোম্পানিকে সুরাটে বাণিজ্য কুঠি স্থাপনের অনুমতি দেন?",
+//     "options": ["আকবর", "শাহবাজ খান", "মুর্শিদকুলি খান", "জাহাঙ্গীর"],
+//     "correct": "জাহাঙ্গীর"
+//   },
+//   {
+//     "id": 61,
+//     "question": "ইংরেজরা বাংলাদেশে আগমন করে-",
+//     "options": ["১৫৯৯", "১৭৫৭", "১৪৭৫", "১৬৫৮"],
+//     "correct": "১৬৫৮"
+//   },
+//   {
+//     "id": 62,
+//     "question": "ইংরেজ বণিকগণ সরাসরিভাবে বঙ্গদেশে বাণিজ্য কেন্দ্র স্থাপন করেন-",
+//     "options": ["আকবরের আমলে", "জাহাঙ্গীরের আমলে", "শাহজাহানের আমলে", "আলমগীরের আমলে"],
+//     "correct": "শাহজাহানের আমলে"
+//   },
+//   {
+//     "id": 63,
+//     "question": "ইস্ট ইন্ডিয়া কোম্পনির শাসনকেন্দ্র ছিল -",
+//     "options": ["কলকাতা", "দিল্লি", "পাঞ্জাব", "ঢাকা"],
+//     "correct": "কলকাতা"
+//   },
+//   {
+//     "id": 64,
+//     "question": "কলকাতা নগরীর প্রতিষ্ঠাতা কে?",
+//     "options": ["ক্লাইভ", "ভালহৌসি", "ওয়েলেসলি", "জব চার্নক"],
+//     "correct": "জব চার্নক"
+//   },
+//   {
+//     "id": 65,
+//     "question": "কোন দেশের বাণিজ্যিক কোম্পানি ফোর্ট উইলিয়াম দুর্গ নির্মাণ করে?",
+//     "options": ["ইংল্যান্ড", "ডেনমার্ক", "ফ্রান্স", "ইতালি", "হল্যান্ড"],
+//     "correct": "ইংল্যান্ড"
+//   },
+//   {
+//     "id": 66,
+//     "question": "ফোর্ট উইলিয়াম দুর্গ কোথায় অবস্থিত ছিল?",
+//     "options": ["ঢাকা", "মুর্শিদাবাদ", "কলকাতা", "আগ্রা"],
+//     "correct": "কলকাতা"
+//   },
+//   {
+//     "id": 67,
+//     "question": "চন্দননগর (পশ্চিমবঙ্গ) একসময় কোন দেশের উপনিবেশ ছিল?",
+//     "options": ["হল্যান্ড", "ফ্রান্স", "ইংল্যান্ড", "পর্তুগাল"],
+//     "correct": "ফ্রান্স"
+//   },
+//   {
+//     "id": 68,
+//     "question": "ইংরেজ ইস্ট ইন্ডিয়া কোম্পানি কখন বাংলা, বিহার ও উড়িষ্যার দেওয়ানি লাভ করেন?",
+//     "options": ["১৬৯০", "১৭৬৫", "১৭৯৩", "১৮২৯"],
+//     "correct": "১৭৬৫"
+//   },
+//   {
+//     "id": 69,
+//     "question": "ইস্ট ইন্ডিয়া কোম্পানিকে বাংলা, বিহার ও উড়িষ্যার দেওয়ানি প্রদান করেন-",
+//     "options": ["শাহ সুজা", "ফররুখ শিয়ার", "মীর জাফর", "দ্বিতীয় শাহ আলম"],
+//     "correct": "দ্বিতীয় শাহ আলম"
+//   },
+//   {
+//     "id": 70,
+//     "question": "বাংলাদেশে দ্বৈত শাসন কে প্রবর্তন করেন?",
+//     "options": ["লর্ড কর্নওয়ালিস", "লর্ড ক্লাইভ", "নবাব মীর কাশেম", "ওয়ারেন হেস্টিংস"],
+//     "correct": "লর্ড ক্লাইভ"
+//   },
+//   {
+//     "id": 71,
+//     "question": "'ছিয়াত্তরের মন্বন্তর' নামক ভয়াবহ দুর্ভিক্ষ হয়েছিল ইংরেজি কত সালে?",
+//     "options": ["১৭৬৮ সালে", "১৭৬৯ সালে", "১৭৭০ সালে", "১৭৭২ সালে"],
+//     "correct": "১৭৭০ সালে"
+//   },
+//   {
+//     "id": 72,
+//     "question": "'ছিয়াত্তরের মন্বন্তর' বাংলা কোন সনে হয়েছিল?",
+//     "options": ["১০৭৬ সনে", "১৩৭৬ সনে", "১১৭৬ সনে", "১২৭৬ সনে"],
+//     "correct": "১১৭৬ সনে"
+//   },
+//   {
+//     "id": 73,
+//     "question": "ব্রিটিশ পার্লামেন্টে 'ভারত শাসন আইন' পাস হয়-",
+//     "options": ["১৭৮৪", "১৭৮৬", "১৭৭৩", "১৭৯০"],
+//     "correct": "১৭৮৪"
+//   },
+//   {
+//     "id": 74,
+//     "question": "ভারতবর্ষে সর্বপ্রথম রাজস্ব বোর্ড স্থাপন করেন",
+//     "options": ["লর্ড ক্লাইভ", "শের শাহ", "সম্রাট আকবর", "ওয়ারেন হেস্টিংস"],
+//     "correct": "ওয়ারেন হেস্টিংস"
+//   },
+//   {
+//     "id": 75,
+//     "question": "বাংলায় চিরস্থায়ী ভূমি ব্যবস্থা কে প্রবর্তন করেন?",
+//     "options": ["লর্ড কর্নওয়ালিস", "লর্ড বেন্টিংক", "লর্ড ক্লাইভ", "লর্ড ওয়াভেল"],
+//     "correct": "লর্ড কর্নওয়ালিস"
+//   },
+//   {
+//     "id": 76,
+//     "question": "'বাংলার চিরস্থায়ী বন্দোবস্তু' প্রবর্তন করা হয় কোন সালে?",
+//     "options": ["১৭০০", "১৭৬২", "১৯৬৫", "১৭৯৩"],
+//     "correct": "১৭৯৩"
+//   },
+//   {
+//     "id": 77,
+//     "question": "চিরস্থায়ী বন্দোবস্ত কবে প্রবর্তন করা হয়?",
+//     "options": ["২২-৩-১৮৯৩", "২২-৩-১৮০৫", "২২-৩-১৭৯৩", "১৬-৩-১৭৯৬"],
+//     "correct": "২২-৩-১৭৯৩"
+//   },
+//   {
+//     "id": 78,
+//     "question": "অধীনতামূলক মিত্রতা নীতির প্রবর্তক-",
+//     "options": ["লর্ড ক্লাইভ", "লর্ড ওয়েলেসলি", "লর্ড মিন্টো", "লর্ড বেন্টিঙ্ক"],
+//     "correct": "লর্ড ওয়েলেসলি"
+//   },
+//   {
+//     "id": 79,
+//     "question": "টিপু সুলতান কে ছিলেন?",
+//     "options": ["ব্যাঙ্গোলারের শাসনকর্তা", "মহীশূরের শাসনকর্তা", "অযোধ্যার শাসনকর্তা", "মীরাটের নবাব"],
+//     "correct": "মহীশূরের শাসনকর্তা"
+//   },
+//   {
+//     "id": 80,
+//     "question": "মহীশূরের টিপু সুলতান সর্বশেষ কোন ইংরেজ সেনাপতির সঙ্গে যুদ্ধ করেন?",
+//     "options": ["ওয়েলেসলি", "ওয়ারেন হেস্টিংস", "কর্নওয়ালিস", "ডালহৌসি"],
+//     "correct": "ওয়েলেসলি"
+//   },
+//   {
+//     "id": 81,
+//     "question": "সতীদাহ প্রথা রহিতকরণ আইন পাস করেন কে?",
+//     "options": ["লর্ড কর্নওয়ালিস", "রাজা রামমোহন রায়", "ঈশ্বরচন্দ্র বিদ্যাসাগর", "লর্ড বেন্টিঙ্ক"],
+//     "correct": "লর্ড বেন্টিঙ্ক"
+//   },
+//   {
+//     "id": 82,
+//     "question": "সতীদাহ প্রথা বিলুপ্ত হয় কার উদ্দ্যোগে?",
+//     "options": ["রামমোহন রায়", "ঈশ্বরচন্দ্র বিদ্যাসাগর", "হান্টার", "লর্ড বেন্টিং"],
+//     "correct": "রামমোহন রায়"
+//   },
+//   {
+//     "id": 83,
+//     "question": "সতীদাহ প্রথা কত সালে রহিত হয়?",
+//     "options": ["১৮১৯", "১৮২৯", "১৮৩৯", "১৮৪৯"],
+//     "correct": "১৮২৯"
+//   },
+//   {
+//     "id": 84,
+//     "question": "স্বত্ববিলোপ নীতি প্রয়োগ করে লর্ড ডালহৌসি কোন রাজ্যটি অধিকার করেন?",
+//     "options": ["অযোধ্যা", "পাঞ্জাব", "নাগপুর", "হায়দ্রাবাদ"],
+//     "correct": "নাগপুর"
+//   },
+//   {
+//     "id": 85,
+//     "question": "ভারতে সর্বপ্রথম কার সময় রেলপথ ও টেলিগ্রাফ লাইন স্থাপিত হয়?",
+//     "options": ["লর্ড ওয়েলেসলি", "লর্ড বেন্টিংক", "লর্ড ক্যানিং", "লর্ড ডালহৌসি"],
+//     "correct": "লর্ড ডালহৌসি"
+//   },
+//   {
+//     "id": 86,
+//     "question": "ভারতে টেলিগ্রাফ কত বছর চালু ছিল?",
+//     "options": ["১৪৫ বছর", "১৫০ বছর", "১৫৫ বছর", "১৬২ বছর"],
+//     "correct": "১৬২ বছর"
+//   },
+//   {
+//     "id": 87,
+//     "question": "এ উপমহাদেশে প্রথম রেল যোগাযোগ চালু করেন কে?",
+//     "options": ["লর্ড রিপন", "লর্ড হ্যান্ডি ট্রপার", "লর্ড কার্জন", "লর্ড ডালহৌসি"],
+//     "correct": "লর্ড ডালহৌসি"
+//   },
+//   {
+//     "id": 88,
+//     "question": "ইস্ট ইন্ডিয়া কোম্পানির শাসন কাল-",
+//     "options": ["১৭৫৭-১৯৪৭", "১৮৭৫-১৯৪৭", "১৭৫৭-১৮৫৭", "১৭৬৫-১৮৮৫"],
+//     "correct": "১৭৫৭-১৮৫৭"
+//   },
+//   {
+//     "id": 89,
+//     "question": "ভারতীয় উপমহাদেশে ইস্ট ইন্ডিয়া কোম্পানির শাসনের অবসান হয় কোন সালে?",
+//     "options": ["১৮৫৭", "১৮৫৮", "১৮৫৯", "১৮৬০"],
+//     "correct": "১৮৫৮"
+//   },
+//   {
+//     "id": 90,
+//     "question": "ভারতের শাসনভার ইংল্যান্ডের রানী ও পার্লামেন্টের হাতে অর্পিত হয়-",
+//     "options": ["১৭৫৮ সালে", "১৮৫৮ সালে", "১৭৯২ সালে", "১৮৬২ সালে"],
+//     "correct": "১৮৫৮ সালে"
+//   },
+//   {
+//     "id": 91,
+//     "question": "বঙ্গ-ভারত উপমহাদেশের প্রথম পুলিশ ব্যবস্থা কে চালু করেন?",
+//     "options": ["মিবার্ত", "সম্রাট আকবর", "লর্ড ক্যানিং", "সম্রাট শাহজাহান"],
+//     "correct": "লর্ড ক্যানিং"
+//   },
+//   {
+//     "id": 92,
+//     "question": "লর্ড ক্যানিং তারত উপমহাদেশে প্রথম কোন ব্যবস্থা চালু করেন?",
+//     "options": ["চিরস্থায়ী বন্দোবস্ত ব্যবস্থা", "দ্বৈত শাসন ব্যবস্থা", "সতীদাহ নিবারণ ব্যাবস্থা", "পুলিশ ব্যবস্থা"],
+//     "correct": "পুলিশ ব্যবস্থা"
+//   },
+//   {
+//     "id": 93,
+//     "question": "ভারতবর্ষে প্রথম আদমশুমারি হয় কোন সালে?",
+//     "options": ["১৯৭২", "১৮৫০", "১৮৭২", "১৯০১"],
+//     "correct": "১৮৭২"
+//   },
+//   {
+//     "id": 94,
+//     "question": "ভারতে প্রথম স্থানীয় শাসন ব্যবস্থার প্রবর্তক-",
+//     "options": ["লর্ড কার্জন", "লর্ড রিপন", "লর্ড ডাফরিন", "লর্ড লিটন"],
+//     "correct": "লর্ড রিপন"
+//   },
+//   {
+//     "id": 95,
+//     "question": "লর্ড লিটন কতসালে 'আর্মস অ্যাক্ট' প্রবর্তন করেন?",
+//     "options": ["১৮৭৬ সালে", "১৮৭৮ সালে", "১৮৮০ সালে", "১৮৮২ সালে"],
+//     "correct": "১৮৭৮ সালে"
+//   },
+//   {
+//     "id": 96,
+//     "question": "Banga bhanga was done in which year?/বঙ্গভঙ্গ আইন পাস করা হয় কত সালে?",
+//     "options": ["1905", "1906", "1911", "1947", "None of these"],
+//     "correct": "1905"
+//   },
+//   {
+//     "id": 97,
+//     "question": "১৯০৫ সাল কোন ঘটনার সঙ্গে জড়িত?",
+//     "options": ["মুসলিম লীগ প্রতিষ্ঠা", "বঙ্গভঙ্গ", "গান্ধী হত্যা", "ভারত বিভক্তি"],
+//     "correct": "বঙ্গভঙ্গ"
+//   },
+//   {
+//     "id": 98,
+//     "question": "Bengal was first partitioned in -/প্রথম কত সালে বঙ্গভঙ্গ (বাংলা বিভক্ত) হয়?",
+//     "options": ["1971", "1947", "1905", "1857", "1757"],
+//     "correct": "1905"
+//   },
+//   {
+//     "id": 99,
+//     "question": "দ্বিতীয়বার বাংলা দ্বিখণ্ডিত হয়েছে কোন সালে?",
+//     "options": ["১৮৫৭", "১৯০৫", "১৯৭১", "১৯৪৭"],
+//     "correct": "১৯৪৭"
+//   },
+//   {
+//     "id": 100,
+//     "question": "বঙ্গভঙ্গের কারণে কোন নতুন প্রদেশ সৃষ্টি হয়েছিল?",
+//     "options": ["পূর্ব বাংলা ও বিহার", "পূর্ববঙ্গ ও আসাম", "পূর্ববঙ্গ"],
+//     "correct": "পূর্ববঙ্গ ও আসাম"
+//   },
+//   {
+//     "id": 101,
+//     "question": "১৯০৫ সালে ঢাকা যে নতুন প্রদেশটির রাজধানী হয়েছিল, সে প্রদেশটির নাম কি?",
+//     "options": ["পূর্ব পাকিস্তান", "বঙ্গপ্রদেশ", "পূর্ববঙ্গ ও আসাম", "পূর্ববঙ্গ"],
+//     "correct": "পূর্ববঙ্গ ও আসাম"
+//   },
+//   {
+//     "id": 102,
+//     "question": "বঙ্গ প্রদেশকে বঙ্গ ও আসাম প্রদেশে বিভক্ত করেন",
+//     "options": ["লর্ড হার্ডিঞ্জ", "লর্ড কার্জন", "লর্ড ক্যানিং", "সম্রাট পঞ্চম জর্জ"],
+//     "correct": "লর্ড কার্জন"
+//   },
+//   {
+//     "id": 103,
+//     "question": "পূর্ববঙ্গ ও আসাম প্রদেশ গঠনকালে ব্রিটিশ ভারতের গভর্নর জেনারেল ও ভাইসরয় ছিলেন-",
+//     "options": ["লর্ড রিপন", "লর্ড কার্জন", "লর্ড মিন্টো", "লর্ড হার্ডিঞ্জ"],
+//     "correct": "লর্ড কার্জন"
+//   },
+//   {
+//     "id": 104,
+//     "question": "বঙ্গভঙ্গের সময় ভারতের ভাইসরয় (গভর্নর জেনারেল) কে ছিলেন?",
+//     "options": ["লর্ড মিন্টো", "লর্ড চেমসফোর্ড", "লর্ড কার্জন", "লর্ড মাউন্টব্যাটেন"],
+//     "correct": "লর্ড কার্জন"
+//   },
+//   {
+//     "id": 105,
+//     "question": "প্রথম বঙ্গভঙ্গ আন্দোলনের সময় ভারতের গভর্নর জেনারেল কে ছিলেন?",
+//     "options": ["হেস্টিংস", "কার্জন", "কর্নওয়ালিস", "ডালহৌসি"],
+//     "correct": "কার্জন"
+//   },
+//   {
+//     "id": 106,
+//     "question": "১৯০৫ সালে নবগঠিত প্রদেশের প্রথম লেফটেনেন্ট গভর্নর কে ছিলেন?",
+//     "options": ["ব্যামফিল্ড ফুলার", "লর্ড মিন্টো", "লর্ড কার্জন", "ওয়ারেন হেস্টিংস"],
+//     "correct": "ব্যামফিল্ড ফুলার"
+//   },
+//   {
+//     "id": 107,
+//     "question": "পূর্ব বাংলার ও আসামের প্রথম লেফটেন্যান্ট গভর্নর কে ছিলেন?",
+//     "options": ["ফুলার", "কার্জন", "মিন্টো", "হেসটিংস"],
+//     "correct": "ফুলার"
+//   },
+//   {
+//     "id": 108,
+//     "question": "ব্রিটিশ শাসনামলে কোন সালে ঢাকাকে প্রাদেশিক রাজধানী করা হয়?",
+//     "options": ["১৭৫৭", "১৯০৫", "১৮৭৫"],
+//     "correct": "১৯০৫"
+//   },
+//   {
+//     "id": 109,
+//     "question": "বঙ্গভঙ্গের পরেই ঢাকায় কি নির্মিত হয়?",
+//     "options": ["সুরম্য অট্টালিকা", "কার্জন হল", "হাইকোর্ট", "এর সবগুলিই"],
+//     "correct": "এর সবগুলিই"
+//   },
+//   {
+//     "id": 110,
+//     "question": "বঙ্গভঙ্গ রদ (রহিত) হয় কোন সালে?",
+//     "options": ["১৯০৫", "১৯৪৫", "১৯১৬", "১৯১১"],
+//     "correct": "১৯১১"
+//   },
+//   {
+//     "id": 111,
+//     "question": "ব্রিটিশ ভারতীয় রাজধানী কলকাতা থেকে দিল্লিতে হস্তান্তর করা হয়-",
+//     "options": ["১৯১২ সালে", "১৮১২ সালে", "১৮৫৭ সালে", "১৮৬৫ সালে"],
+//     "correct": "১৯১২ সালে"
+//   },
+//   {
+//     "id": 112,
+//     "question": "Who is the last Viceroy of British India?/ব্রিটিশ ভারতের শেষ ভাইসরয় (বড়লাট বা গভর্নর জেনারেল) কে ছিলেন?",
+//     "options": ["Lord Wavel", "Lord Linlintgo", "Lord Mountbatten", "None of them", "Lord Curzon"],
+//     "correct": "Lord Mountbatten"
+//   },
+//   {
+//     "id": 113,
+//     "question": "কোন ব্রিটিশ শাসকের সময়ে ভারত উপমহাদেশ স্বাধীন হয়?",
+//     "options": ["লর্ড মাউন্টব্যাটেন", "লর্ড কর্নওয়ালিস", "লর্ড বেন্টিং", "লর্ড ডালহৌসি"],
+//     "correct": "লর্ড মাউন্টব্যাটেন"
+//   },
+//   {
+//     "id": 114,
+//     "question": "ভারত বিভাজনের সময় ইংল্যান্ডের প্রধানমন্ত্রী কে ছিলেন?",
+//     "options": ["এটলি", "চার্চিল", "ডিজরেইলি", "গ্লান্ডস্টোন"],
+//     "correct": "এটলি"
+//   },
+//   {
+//     "id": 115,
+//     "question": "১৯৪৭ সালের সীমানা কমিশন যে নামে পরিচিত-",
+//     "options": ["ব্যাডক্লিফ কমিশন", "সাইমন কমিশন", "লরেন্স কমিশন", "ম্যাকডোনাল্ড কমিশন"],
+//     "correct": "ব্যাডক্লিফ কমিশন"
+//   },
+//   {
+//     "id": 116,
+//     "question": "অবিভক্ত বাংলার সর্বশেষ গভর্নর ছিলেন-",
+//     "options": ["স্যার জন হাবার্ট", "এন্ডারসন", "স্যার এফ বারোজ", "আর জি কেসি"],
+//     "correct": "স্যার এফ বারোজ"
+//   },
+//   {
+//     "id": 117,
+//     "question": "The British ruled the Indian Sub-Continent for about ___ years.",
+//     "options": ["500", "450", "400", "300", "200", "150", "100"],
+//     "correct": "200"
+//   },
+//   {
+//     "id": 118,
+//     "question": "ব্রিটিশ শাসনের বিরুদ্ধে বাঙালিদের প্রথম বিদ্রোহ-",
+//     "options": ["ফকির ও সন্ন্যাসী বিদ্রোহ", "নীল বিদ্রোহ", "আগস্ট (১৯৪২) বিদ্রোহ", "সিপাহি বিদ্রোহ"],
+//     "correct": "ফকির ও সন্ন্যাসী বিদ্রোহ"
+//   },
+//   {
+//     "id": 119,
+//     "question": "ফকিররা কত সাল থেকে কত সাল পর্যন্ত বাংলার বিভিন্ন স্থানে বিদ্রোহ করেছিল?",
+//     "options": ["১৭৮১ থেকে ১৮৪০ পর্যন্ত", "১৭৬০ থেকে ১৮৪০ পর্যন্ত", "১৭৫৭ থেকে ১৮৫৭ পর্যন্ত", "১৮১৯ থেকে ১৮৬২ পর্যন্ত"],
+//     "correct": "১৭৬০ থেকে ১৮৪০ পর্যন্ত"
+//   },
+//   {
+//     "id": 120,
+//     "question": "ফকির আন্দোলন সংঘটিত হয় কোন শতাব্দীতে?",
+//     "options": ["সপ্তদশ শতাব্দীতে", "অষ্টদশ শতাব্দীতে", "উনবিংশ শতাব্দীতে", "বিংশ শতাব্দীতে"],
+//     "correct": "অষ্টদশ শতাব্দীতে"
+//   },
+//   {
+//     "id": 121,
+//     "question": "ফকির আন্দোলনের নেতা কে?",
+//     "options": ["সিরাজ শাহ", "মজনু শাহ", "মোহসীন আলী", "জহীর শাহ"],
+//     "correct": "মজনু শাহ"
+//   },
+//   {
+//     "id": 122,
+//     "question": "ইস্ট ইন্ডিয়া কোম্পানি চট্টগ্রামের শাসনভার লাভ করে-",
+//     "options": ["১৭৬০ খ্রিস্টাব্দে", "১৬০০ খ্রিস্টাব্দে", "১৮৬০ খ্রিস্টাব্দে", "১৬৮৫ খ্রিস্টাব্দে"],
+//     "correct": "১৭৬০ খ্রিস্টাব্দে"
+//   },
+//   {
+//     "id": 123,
+//     "question": "ব্রিটিশ বণিকদের বিরুদ্ধে একজন চাকমা জুমিয়া নেতা বিদ্রোহের পতাকা উড়িয়েছিলেন, তাঁর নাম-",
+//     "options": ["রাজা ত্রিদিব রায়", "রাজা ত্রিভুবন চাকমা", "জুম্মা খান", "জোয়ান বকস খাঁ"],
+//     "correct": "জোয়ান বকস খাঁ"
+//   },
+//   {
+//     "id": 124,
+//     "question": "বাঁশের কেল্লাখ্যাত স্বাধীনতা সংগ্রামী কে?",
+//     "options": ["ফকির মজনু শাহ", "দুদু মিয়া", "তিতুমীর", "মীর কাসিম"],
+//     "correct": "তিতুমীর"
+//   },
+//   {
+//     "id": 125,
+//     "question": "তিতুমীরের দুর্গের মূল উপাদান কি ছিল?",
+//     "options": ["ইট", "পাথর", "বাঁশ"],
+//     "correct": "বাঁশ"
+//   },
+//   {
+//     "id": 126,
+//     "question": "তিতুমীরের বাঁশের কেল্লা কোথায় অবস্থিত ছিল?",
+//     "options": ["বারাসাত", "নারিকেলবাড়িয়া", "চাঁদপুর", "হায়দারপুর"],
+//     "correct": "নারিকেলবাড়িয়া"
+//   },
+//   {
+//     "id": 127,
+//     "question": "ব্রিটিশ আমলে বাংলাদেশে যে সব আন্দোলন হয়েছিল তার মধ্যে কোনটি প্রধান?",
+//     "options": ["হাসেমী আন্দোলন", "কোরায়েশী আন্দোলন", "ফরায়েজী আন্দোলন", "সৈয়দী আন্দোলন"],
+//     "correct": "ফরায়েজী আন্দোলন"
+//   },
+//   {
+//     "id": 128,
+//     "question": "ফরায়েজী আন্দোলনের প্রধান কেন্দ্র ছিল-",
+//     "options": ["ফরিদপুর", "শরীয়তপুর", "খুলনা", "যশোর"],
+//     "correct": "ফরিদপুর"
+//   },
+//   {
+//     "id": 129,
+//     "question": "বাংলায় ফরায়েজী আন্দোলনের উদ্যোক্তা (সূচনাকারী) কে ছিলেন?",
+//     "options": ["শাহ ওয়ালীউল্লাহ", "হাজী শরীয়তুল্লাহ", "পীর মহসীন", "তিতুমীর"],
+//     "correct": "হাজী শরীয়তুল্লাহ"
+//   },
+//   {
+//     "id": 130,
+//     "question": "ফরায়েজী আন্দোলনের নেতা কে ছিলেন?",
+//     "options": ["তিতুমীর", "হাজী শরীয়তউল্লাহ", "ইসমাইল হোসেন সিরাজী", "কেরামত আলী"],
+//     "correct": "হাজী শরীয়তউল্লাহ"
+//   },
+//   {
+//     "id": 131,
+//     "question": "হাজী শরীয়তউল্লাহ কোন জেলায় জন্মগ্রহণ করেন?",
+//     "options": ["শরীয়তপুর", "মাদারীপুর", "ফরিদপুর", "যশোর"],
+//     "correct": "মাদারীপুর"
+//   },
+//   {
+//     "id": 132,
+//     "question": "'ভূমি থেকে খাজনা আদায় আল্লাহর আইনের পরিপন্থী' এটি কার ঘোষণা?",
+//     "options": ["তিতুমীর", "ফকির মজনু শাহ", "দুদু মিয়া", "হাজী শরীয়তুল্লাহ"],
+//     "correct": "দুদু মিয়া"
+//   },
+//   {
+//     "id": 133,
+//     "question": "ফরায়েজী আন্দোলনকে কোন নেতা রাজনৈতিক আন্দোলনে রূপদান করেন?",
+//     "options": ["হাজী শরীয়তউল্লাহ", "তিতুমীর", "দুদু মিয়া", "নবাব সলিমুল্লাহ"],
+//     "correct": "দুদু মিয়া"
+//   },
+//   {
+//     "id": 134,
+//     "question": "দুদু মিয়া কোন আন্দোলনের সাথে জড়িত?",
+//     "options": ["তেভাগা", "স্বদেশি", "ফরায়েজী", "ওয়াহাবী"],
+//     "correct": "ফরায়েজী"
+//   },
+//   {
+//     "id": 135,
+//     "question": "চিরস্থায়ী বন্দোবস্তের ফলে বাংলার কৃষকরা ভূমিদাসে পরিণত হয়। এ অবস্থা দীর্ঘকাল চলার বিরুদ্ধে প্রধানত বাংলায় গড়ে ওঠে শক্তিশালী-",
+//     "options": ["ওয়াহাবি আন্দোলন", "ফরায়েজী আন্দোলন", "প্রজা আন্দোলন", "স্বদেশি আন্দোলন"],
+//     "correct": "ফরায়েজী আন্দোলন"
+//   },
+//   {
+//     "id": 136,
+//     "question": "প্রথম স্বাধীনতা সংগ্রাম কোনটি?",
+//     "options": ["তিতুমীরের বাঁশের কেল্লা", "জালিয়ানওয়ালাবাগের সংগ্রাম", "অসহযোগ আন্দোলন", "সিপাহি বিপ্লব"],
+//     "correct": "সিপাহি বিপ্লব"
+//   },
+//   {
+//     "id": 137,
+//     "question": "পাক-ভারত-বাংলা এই উপমহাদেশের প্রথম স্বাধীনতা যুদ্ধ কোন সনে শুরু হয়?",
+//     "options": ["১৭৫১", "১৮৫৭", "১৯৫২", "১৯৭১"],
+//     "correct": "১৮৫৭"
+//   },
+//   {
+//     "id": 138,
+//     "question": "উপমহাদেশে সিপাহি বিদ্রোহ শুরু হয় কোন সালে?",
+//     "options": ["১৭৫০", "১৭৫৭", "১৮৫০", "১৮৫৭"],
+//     "correct": "১৮৫৭"
+//   },
+//   {
+//     "id": 139,
+//     "question": "ভারতবর্ষে কোন সনে সিপাহি বিদ্রোহ হয়?",
+//     "options": ["১৭৫৭", "১৮৫০", "১৮৫৭", "১৭৯৩"],
+//     "correct": "১৮৫৭"
+//   },
+//   {
+//     "id": 140,
+//     "question": "ঢাকায় ১৮৫৭ সালে সিপাহি বিদ্রোহের স্মৃতিজড়িত স্থানের নাম-",
+//     "options": ["ন্যাশনাল পার্ক", "সোহরাওয়ার্দী উদ্যান", "বাহাদুর শাহ পার্ক", "রমনা পার্ক"],
+//     "correct": "বাহাদুর শাহ পার্ক"
+//   },
+//   {
+//     "id": 141,
+//     "question": "নীল বিদ্রোহ কখন সংঘটিত হয়?",
+//     "options": ["১৪৪২-৪৪ সালে", "১৮৫৯-৬২ সালে", "১৮৯৪-৯৬ সালে", "১৯১৭-২০ সালে"],
+//     "correct": "১৮৫৯-৬২ সালে"
+//   },
+//   {
+//     "id": 142,
+//     "question": "বাংলাদেশে নীল বিদ্রোহের অবসান হয়-",
+//     "options": ["১৮৫৮ সালে", "১৮৫৬ সালে", "১৮৬০ সালে", "১৮৬২ সালে"],
+//     "correct": "১৮৬২ সালে"
+//   },
+//   {
+//     "id": 143,
+//     "question": "কি কারণে বাংলাদেশ হতে নীলচাষ বিলুপ্ত হয়?",
+//     "options": ["নীলচাষ নিষিদ্ধ করার ফলে", "নীলকরদের অত্যাচারের ফলে", "নীলচাষীদের বিদ্রোহের ফলে", "কৃত্রিম নীল আবিষ্কারের ফলে"],
+//     "correct": "নীলচাষীদের বিদ্রোহের ফলে"
+//   },
+//   {
+//     "id": 144,
+//     "question": "ভারতীয় জাতীয় কংগ্রেস প্রতিষ্ঠিত হয় -",
+//     "options": ["১৭৮৫", "১৮৮৫", "১৯০৬", "১৯০৫"],
+//     "correct": "১৮৮৫"
+//   },
+//   {
+//     "id": 145,
+//     "question": "ভারতীয় জাতীয় কংগ্রেস প্রতিষ্ঠা করেন-",
+//     "options": ["জওহরলাল নেহেরু", "মহাত্মা গান্ধী", "অক্টোভিয়ান হিউম", "ইন্দিরা গান্ধী"],
+//     "correct": "অক্টোভিয়ান হিউম"
+//   },
+//   {
+//     "id": 146,
+//     "question": "সর্বভারতীয় জাতীয় কংগ্রেসের প্রথম সভাপতি-",
+//     "options": ["এ্যালান অক্টোভিয়ান হিউম", "আনন্দমোহন বসু", "মতিলাল নেহেরু", "উমেশচন্দ্র বন্দ্যোপাধ্যায়"],
+//     "correct": "উমেশচন্দ্র বন্দ্যোপাধ্যায়"
+//   },
+//   {
+//     "id": 147,
+//     "question": "কত সালে মুসলিম লীগ প্রতিষ্ঠিত হয়?",
+//     "options": ["১৯০৩ সালে", "১৯০৪ সালে", "১৯০৫ সালে", "১৯০৬ সালে"],
+//     "correct": "১৯০৬ সালে"
+//   },
+//   {
+//     "id": 148,
+//     "question": "নিখিল ভারত মুসলিম লীগ প্রতিষ্ঠিত হয় কোন শহরে-",
+//     "options": ["ফরিদপুরে", "করাচিতে", "ঢাকায়", "কোলকাতায়"],
+//     "correct": "ঢাকায়"
+//   },
+//   {
+//     "id": 149,
+//     "question": "কে মুসলিম লীগ প্রতিষ্ঠা করেন?",
+//     "options": ["মাওলানা ভাসানী", "নবাব সলিমুল্লাহ", "সৈয়দ আমীর আলী", "হাজী মুহম্মদ মহসীন"],
+//     "correct": "নবাব সলিমুল্লাহ"
+//   },
+//   {
+//     "id": 150,
+//     "question": "বঙ্গভঙ্গের বিরুদ্ধে স্বদেশী আন্দোলনের নেতৃত্ব দান করেন কে?",
+//     "options": ["বলভভাই প্যাটেল", "অরবিন্দ ঘোষ", "হাজী শরীয়তউল্লাহ", "সুরেন্দ্রনাথ বন্দ্যোপাধ্যায়"],
+//     "correct": "সুরেন্দ্রনাথ বন্দ্যোপাধ্যায়"
+//   },
+//   {
+//     "id": 151,
+//     "question": "স্বদেশী আন্দোলন কি?",
+//     "options": ["কুটির শিল্পের পুনরুজ্জীবনের আন্দোলন", "ইংরেজ বিরোধী স্বাধীনতা আন্দোলন", "পাকিস্তানিদের বিরুদ্ধে পরিচালিত স্বাধীনতা আন্দোলন", "মুঘলবিরোধী স্বাধিকার আন্দোলন"],
+//     "correct": "ইংরেজ বিরোধী স্বাধীনতা আন্দোলন"
+//   },
+//   {
+//     "id": 152,
+//     "question": "কে বাংলার গ্রামে গ্রামে ঘুরে 'পড়ো না রেশমী চুড়ি বঙ্গনারী' গান গেয়ে জনগণের মধ্যে স্বদেশী আন্দোলনের পক্ষে তীব্র আবেগ সৃষ্টি করেন?",
+//     "options": ["কবি মুকুন্দ দাস", "সৈয়দ আমীর আলী", "বঙ্কিম চন্দ্র", "সুভাষ চন্দ্র বসু"],
+//     "correct": "কবি মুকুন্দ দাস"
+//   },
+//   {
+//     "id": 153,
+//     "question": "নিশাত বুদ্ধিমতী। তার খাদ্য তালিকায়, পোশাক পরিচ্ছদে সব সময় ব্যবহৃত হয় দেশীয় পণ্য। নিশাত আমাদের মনে করিয়ে দেয়",
+//     "options": ["অসহযোগ আন্দোলন", "ফারায়েজি আন্দোলন", "খিলাফত আন্দোলন", "স্বদেশী আন্দোলন"],
+//     "correct": "স্বদেশী আন্দোলন"
+//   },
+//   {
+//     "id": 154,
+//     "question": "ইংরেজ ম্যাজিস্ট্রেট কিংস ফোর্ডকে হত্যার জন্য কে বোমা নিক্ষেপ করে?",
+//     "options": ["ক্ষুদিরাম", "তিতুমীর", "মাস্টার দা সূর্যসেন", "আসাদুজ্জামান আসাদ"],
+//     "correct": "ক্ষুদিরাম"
+//   },
+//   {
+//     "id": 155,
+//     "question": "যে ইংরেজকে হত্যার অভিযোগে ক্ষুদিরামকে ফাঁসি দেয়া হয় তার নাম-",
+//     "options": ["কিংসফোর্ড", "লর্ড হার্ডিঞ্জ", "হাডসন", "সিম্পসন"],
+//     "correct": "কিংসফোর্ড"
+//   },
+//   {
+//     "id": 156,
+//     "question": "চট্টগ্রামের অস্ত্রাগার লুষ্ঠিত হয় কোন সালে?",
+//     "options": ["১৯১১ সালে", "১৯১৫ সালে", "১৯২১ সালে", "১৯৩০ সালে"],
+//     "correct": "১৯৩০ সালে"
+//   },
+//   {
+//     "id": 157,
+//     "question": "কে ব্রিটিশ বিরোধী স্বাধীনতা যুদ্ধের নেতা?",
+//     "options": ["বল্লাল সেন", "অমর্ত্য সেন", "সূর্যসেন", "বনলতা সেন"],
+//     "correct": "সূর্যসেন"
+//   },
+//   {
+//     "id": 158,
+//     "question": "মাস্টারদা সূর্যসেনের ফাঁসি কার্যকর হয়েছিল?",
+//     "options": ["মেদিনীপুরে", "ব্যারাকপুরে", "চট্টগ্রামে", "আন্দামানে", "কুমিল্লায়"],
+//     "correct": "চট্টগ্রামে"
+//   },
+//   {
+//     "id": 159,
+//     "question": "প্রীতিলতা ওয়াদ্দেদার সম্পৃক্ত ছিলেন-",
+//     "options": ["তেভাগা আন্দোলনে", "ব্রিটিশ বিরোধী সন্ত্রাসী আন্দোলন", "১৯৭১-এর মুক্তিযুদ্ধে", "সত্যাগ্রহ আন্দোলন"],
+//     "correct": "ব্রিটিশ বিরোধী সন্ত্রাসী আন্দোলন"
+//   },
+//   {
+//     "id": 160,
+//     "question": "প্রীতিলতা ওয়াদ্দেদার কার শিষ্য ছিলেন?",
+//     "options": ["দেশবন্ধু চিত্তরঞ্জন দাসের", "মাস্টারদা সূর্যসেনের", "নেতাজী সুভাস চন্দ্র বসুর", "মহাত্মা গান্ধীজীর"],
+//     "correct": "মাস্টারদা সূর্যসেনের"
+//   },
+//   {
+//     "id": 161,
+//     "question": "কে অসহযোগ আন্দোলনে নেতৃত্ব দেন?",
+//     "options": ["গান্ধীজি", "মওলানা শওকত আলী", "জহরলাল নেহেরু", "বিপিনচন্দ্র পাল"],
+//     "correct": "গান্ধীজি"
+//   },
+//   {
+//     "id": 162,
+//     "question": "খিলাফত আন্দোলনের অন্যতম নেতা-",
+//     "options": ["খাজা নাজিমউদ্দীন", "মোহাম্মদ আলী বিল্লাহ", "মওলানা মোহাম্মদ আলী", "এ.কে ফজলুল হক"],
+//     "correct": "মওলানা মোহাম্মদ আলী"
+//   },
+//   {
+//     "id": 163,
+//     "question": "অসহযোগ এবং খেলাফত আন্দোলনের সঙ্গে জড়িত স্মরণীয় নায়ক কে?",
+//     "options": ["মোহাম্মদ আলী জিন্নাহ", "মাওলানা মোহাম্মদ আলী", "আগা খান", "আবদুর রহিম"],
+//     "correct": "মাওলানা মোহাম্মদ আলী"
+//   },
+//   {
+//     "id": 164,
+//     "question": "১৯০৫ ও ১৯২৩ সাল আমাদের জাতীয় জীবনের কোন দুটি ঐতিহাসিক ঘটনার সাথে সম্পৃক্ত?",
+//     "options": ["বঙ্গভঙ্গ, বেঙ্গল প্যাক্ট চুক্তি সম্পাদিত হয়", "খেলাফত আন্দোলন, বিপ্লবী আন্দোলন", "বঙ্গভঙ্গ রদ, গান্ধীর অসহযোগ আন্দোলন", "গান্ধীর ভারত আগমন, বিপ্লবী আন্দোলন"],
+//     "correct": "বঙ্গভঙ্গ, বেঙ্গল প্যাক্ট চুক্তি সম্পাদিত হয়"
+//   },
+//   {
+//     "id": 165,
+//     "question": "'বেঙ্গল প্যাক্ট' কার উদ্যোগে স্বাক্ষরিত হয়?",
+//     "options": ["এ. কে ফজলুল হক", "সুভাস চন্দ্র বসু", "খাজা নাজিমউদ্দীন", "চিত্তরঞ্জন দাশ"],
+//     "correct": "চিত্তরঞ্জন দাশ"
+//   },
+//   {
+//     "id": 166,
+//     "question": "কৃষক প্রজা পার্টির প্রতিষ্ঠাতা-",
+//     "options": ["মাওলানা ভাসানী", "এ.কে ফজলুল হক", "আবুল হাশিম", "সোহরাওয়ার্দী"],
+//     "correct": "এ.কে ফজলুল হক"
+//   },
+//   {
+//     "id": 167,
+//     "question": "Who was the first Chief Minister of the undivided Bengal?/অবিভক্ত বাংলার প্রথম মুখ্যমন্ত্রী",
+//     "options": ["Syed Mahmud", "Syed Amir Ali", "Nawab Abdul Latif", "A.K. Fazlul Huq"],
+//     "correct": "A.K. Fazlul Huq"
+//   },
+//   {
+//     "id": 168,
+//     "question": "বাংলায় 'ঋণ সালিশি আইন' কার আমলে প্রণীত হয়?",
+//     "options": ["এ. কে ফজলুল হক", "এইচ, এস, সোহরাওয়ার্দী", "খাজা নাজিমউদ্দীন", "নুরুল আমিন"],
+//     "correct": "এ. কে ফজলুল হক"
+//   },
+//   {
+//     "id": 169,
+//     "question": "কোন নেতা জমিদারি প্রথা রদে প্রধান ভূমিকা পালন করেন?",
+//     "options": ["হোসেন শহীদ সোহরাওয়ার্দী", "মাওলানা আবদুল হামিদ খান ভাসানী", "এ কে ফজলুল হক", "আতাউর রহমান খান"],
+//     "correct": "এ কে ফজলুল হক"
+//   },
+//   {
+//     "id": 170,
+//     "question": "অবিভক্ত বাংলার দ্বিতীয় মুখ্যমন্ত্রী-",
+//     "options": ["আবুল হাসেম", "এ কে ফজলুল হক", "শহীদ সোহরাওয়ার্দী", "খাজা নাজিমউদ্দীন"],
+//     "correct": "খাজা নাজিমউদ্দীন"
+//   },
+//   {
+//     "id": 171,
+//     "question": "দ্বি-জাতি তত্ত্বের প্রবক্তা কে ছিলেন?",
+//     "options": ["আল্লামা ইকবাল", "মোহাম্মদ আলী জিন্নাহ", "স্যার সৈয়দ আহম্মদ", "স্যার সলিমুল্লাহ"],
+//     "correct": "মোহাম্মদ আলী জিন্নাহ"
+//   },
+//   {
+//     "id": 172,
+//     "question": "১৯৪০ সালের লাহোর প্রস্তাবের উত্থাপক কে ছিলেন?",
+//     "options": ["লিয়াকত আলী খান", "খাজা নাজিমউদ্দীন", "এ.কে ফজলুল হক", "মোহাম্মদ আলী জিন্নাহ", "হোসেন শহীদ সোহরাওয়ার্দী"],
+//     "correct": "এ.কে ফজলুল হক"
+//   },
+//   {
+//     "id": 173,
+//     "question": "ঐতিহাসিক লাহোর প্রস্তাব কত তারিখে উত্থাপিত হয়?",
+//     "options": ["১৩ ফেব্রুয়ারি, ১৯৪০", "১৩ মার্চ, ১৯৪০", "২৩ মার্চ, ১৯৪০", "২৩ মার্চ, ১৯৪২"],
+//     "correct": "২৩ মার্চ, ১৯৪০"
+//   },
+//   {
+//     "id": 174,
+//     "question": "'লাহোর প্রস্থাব' কত সালে উত্থাপিত (গৃহীত) হয়?",
+//     "options": ["১৯৩৫", "১৯৪০", "১৮৪০", "১৯৪৫"],
+//     "correct": "১৯৪০"
+//   },
+//   {
+//     "id": 175,
+//     "question": "লাহোর প্রস্তাব ছিল-",
+//     "options": ["স্বাধীন বাংলা প্রস্তাব", "পাকিস্তান প্রস্তাব", "ভারত বিভাগের প্রস্তাব", "ভারতে মুসলিম সংখ্যাগরিষ্ঠ এলাকার জন্য স্বাধীন রাষ্ট্রসমূহ গঠনের প্রস্তাব"],
+//     "correct": "ভারতে মুসলিম সংখ্যাগরিষ্ঠ এলাকার জন্য স্বাধীন রাষ্ট্রসমূহ গঠনের প্রস্তাব"
+//   },
+//   {
+//     "id": 176,
+//     "question": "ক্রীপস মিশন কোন উদ্দেশ্যে এদেশে আগমন করে?",
+//     "options": ["অর্থনৈতিক", "রাজনৈতিক", "সামাজিক", "সাংস্কৃতিক"],
+//     "correct": "রাজনৈতিক"
+//   },
+//   {
+//     "id": 177,
+//     "question": "'পঞ্চাশের মন্বন্তর' হয়েছিল ইংরেজি কত সালে?",
+//     "options": ["১৯৪৩ সালে", "১৮৫০ সালে", "১৯২১ সালে", "১৯৫০ সালে"],
+//     "correct": "১৯৪৩ সালে"
+//   },
+//   {
+//     "id": 178,
+//     "question": "ইলা মিত্র অংশগ্রহণ করেন-",
+//     "options": ["ওয়াহাবী আন্দোলনে", "তেভাগা আন্দোলনে", "নীল বিদ্রোহে", "সিপাহি বিদ্রোহে"],
+//     "correct": "তেভাগা আন্দোলনে"
+//   },
+//   {
+//     "id": 179,
+//     "question": "Who was the leader of 'Tebhaga Andolon' of Bangladesh?/তেভাগা আন্দোলনের নেত্রী-",
+//     "options": ["Ila Mitra", "Taramon Bibi", "Sumitra Devi", "Pritilata Waddedar"],
+//     "correct": "Ila Mitra"
+//   },
+//   {
+//     "id": 180,
+//     "question": "ভারতে ক্যাবিনেট মিশন কখন এসেছিল?",
+//     "options": ["১৯৪০ সালে", "১৯৪৬ সালে", "১৯৪২ সালে", "১৯৪৭ সালে"],
+//     "correct": "১৯৪৬ সালে"
+//   },
+//   {
+//     "id": 181,
+//     "question": "Who is the last chief Minister of undivided Bengal?/অবিভক্ত বাংলার শেষ মুখ্যমন্ত্রী কে ছিলেন?",
+//     "options": ["A.K. Fazlul Haque", "Huseyen Shahid Shurwardy", "Abul Hashem", "Khaja Nazim Uddin", "None of them"],
+//     "correct": "Huseyen Shahid Shurwardy"
+//   },
+//   {
+//     "id": 182,
+//     "question": "মহাত্মা গান্ধী বাংলাদেশের কোন জেলা সফর করেছিলেন?",
+//     "options": ["নোয়াখালী", "বরিশাল", "ঢাকা", "খুলনা"],
+//     "correct": "নোয়াখালী"
+//   },
+//   {
+//     "id": 183,
+//     "question": "১৯৪৭ সালে পূর্ব বাংলার মুখ্যমন্ত্রী ছিলেন-",
+//     "options": ["নুরুল আমিন", "আতাউর রহমান", "খাজা নাজিমউদ্দীন", "আবু হোসেন সরকার"],
+//     "correct": "খাজা নাজিমউদ্দীন"
+//   },
+//   {
+//     "id": 184,
+//     "question": "পূর্ব বাংলার প্রথম গভর্নর কে ছিলেন?",
+//     "options": ["ইস্কান্দার মীর্জা", "চৌধুরী খালেকুজ্জামান", "ফ্রেডেরিক চালমার্স বোর্ন", "এ কে ফজলুল হক"],
+//     "correct": "ফ্রেডেরিক চালমার্স বোর্ন"
+//   },
+//   {
+//     "id": 185,
+//     "question": "আওয়ামী লীগের মূল বা আদি নাম কি?",
+//     "options": ["আওয়ামী পার্টি", "আওয়ামী জাতীয় পার্টি", "আওয়ামী মুসলিম লীগ", "আওয়ামী লীগ"],
+//     "correct": "আওয়ামী মুসলিম লীগ"
+//   },
+//   {
+//     "id": 186,
+//     "question": "আওয়ামী মুসলীগ লীগের প্রতিষ্ঠাতা সভাপতি",
+//     "options": ["মাওলানা ভাসানী", "শেখ মজিবুর রহমান", "শামসুল হক", "সোহরাওয়ার্দী"],
+//     "correct": "মাওলানা ভাসানী"
+//   },
+//   {
+//     "id": 187,
+//     "question": "আওয়ামী মুসলিম লীগের প্রতিষ্ঠাতা সাধারণ সম্পাদক কে ছিলেন?",
+//     "options": ["শেখ মুজিবুর রহমান", "মাওলানা আব্দুল হামিদ খান ভাসানী", "শামসুল হক", "আবুল হাশিম"],
+//     "correct": "শামসুল হক"
+//   },
+//   {
+//     "id": 188,
+//     "question": "আওয়ামী মুসলিম লীগের প্রতিষ্ঠাকালীন সময়ে শেখ মুজিবুর রহমান নিচের কি ছিলেন?",
+//     "options": ["যুগ্ম সম্পাদক", "সহ-সভাপতি", "সম্পাদক", "সাংগঠনিক সম্পাদক"],
+//     "correct": "যুগ্ম সম্পাদক"
+//   },
+//   {
+//     "id": 189,
+//     "question": "বাংলাদেশের ইতিহাসে যে ঘটনাটি আগে ঘটেছিল-",
+//     "options": ["যুক্তফ্রন্ট গঠন", "আগরতলা ষড়যন্ত্র মামলা", "ভাষা আন্দোলন", "আওয়ামী মুসলিম লীগের প্রতিষ্ঠা"],
+//     "correct": "আওয়ামী মুসলিম লীগের প্রতিষ্ঠা"
+//   },
+//   {
+//     "id": 190,
+//     "question": "বাংলাদেশের গৃহীত এস্টেট একুইজিশন এন্ড টেনান্সী এ্যাক্ট কোন সনে পাস হয়?",
+//     "options": ["১৯৫০", "১৯৫১", "১৯৫২", "১৯৬১"],
+//     "correct": "১৯৫০"
+//   },
+//   {
+//     "id": 191,
+//     "question": "পূর্ববঙ্গ জমিদারী দখল ও প্রজাস্বত্ব আইন কবে প্রণীত হয়?",
+//     "options": ["১৯৫০", "১৯৪৮", "১৯৪৭", "১৯৫৪"],
+//     "correct": "১৯৫০"
+//   },
+//   {
+//     "id": 192,
+//     "question": "জমিদারি প্রথা বিলুপ্ত হয়?",
+//     "options": ["১৯৪৭ সালে", "১৯৫০ সালে", "১৯৫২ সালে", "১৯৬৪ সালে"],
+//     "correct": "১৯৫০ সালে"
+//   }
+// ]
 // [
 //   {
 //     "id": 1,

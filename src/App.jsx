@@ -28,19 +28,20 @@ export default function App() {
    "Math & IQ": MathAndIQQuestions,
     "Current Affairs": CurrentAffairs,
     All: AllQuestions,
-    "Revision": Revision
+    "Revise Mistakes": Revision
   };
 
 // 🚀 Start Quiz
-function handleStart(name, expectedScore, totalTime, topic, totalQuestions) {
+function handleStart(name, expectedScore, totalTime, topic, totalQuestions, attemptMode = "normal") {
   const selectedQuestions = topicsData[topic] || [];
 
-  // No shuffle — keep original order
-  setUser({ name, expectedScore, topic });
-  setQuestions(selectedQuestions.slice(0, totalQuestions)); // load correct number of questions
+  setUser({ name, expectedScore, topic, mode: attemptMode }); // save mode
+  setQuestions(selectedQuestions.slice(0, totalQuestions));
   setTotalTime(totalTime);
   setStep("quiz");
 }
+
+
 
 
   // 📝 Submit Answers
@@ -71,16 +72,18 @@ function handleStart(name, expectedScore, totalTime, topic, totalQuestions) {
         />
       )}
 
-      {step === "result" && (
-        <Result
-          name={user.name}
-          expectedScore={user.expectedScore}
-          questions={questions}
-          answers={answers}
-          onRestart={handleRestart}
-          topic={user.topic}
-        />
-      )}
+  {step === "result" && (
+  <Result
+    name={user.name}
+    expectedScore={user.expectedScore}
+    questions={questions}
+    answers={answers}
+    onRestart={handleRestart}
+    topic={user.topic}
+    mode={user.mode} // <-- pass mode to Result
+  />
+)}
+
     </div>
   );
 }

@@ -86,8 +86,8 @@ const MathAndIQQuestions = [
   {
     id: "Q14",
     question: "If TABLE is coded as UDCNG, how is CHAIR coded?",
-    options: ["EJCKT", "DKBJS", "EGCJP", "DIBKS"],
-    correct: "EJCKT"
+    options: ["EJCKT", "DKBKT", "EGCJP", "DIBKS"],
+    correct: "DKBKT"
   },
   {
     id: "Q15",
@@ -98,8 +98,8 @@ const MathAndIQQuestions = [
   {
     id: "Q16",
     question: "If CAT = 24 and DOG = 26, then FISH = ?",
-    options: ["30", "32", "36", "38"],
-    correct: "32"
+    options: ["30", "32", "36", "42"],
+    correct: "42"
   },
 {
   id: "Q17",

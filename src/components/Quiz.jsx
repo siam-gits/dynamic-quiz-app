@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import useTimer from "../hooks/useTimer";
+import { ArrowUp, ArrowDown } from "lucide-react";
 
 export default function Quiz({ questions, onSubmit, totalTime }) {
   const [answers, setAnswers] = useState({});
@@ -34,6 +35,44 @@ useEffect(() => {
   };
   window.addEventListener("scroll", handleScroll);
   return () => window.removeEventListener("scroll", handleScroll);
+}, []);
+
+// Scroll button states
+const [showScrollButton, setShowScrollButton] = useState(false);
+const [isScrollingUp, setIsScrollingUp] = useState(false);
+const [isScrolling, setIsScrolling] = useState(false);
+const scrollTimeout = useRef(null);
+const lastScrollY = useRef(0);
+
+useEffect(() => {
+  const handleScroll = () => {
+    const currentScrollY = window.scrollY;
+    const totalHeight = document.body.scrollHeight;
+    const scrollBottom = currentScrollY + window.innerHeight;
+
+    // Detect scroll direction
+    const scrollingUp = currentScrollY < lastScrollY.current;
+    lastScrollY.current = currentScrollY;
+
+    // Show button after 150px scroll
+    setShowScrollButton(currentScrollY > 150);
+
+    // Show button during active scroll
+    setIsScrolling(true);
+    if (scrollTimeout.current) clearTimeout(scrollTimeout.current);
+    scrollTimeout.current = setTimeout(() => {
+      setIsScrolling(false);
+    }, 2000);
+
+    // Show up arrow if scrolling up OR at bottom
+    setIsScrollingUp(scrollingUp || scrollBottom >= totalHeight - 50);
+  };
+
+  window.addEventListener("scroll", handleScroll);
+  return () => {
+    window.removeEventListener("scroll", handleScroll);
+    clearTimeout(scrollTimeout.current);
+  };
 }, []);
 
   // Load voices
@@ -163,49 +202,34 @@ useEffect(() => {
 
       {/* Questions */}
       {questions.map((q, i) => (
-        <div
-          key={i}
-          ref={(el) => (questionRefs.current[i] = el)}
-          className="p-4 bg-white rounded-xl shadow-md border-l-4 border-blue-400 transition"
-        >
-          <p className="font-semibold mb-2">
-            {i + 1}. {q.question}
-          </p>
-
-          {q.image && (
-            <img
-              src={q.image}
-              alt="Question visual"
-              className="mb-3 max-w-full rounded-lg shadow-sm"
-            />
-          )}
-
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-            {q.options.map((opt, j) => {
-              const isSelected = answers[i] === opt;
-              return (
-                <label
-                  key={j}
-                  onClick={(e) => {
-                    e.preventDefault();
-                    handleSelect(i, opt);
-                  }}
-                  className={`cursor-pointer flex items-center p-2 border rounded-lg transition ${
-                    isSelected
-                      ? "bg-blue-500 text-white border-blue-500"
-                      : "hover:bg-blue-50"
-                  }`}
-                >
-                  <input
-                    type="radio"
-                    name={`q-${i}`}
-                    value={opt}
-                    checked={isSelected}
-                    readOnly
-                    className="mr-2 accent-blue-600 pointer-events-none"
-                  />
-                  {opt}
-                </label>
+    <div
+      key={i}
+      ref={(el) => (questionRefs.current[i] = el)}
+      className="p-3 sm:p-4 bg-white rounded-xl shadow-md border-l-4 border-blue-400 transition max-w-full sm:max-w-[95%] mx-auto"
+    >
+      <p className="font-semibold mb-2">{i + 1}. {q.question}</p>
+      {q.image && <img src={q.image} alt="Question visual" className="mb-3 max-w-full rounded-lg shadow-sm" />}
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+        {q.options.map((opt, j) => {
+          const isSelected = answers[i] === opt;
+          return (
+            <label
+              key={j}
+              onClick={(e) => { e.preventDefault(); handleSelect(i, opt); }}
+              className={`cursor-pointer flex items-center p-2 border rounded-lg transition ${
+                isSelected ? "bg-blue-500 text-white border-blue-500" : "hover:bg-blue-50"
+              }`}
+            >
+              <input
+                type="radio"
+                name={`q-${i}`}
+                value={opt}
+                checked={isSelected}
+                readOnly
+                className="mr-2 accent-blue-600 pointer-events-none"
+              />
+              {opt}
+            </label>
               );
             })}
           </div>
@@ -259,6 +283,27 @@ useEffect(() => {
     )}
   </div>
 </div>
+
+{/* Scroll Toggle Button */}
+{showScrollButton && isScrolling && (
+  <div className="fixed bottom-6 right-1 z-50">
+    <button
+      onClick={() => {
+        if (isScrollingUp) {
+          window.scrollTo({ top: 0, behavior: "smooth" });
+        } else {
+          window.scrollTo({ top: document.body.scrollHeight, behavior: "smooth" });
+        }
+      }}
+      className="bg-gradient-to-r from-blue-500 to-indigo-600 text-white rounded-full p-4 shadow-xl hover:scale-110 transition transform"
+      title={isScrollingUp ? "Scroll to Top" : "Scroll to Bottom"}
+    >
+      {isScrollingUp ? <ArrowUp size={25} color="#fff" /> : <ArrowDown size={25} color="#fff" />}
+    </button>
+  </div>
+)}
+
+
 
 
 
