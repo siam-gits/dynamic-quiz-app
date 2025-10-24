@@ -1,975 +1,570 @@
 const Revision = [
+    {
+      "id": 1,
+      "question": "Which Mughal Emperor visited Dhaka? কোন মুঘল সম্রাট ঢাকায় আলেন?",
+      "options": ["Babar", "Shajahan", "Akbar", "None of these", "Jahangir"],
+      "correct": "None of these"
+    },
+    {
+      "id": 2,
+      "question": "আর্যদের ধর্মগ্রন্থের নাম কী?",
+      "options": ["ত্রিপিটক", "বেদ", "উপনিষদ", "ভগবৎ গীতা"],
+      "correct": "বেদ"
+    },
+    {
+      "id": 3,
+      "question": "নৃতাত্ত্বিকভাবে বাংলাদেশের মানুষ প্রধানত কোন নরগোষ্ঠীর অন্তর্ভুক্ত?",
+      "options": ["অ্যালপাইন", "আদি-অস্ট্রেলীয়", "নার্কিড", "মঙ্গোলীয়"],
+      "correct": "আদি-অস্ট্রেলীয়"
+    },
+    {
+      "id": 4,
+      "question": "বাংলাদেশে বসবাসকারী উপজাতীয়দের বড় অংশ-",
+      "options": ["মঙ্গোলয়েড", "সেমাটিড", "অস্ট্রালয়েড", "ককেশীয়"],
+      "correct": "মঙ্গোলয়েড"
+    },
+    {
+      "id": 5,
+      "question": "প্রাচীন বাংলায় নিম্নের কোন অঞ্চল বাংলাদেশের পূর্বাংশে অবস্থিত ছিল?",
+      "options": ["হরিকেল", "সমতট", "বরেন্দ্র", "রাঢ়"],
+      "correct": "সমতট"
+    },
+    {
+      "id": 6,
+      "question": "কোন আমলে বাংলা গজল ও সুফি সাহিত্য সৃষ্টি হয়?",
+      "options": ["", "সুলতানি", "হুসাইন শাহী", "মোগল"],
+      "correct": "সুলতানি"
+    },
+    {
+      "id": 7,
+      "question": "বাংলার মুসলিম শাসন (আধিপত্য বিস্তারের) সূচনা করেন-",
+      "options": ["মুহম্মদ বখতিয়ার খলজী", "মুহম্মদ বিন কাসিম", "মুহম্মদ খুরী", "সুলতান মাহমুদ"],
+      "correct": "মুহম্মদ বখতিয়ার খলজী"
+    },
+    {
+      "id": 8,
+      "question": "Which Mughal emperor is laid in rest in Yangon?/ কোন মুঘল সম্রাটকে ইয়াঙ্গুনে সমাহিত করা হয়?",
+      "options": ["Bahadur Shah", "Elias Shah", "Sher Shah", "None of them", "Jafar Shah"],
+      "correct": "Bahadur Shah"
+    },
+    {
+      "id": 9,
+      "question": "চীনা পরিব্রাজক ফা হিয়েন কখন ভারতবর্ষে অবস্থান করেন?",
+      "options": ["২০১-২১০ খ্রিস্টাব্দ", "৪০১-৪১০ খ্রিস্টাব্দ", "৭০২-৭০৮ খ্রিস্টাব্দ", "৯৯৫-৯১৪ খ্রিস্টাব্দ"],
+      "correct": "৪০১-৪১০ খ্রিস্টাব্দ"
+    },
+    {
+      "id": 10,
+      "question": "নালন্দা বিশ্ববিদ্যালয় কোন শতকে প্রতিষ্ঠিত হয়েছিল?",
+      "options": ["চতুর্থ শতকে", "পঞ্চম শতকে", "সপ্তম শতকে", "ষষ্ঠ শতকে"],
+      "correct": "পঞ্চম শতকে"
+    },
+    {
+      "id": 11,
+      "question": "ঈসা খাঁর রাজধানী কোথায় অবস্থিত?",
+      "options": ["গৌড়", "মহাস্থানগড়", "লক্ষণাবর্তী", "সোনারগাঁও"],
+      "correct": "সোনারগাঁও"
+    },
+    {
+      "id": 12,
+      "question": "During which period, Sonargaon was the capital of Bangladesh?/সোনারগাঁও কোন আমলে বাংলাদেশের রাজধানী ছিল?",
+      "options": ["Sultanate rule", "Mughal rule", "Pala dynasty", "Maurya dynasty"],
+      "correct": "Sultanate rule"
+    },
+    {
+      "id": 13,
+      "question": "বাংলার রাজধানী হিসেবে সোনারগাঁও এর পত্তন করেছিলেন কে?",
+      "options": ["শাহজাদা আজম", "সুবেদার ইসলাম খান", "সম্রাট আকবর", "ঈসা খান"],
+      "correct": "ঈসা খান"
+    },
+    {
+      "id": 14,
+      "question": "কোন মুসলিম সেনাপতি স্পেন জয় করেন?",
+      "options": ["মুসা বিন নুসায়ের", "খালিদ বিন ওয়ালিদ", "মুহম্মদ বিন কাসিম", "তারিক"],
+      "correct": "তারিক"
+    },
+    {
+      "id": 15,
+      "question": "কোন মুসলিম সেনাপতি সিন্ধু জয় করেন?",
+      "options": ["মুসা বিন নুসাইর", "তারেক বিন জিয়াদ", "খালেদ বিন ওয়ালিদ", "মুহাম্মদ বিন কাসিম"],
+      "correct": "মুহাম্মদ বিন কাসিম"
+    },
+    {
+      "id": 16,
+      "question": "Isa khan ruled the 'Bhati region' of medieval Bengal during the period - / বাংলার ভাটি অঞ্চলের শাসক ঈসা খাঁ এর জীবনকাল -",
+      "options": ["1529-1595", "1529-1596", "1529-1598", "1529-1599"],
+      "correct": "1529-1599"
+    },
+    {
+      "id": 17,
+      "question": "He is ______ very Dr. Faustus of our age.",
+      "options": ["a", "an", "the", "no article"],
+      "correct": "the"
+    },
+    {
+      "id": 18,
+      "question": "The phrase 'not only... but also' is a type of:",
+      "options": ["Coordinating conjunction", "Subordinating conjunction", "Correlative conjunction", "Conjunctive adverb"],
+      "correct": "Correlative conjunction"
+    },
+    {
+      "id": 19,
+      "question": "The expression 'The pen is mightier than the sword' is an example of:",
+      "options": ["personification", "metaphorical inversion", "abstract noun conversion", "synecdoche"],
+      "correct": "synecdoche"
+    },
+    {
+      "id": 20,
+      "question": "Neither the students nor the teacher was present. What is 'nor'?",
+      "options": ["Coordinating Conjunction", "Subordinating Conjunction", "Correlative Conjunction", "Adverb"],
+      "correct": "Correlative Conjunction"
+    },
+    {
+      "id": 21,
+      "question": "The word 'round' in 'The earth moves round the sun' is a/an:",
+      "options": ["Adverb", "Adjective", "Preposition", "Noun"],
+      "correct": "Preposition"
+    },
+    {
+      "id": 22,
+      "question": "She would rather starve than beg. The word 'than' is used as a:",
+      "options": ["Adverb", "Preposition", "Coordinating Conjunction", "Subordinating Conjunction"],
+      "correct": "Subordinating Conjunction"
+    },
+    {
+      "id": 23,
+      "question": "The Noun form of the verb 'prophesy' is:",
+      "options": ["prophetic", "prophetically", "prophecy", "prophet"],
+      "correct": "prophecy"
+    },
+    {
+      "id": 24,
+      "question": "Turn the sentence into a Compound Sentence: 'Being ill, he could not attend the meeting.'",
+      "options": ["He was ill and could not attend the meeting.", "As he was ill, he could not attend the meeting.", "He was ill, but he could not attend the meeting.", "He could not attend the meeting due to illness."],
+      "correct": "He was ill and could not attend the meeting."
+    },
+    {
+      "id": 25,
+      "question": "The word 'since' in 'It has been raining since morning' is a/an:",
+      "options": ["Adverb", "Conjunction", "Preposition", "Interjection"],
+      "correct": "Preposition"
+    },
+    {
+      "id": 26,
+      "question": "The comparative form of 'far' can be farther or further. They are different because:",
+      "options": ["'Farther' is always used for time and 'further' for distance.", "'Farther' is used for distance and 'further' for both distance and abstract meaning.", "'Further' is used for distance and 'farther' for abstract meaning.", "They are entirely interchangeable in all contexts."],
+      "correct": "'Farther' is used for distance and 'further' for both distance and abstract meaning."
+    },
+    {
+      "id": 27,
+      "question": "The word 'before' in 'He arrived before the bell rang' is a/an:",
+      "options": ["Preposition", "Adverb", "Conjunction", "Interjection"],
+      "correct": "Conjunction"
+    },
+    {
+      "id": 28,
+      "question": "The word 'only' in 'Only he can do this' is a/an:",
+      "options": ["Adverb", "Adjective", "Conjunction", "Adverb/Adjective (determiner)"],
+      "correct": "Adverb/Adjective (determiner)"
+    },
+    {
+      "id": 29,
+      "question": "The word 'up' in 'The old man walked up the hill' is a/an:",
+      "options": ["Adverb", "Adjective", "Preposition", "Conjunction"],
+      "correct": "Preposition"
+    },
+    {
+      "id": 30,
+      "question": "The word 'less' in 'Speak less, but mean more' is a/an:",
+      "options": ["Adjective", "Adverb", "Noun", "Conjunction"],
+      "correct": "Adverb"
+    },
+    {
+      "id": 31,
+      "question": "The idiom 'a Herculean task' uses 'a' because:",
+      "options": ["'Herculean' sounds like a vowel.", "It refers to one specific task.", "'Herculean' starts with a consonant sound.", "It is a plural noun."],
+      "correct": "'Herculean' starts with a consonant sound."
+    },
+    {
+      "id": 32,
+      "question": "What kind of conjunction is used in the sentence: 'We must eat, or we cannot live'?",
+      "options": ["Subordinating", "Correlative", "Coordinating", "Adverbial"],
+      "correct": "Coordinating"
+    },
+    {
+      "id": 33,
+      "question": "The word 'only' in 'He spoke only a few words' is a/an:",
+      "options": ["Adjective", "Conjunction", "Adverb", "Preposition"],
+      "correct": "Adverb"
+    },
+    {
+      "id": 34,
+      "question": "She is going to a university in Dhaka. 'A' is used here because:",
+      "options": ["The word 'university' starts with a vowel.", "The word 'university' starts with a consonant sound (/ju/).", "It refers to a specific university.", "It is always 'a' before 'university'."],
+      "correct": "The word 'university' starts with a consonant sound (/ju/)."
+    },
+    {
+      "id": 35,
+      "question": "The sentence 'He tried hard; nevertheless, he failed' is joined by a:",
+      "options": ["Coordinating Conjunction", "Subordinating Conjunction", "Conjunctive Adverb", "Preposition"],
+      "correct": "Conjunctive Adverb"
+    },
+    {
+      "id": 36,
+      "question": "The Adverb form of the Noun 'danger' is:",
+      "options": ["dangerous", "dangerously", "endanger", "dangerousness"],
+      "correct": "dangerously"
+    },
+    {
+      "id": 37,
+      "question": "Change to Comparative: 'This book is not so costly as that one.'",
+      "options": ["That book is costlier than this one.", "This book is costlier than that one.", "No book is as costly as that one.", "That book is the costliest of all."],
+      "correct": "That book is costlier than this one."
+    },
+    {
+      "id": 38,
+      "question": "He died on the first of October. 'The' is used because:",
+      "options": ["It is a proper noun.", "It refers to a specific date.", "Ordinal numbers usually take 'the'.", "It is a fraction."],
+      "correct": "Ordinal numbers usually take 'the'."
+    },
+    {
+      "id": 39,
+      "question": "The linker that shows a purpose and requires a negative verb (should not) is:",
+      "options": ["unless", "lest", "while", "as if"],
+      "correct": "lest"
+    },
+    {
+      "id": 40,
+      "question": "The best linker for reason is: 'He worked hard ______ he wanted to succeed.'",
+      "options": ["so that", "for", "though", "yet"],
+      "correct": "for"
+    },
+    {
+      "id": 41,
+      "question": "The word 'like' in 'He looks like his father' is a/an:",
+      "options": ["Adverb", "Verb", "Adjective", "Preposition"],
+      "correct": "Preposition"
+    },
+    {
+      "id": 42,
+      "question": "The word 'save' in 'All save him were drowned' is a/an:",
+      "options": ["Verb", "Conjunction", "Preposition", "Adverb"],
+      "correct": "Preposition"
+    },
+    {
+      "id": 43,
+      "question": "The correct order of adjectives in 'a small old round brown wooden table' follows the sequence:",
+      "options": ["Quantity, Age, Size, Color, Material", "Size, Age, Shape, Color, Material", "Opinion, Size, Age, Color, Material", "Shape, Size, Color, Age, Material"],
+      "correct": "Size, Age, Shape, Color, Material"
+    },
+    {
+      "id": 44,
+      "question": "The word 'that' in 'All that glitters is not gold' is a/an:",
+      "options": ["Demonstrative Pronoun", "Demonstrative Adjective", "Relative Pronoun", "Subordinating Conjunction"],
+      "correct": "Relative Pronoun"
+    },
+    {
+      "id": 45,
+      "question": "The word 'off' in 'He took off his coat' is a/an:",
+      "options": ["Preposition", "Adverb", "Adjective", "Conjunction"],
+      "correct": "Adverb"
+    },
+    {
+      "id": 46,
+      "question": "The word 'down' in 'He looked down on the valley' is a/an:",
+      "options": ["Adverb", "Adjective", "Preposition", "Conjunction"],
+      "correct": "Preposition"
+    },
+    {
+      "id": 47,
+      "question": "The word 'where' in 'This is the house where I was born' is a/an:",
+      "options": ["Interrogative Adverb", "Relative Adverb", "Conjunction", "Pronoun"],
+      "correct": "Relative Adverb"
+    },
+    {
+      "id": 48,
+      "question": "Hardly had he started when it rained. This structure uses:",
+      "options": ["Coordinating conjunction", "Subordinating conjunction of time", "Correlative conjunction (Inversion)", "Adverbial phrase"],
+      "correct": "Correlative conjunction (Inversion)"
+    },
+    {
+      "id": 49,
+      "question": "The word 'only' in 'He left only yesterday' is a/an:",
+      "options": ["Adjective", "Conjunction", "Adverb", "Preposition"],
+      "correct": "Adverb"
+    },
+    {
+      "id": 50,
+      "question": "The word 'much' in 'Much of what he said was nonsense' is a/an:",
+      "options": ["Adjective", "Adverb", "Pronoun", "Conjunction"],
+      "correct": "Pronoun"
+    },
+    {
+      "id": 51,
+      "question": "Which linker indicates contrast or concession?",
+      "options": ["since", "whereas", "so that", "in order that"],
+      "correct": "whereas"
+    },
+    {
+      "id": 52,
+      "question": "The word 'that' in 'He said that he was ill' is a/an:",
+      "options": ["Relative Pronoun", "Demonstrative Pronoun", "Subordinating Conjunction", "Adverb"],
+      "correct": "Subordinating Conjunction"
+    },
+    {
+      "id": 53,
+      "question": "The Noun form of the verb 'admit' is:",
+      "options": ["admissible", "admission", "admittedly", "admittance"],
+      "correct": "admittance"
+    },
+    {
+      "id": 54,
+      "question": "The word 'enough' in 'I had enough' is a/an:",
+      "options": ["Adjective", "Adverb", "Pronoun", "Determiner"],
+      "correct": "Pronoun"
+    },
+    {
+      "id": 55,
+      "question": "The linker 'as if' is a subordinating conjunction of:",
+      "options": ["Time", "Manner or Comparison", "Reason", "Concession"],
+      "correct": "Manner or Comparison"
+    },
+    {
+      "id": 56,
+      "question": "The word 'near' in 'He stood near the window' is a/an:",
+      "options": ["Adverb", "Adjective", "Preposition", "Conjunction"],
+      "correct": "Preposition"
+    },
+    {
+      "id": 57,
+      "question": "______ Himalayas are to the north of India.",
+      "options": ["A", "An", "The", "No article"],
+      "correct": "The"
+    },
+    {
+      "id": 58,
+      "question": "The word 'after' in 'He went to the field after taking his meal' is a/an:",
+      "options": ["Adverb", "Conjunction", "Preposition", "Interjection"],
+      "correct": "Preposition"
+    },
+    {
+      "id": 59,
+      "question": "Choose the grammatically correct sentence:",
+      "options": ["She is a far better speaker than me.", "She is a far better speaker than I.", "She is a much better speaker than I am.", "She is a much better speaker than me."],
+      "correct": "She is a much better speaker than I am."
+    },
+    {
+      "id": 60,
+      "question": "He speaks English as fluent as his mother tongue. The error is in the phrase:",
+      "options": ["He speaks English", "as fluent as", "his mother tongue", "No error"],
+      "correct": "as fluent as"
+    },
+    {
+      "id": 61,
+      "question": "The conjunctive adverb that means 'in spite of that' is:",
+      "options": ["Consequently", "Furthermore", "Nevertheless", "Hence"],
+      "correct": "Nevertheless"
+    },
+    {
+      "id": 62,
+      "question": "The Adjective form of the Noun 'friendship' is:",
+      "options": ["friend", "friendly", "friendless", "befriend"],
+      "correct": "friendly"
+    },
+    {
+      "id": 63,
+      "question": "The word 'both' in 'Both his sisters are teachers' is a/an:",
+      "options": ["Pronoun", "Conjunction", "Adjective (Determiner)", "Adverb"],
+      "correct": "Adjective (Determiner)"
+    },
+    {
+      "id": 64,
+      "question": "What is the verb form of the noun 'access'?",
+      "options": ["accessible", "accessing", "access", "accession"],
+      "correct": "access"
+    },
+    {
+      "id": 65,
+      "question": "The word 'what' in 'I gave him what he wanted' is a/an:",
+      "options": ["Interrogative Pronoun", "Relative Pronoun", "Compound Relative Pronoun", "Adjective"],
+      "correct": "Compound Relative Pronoun"
+    },
+    {
+      "id": 66,
+      "question": "The word 'but' in 'We are but dust' is a/an:",
+      "options": ["Conjunction", "Preposition", "Adverb", "Interjection"],
+      "correct": "Adverb"
+    },
+    {
+      "id": 67,
+      "question": "The word 'much' in 'I don't need much' is a/an:",
+      "options": ["Adjective", "Adverb", "Pronoun", "Conjunction"],
+      "correct": "Pronoun"
+    },
+    {
+      "id": 68,
+      "question": "What is the Noun form of the adjective 'supreme'?",
+      "options": ["supremely", "supremacy", "superior", "superfluous"],
+      "correct": "supremacy"
+    },
+    {
+      "id": 69,
+      "question": "Which of the following geographical names takes 'the'?",
+      "options": ["Mount Everest", "Australia", "Lake Superior", "The United Arab Emirates"],
+      "correct": "The United Arab Emirates"
+    },
+    {
+      "id": 70,
+      "question": "The word 'still' in 'A still small voice' is a/an:",
+      "options": ["Adverb", "Conjunction", "Adjective", "Verb"],
+      "correct": "Adjective"
+    },
+    {
+      "id": 71,
+      "question": "The word 'like' in 'Like the moon, she is beautiful' is a/an:",
+      "options": ["Adverb", "Adjective", "Preposition", "Conjunction"],
+      "correct": "Preposition"
+    },
+    {
+      "id": 72,
+      "question": "He went to ______ war.",
+      "options": ["a", "an", "the", "no article"],
+      "correct": "no article"
+    },
+    {
+      "id": 73,
+      "question": "Scarcely had he entered than it began to rain. The error is the use of:",
+      "options": ["Scarcely", "had he entered", "than", "it began to rain"],
+      "correct": "than"
+    },
+    {
+      "id": 74,
+      "question": "The linker 'notwithstanding' functions primarily as a/an:",
+      "options": ["Adverb of time", "Subordinating conjunction of reason", "Preposition/Conjunctive Adverb of concession", "Coordinating conjunction"],
+      "correct": "Preposition/Conjunctive Adverb of concession"
+    },
+    {
+      "id": 75,
+      "question": "The word 'however' when used at the beginning of a clause to introduce a contrast is a:",
+      "options": ["Coordinating conjunction", "Conjunctive Adverb", "Subordinating conjunction", "Preposition"],
+      "correct": "Conjunctive Adverb"
+    },
+    {
+      "id": 76,
+      "question": "The linker 'on condition that' is primarily used to express:",
+      "options": ["Time", "Result", "Condition", "Concession"],
+      "correct": "Condition"
+    },
+    {
+      "id": 77,
+      "question": "The word 'like' in 'He spoke like a scholar' is a/an:",
+      "options": ["Adverb", "Verb", "Preposition", "Adjective"],
+      "correct": "Preposition"
+    },
+    {
+      "id": 78,
+      "question": "Which of the following linkers introduces a clause of result?",
+      "options": ["so that", "in order that", "lest", "consequently"],
+      "correct": "consequently"
+    },
+    {
+      "id": 79,
+      "question": "The word 'well' in 'She is now well' is a/an:",
+      "options": ["Adverb", "Noun", "Adjective", "Interjection"],
+      "correct": "Adjective"
+    },
+    {
+      "id": 80,
+      "question": "The sentence 'He is as good, if not better than his brother' has an error in the phrase:",
+      "options": ["He is as good", "if not better", "than his brother", "No error"],
+      "correct": "He is as good"
+    },
+    {
+      "id": 81,
+      "question": "The word 'after' in 'The period after the war' is a/an:",
+      "options": ["Adverb", "Conjunction", "Preposition", "Adjective"],
+      "correct": "Preposition"
+    },
+    {
+      "id": 82,
+      "question": "The word 'yet' in 'Yet another problem arose' is a/an:",
+      "options": ["Conjunction", "Adverb", "Interjection", "Preposition"],
+      "correct": "Adverb"
+    },
+    {
+      "id": 83,
+      "question": "The word 'but' in 'It is nothing but a dream' is a/an:",
+      "options": ["Conjunction", "Adverb", "Preposition", "Interjection"],
+      "correct": "Preposition"
+    },
+    {
+      "id": 84,
+      "question": "The word 'for' in 'We waited, for the train was late' is a/an:",
+      "options": ["Preposition", "Adverb", "Coordinating Conjunction", "Subordinating Conjunction"],
+      "correct": "Coordinating Conjunction"
+    },
+    {
+      "id": 85,
+      "question": "The word 'what' in 'What time is it?' is a/an:",
+      "options": ["Interrogative Pronoun", "Relative Pronoun", "Interrogative Adjective", "Adverb"],
+      "correct": "Interrogative Adjective"
+    },
+    {
+      "id": 86,
+      "question": "The word 'like' in 'You should work like I do' is a/an:",
+      "options": ["Preposition", "Adverb", "Conjunction", "Adjective"],
+      "correct": "Conjunction"
+    },
+    {
+      "id": 87,
+      "question": "The Verb form of the Noun 'price' is:",
+      "options": ["pricing", "price", "priceless", "precious"],
+      "correct": "price"
+    },
+    {
+      "id": 88,
+      "question": "The word 'all' in 'All were present' is a/an:",
+      "options": ["Adjective", "Adverb", "Pronoun", "Conjunction"],
+      "correct": "Pronoun"
+    },
+    {
+      "id": 89,
+      "question": "The structure 'The more, the merrier' is an example of:",
+      "options": ["Comparative with a preposition", "Double comparative (correlative)", "Superlative idiom", "Subordinating adverb"],
+      "correct": "Double comparative (correlative)"
+    },
+    {
+      "id": 90,
+      "question": "The word 'above' in 'The above remarks are true' is a/an:",
+      "options": ["Adverb", "Preposition", "Adjective", "Noun"],
+      "correct": "Adjective"
+    },
+    {
+      "id": 91,
+      "question": "What is the Adjective form of the Noun 'coward'?",
+      "options": ["cowardly", "cowardliness", "cowardice", "cowardism"],
+      "correct": "cowardly"
+    },
+    {
+      "id": 92,
+      "question": "Which of the following linkers implies inversion (change in normal word order)?",
+      "options": ["In case", "Lest", "No sooner", "As soon as"],
+      "correct": "No sooner"
+    },
+    {
+      "id": 93,
+      "question": "The word 'but' in 'She is but a child' is a/an:",
+      "options": ["Conjunction", "Preposition", "Adverb", "Interjection"],
+      "correct": "Adverb"
+    },
+    {
+      "id": 94,
+      "question": "The word 'like' in 'He likes to sing' is a/an:",
+      "options": ["Adverb", "Preposition", "Verb", "Adjective"],
+      "correct": "Verb"
+    }
+  ]
 
-  {
-    "id": 1,
-    "question": "'তাহারেই পড়ে মনে' কবিতায় কবির ব্যক্তিজীবনের কোন দিকটি প্রতিফলিত হয়েছে?",
-    "options": [
-      "নিষ্ক্রিয়তা",
-      "দুঃখময়তা",
-      "আচ্ছন্নতা",
-      "অনুভূতিহীনতা"
-    ],
-    "correct": "দুঃখময়তা"
-  },
-  {
-    "id": 2,
-    "question": "'প্রতিদান' কবিতাটি কোন কাব্যগ্রন্থ থেকে সংকলিত?",
-    "options": [
-      "ধানখেত",
-      "বালুচর",
-      "রাখালি",
-      "রঙিলা নায়ের মাঝি"
-    ],
-    "correct": "বালুচর"
-  },
-  {
-    "id": 3,
-    "question": "'অপরিচিতা' গল্পে কোন বয়সটা না দৈর্ঘ্যে না গুণে বড়?",
-    "options": [
-      "সাতাশ বছর",
-      "উনিশ বছর",
-      "ছাব্বিশ বছর",
-      "তেইশ বছর"
-    ],
-    "correct": "সাতাশ বছর"
-  },
-  {
-    "id": 4,
-    "question": "নিচের কোন শব্দটি তদ্ভব নয় ?",
-    "options": [
-      "বউ",
-      "মা",
-      "কানু",
-      "খোকা"
-    ],
-    "correct": "খোকা"
-  },
-  {
-    "id": 5,
-    "question": "“অর্বাচীন” শব্দের সমার্থক কোনটি ?",
-    "options": [
-      "বিসর্জন",
-      "অতীন্দ্রিয়",
-      "প্রাচীন",
-      "মূর্খ"
-    ],
-    "correct": "মূর্খ"
-  },
-  {
-    "id": 6,
-    "question": "বাক্যের ক্ষুদ্রতম একক কোনটি ?",
-    "options": [
-      "শব্দ",
-      "বর্ণ",
-      "ধ্বনি",
-      "কারক"
-    ],
-    "correct": "শব্দ"
-  },
-  {
-    "id": 7,
-    "question": "”উদ্বাস্তু” কোন সমাসের উদাহরণ ?",
-    "options": [
-      "অলুক তৎপুরুষ",
-      "বহুব্রীহি",
-      "অব্যয়ীভাব",
-      "প্রাদি"
-    ],
-    "correct": "বহুব্রীহি"
-  },
-  {
-    "id": 8,
-    "question": "The news shocked him. The best passive form will be-",
-    "options": [
-      "He was shocked by the news",
-      "He was shocked to the news",
-      "He is shocked to hear the news",
-      "He was shocked at the news"
-    ],
-    "correct": "He was shocked at the news"
-  },
-  {
-    "id": 9,
-    "question": "Select the pair that best expresses a relationship similar to that expressed in the original pair. SUBMISSIVE: DISOBEDIENT",
-    "options": [
-      "Comply : Confirm",
-      "Need: Acquiesce",
-      "Observe: Defy",
-      "Obey: Hearken to"
-    ],
-    "correct": "Observe: Defy"
-  },
-  {
-    "id": 10,
-    "question": "What is the synonym of \"incite\"?",
-    "options": [
-      "Instigate",
-      "Permit",
-      "Urge",
-      "Deceive"
-    ],
-    "correct": "Instigate"
-  },
-  {
-    "id": 11,
-    "question": "The manager's \"Laconic\" dismissal letter left the fired employees feeling angry and hurt. What is the meaning of the quotation word \"laconic\"?",
-    "options": [
-      "Verbose",
-      "Concise",
-      "Voluble",
-      "Garrulous"
-    ],
-    "correct": "Concise"
-  },
-  {
-    "id": 12,
-    "question": "The Antonym of \"honorary\" is-",
-    "options": [
-      "Literary",
-      "Honorable",
-      "Salaried",
-      "Official"
-    ],
-    "correct": "Salaried"
-  },
-  {
-    "id": 13,
-    "question": "Bangladesh Folk Arts and Crafts Museum is located in-",
-    "options": [
-      "Munshiganj",
-      "Narayanganj",
-      "Mymensingh",
-      "Sonargaon"
-    ],
-    "correct": "Sonargaon"
-  },
-  {
-    "id": 14,
-    "question": "First captain of Bangladesh Test Cricket Team was-",
-    "options": [
-      "Naimur Rahman Durjoy",
-      "Akram Khan",
-      "Aminul Islam Bulbul",
-      "Khaled Mashud"
-    ],
-    "correct": "Naimur Rahman Durjoy"
-  },
-  {
-    "id": 15,
-    "question": "Smallest Union of Bangladesh is in-",
-    "options": [
-      "Saint Martin's",
-      "Hili",
-      "Lalpur",
-      "Hazipur"
-    ],
-    "correct": "Hazipur"
-  },
-  {
-    "id": 16,
-    "question": "The archaeological site 'Shitalokkha Bhaban' is located in-",
-    "options": [
-      "Paharpur",
-      "Mahasthangarh",
-      "Mainamati",
-      "Sonargaon"
-    ],
-    "correct": "Mainamati"
-  },
-  {
-    "id": 17,
-    "question": "The number of reserve seats for female members in Parliament in Bangladesh increased from 45 to 50 in the ... amendment.",
-    "options": [
-      "13th",
-      "15th",
-      "14th",
-      "16th"
-    ],
-    "correct": "15th"
-  },
-  {
-    "id": 18,
-    "question": "Who is the first centurion of Bangladesh in ODI Cricket?",
-    "options": [
-      "Tamim Iqbal",
-      "Habibul Bashar",
-      "Akram Khan",
-      "Mehrab Hossain"
-    ],
-    "correct": "Mehrab Hossain"
-  },
-  {
-    "id": 19,
-    "question": "Sovereignty over Hong Kong was transferred from United Kingdom to China in-",
-    "options": [
-      "1997",
-      "1998",
-      "1996",
-      "1978"
-    ],
-    "correct": "1997"
-  },
-  {
-    "id": 20,
-    "question": "WMD stands for-",
-    "options": [
-      "Weapons of Mass Destruction",
-      "Weapons of Maximum Destruction",
-      "Weapons of Mass Deterioration",
-      "Weapons of Mass Dissemination"
-    ],
-    "correct": "Weapons of Mass Destruction"
-  },
-  {
-    "id": 21,
-    "question": "The famous city 'Palmyra' is located in-",
-    "options": [
-      "Sudan",
-      "Egypt",
-      "Syria",
-      "Libya"
-    ],
-    "correct": "Syria"
-  },
 
-  {
-    "id": 23,
-    "question": "Naguib Mahfuz is famous as a/an-",
-    "options": [
-      "Novelist",
-      "Journalist",
-      "Artist",
-      "Poet"
-    ],
-    "correct": "Novelist"
-  },
-  {
-    "id": 24,
-    "question": "'Statue of Democracy' is located in-",
-    "options": [
-      "UK",
-      "Hong Kong",
-      "USA",
-      "Japan"
-    ],
-    "correct": "Hong Kong"
-  },
-  {
-    "id": 25,
-    "question": "Who won the Men's Singles Championship in Wimbledon 2025?",
-    "options": [
-      "Roger Federer",
-      "Novak Djokovic",
-      "Rafael Nadal",
-      "Jannik Sinner"
-    ],
-    "correct": "Jannik Sinner"
-  },
-  {
-    "id": 26,
-    "question": "Where is the Headquarters of Arab League?",
-    "options": [
-      "Cairo",
-      "Amman",
-      "Tehran",
-      "Jeddah"
-    ],
-    "correct": "Cairo"
-  },
-  {
-    "id": 27,
-    "question": "Which word is the antonym of \"benevolent\"?",
-    "options": [
-      "Generous",
-      "Kind",
-      "Malicious",
-      "Altruistic"
-    ],
-    "correct": "Malicious"
-  },
-  {
-    "id": 28,
-    "question": "Complete the sentence with the correct form of the verb: \"I wish I ________ to the party last night; it sounds like it was fun.\"",
-    "options": [
-      "went",
-      "would go",
-      "had gone",
-      "was going"
-    ],
-    "correct": "had gone"
-  },
-  {
-    "id": 29,
-    "question": "What is the technical term for a word that imitates the natural sound of something (e.g., \"buzz\" or \"hiss\")?",
-    "options": [
-      "Alliteration",
-      "Onomatopoeia",
-      "Hyperbole",
-      "Paradox"
-    ],
-    "correct": "Onomatopoeia"
-  },
-  {
-    "id": 30,
-    "question": "A clock, when seen from the mirror, shows time 7:20. What is the real time in the clock?",
-    "options": [
-      "4:20",
-      "7:20",
-      "4:40",
-      "3:50"
-    ],
-    "correct": "4:40"
-  },
-  {
-    "id": 31,
-    "question": "Choose the figure that replaces the question mark. The shapes on the left side of the arrow are related in the same way as the shapes on the right side. \n▲ → ■; ⬟ → ?",
-    "options": [
-      "⬢",
-      "●",
-      "▢",
-      "◇"
-    ],
-    "correct": "⬢"
-  },
-  {
-    "id": 32,
-    "question": "Current Prime Minister of Australia is-",
-    "options": [
-      "Scott Morrison",
-      "Tony Abbott",
-      "Anthony Albanese",
-      "Malcolm Turnbull"
-    ],
-    "correct": "Anthony Albanese"
-  },
-  {
-    "id": 33,
-    "question": "A jacket costs $80. If its price is increased by 15%, what is the new price?",
-    "options": [
-      "$89",
-      "$92",
-      "$94",
-      "$96"
-    ],
-    "correct": "$92"
-  },
-  {
-    "id": 34,
-    "question": "What is the next term in the series: 1, 4, 9, 16, 25, ...?",
-    "options": [
-      "30",
-      "32",
-      "36",
-      "49"
-    ],
-    "correct": "36"
-  },
-  {
-    "id": 35,
-    "question": "The word 'Water' is a:",
-    "options": [
-      "Proper Noun",
-      "Common Noun",
-      "Collective Noun",
-      "Material Noun"
-    ],
-    "correct": "Material Noun"
-  },
-  {
-    "id": 36,
-    "question": "The singular form of 'Axes' is:",
-    "options": [
-      "Axiom",
-      "Axis",
-      "Axus",
-      "Ax"
-    ],
-    "correct": "Axis"
-  },
-  {
-    "id": 37,
-    "question": "She has ___ furniture in her small apartment.",
-    "options": [
-      "many",
-      "a few",
-      "much",
-      "numerous"
-    ],
-    "correct": "much"
-  },
-  {
-    "id": 38,
-    "question": "We have ___ time left, so we must hurry.",
-    "options": [
-      "a little",
-      "little",
-      "a lot of",
-      "plenty of"
-    ],
-    "correct": "little"
-  },
-  {
-    "id": 39,
-    "question": "The vase ___ by the child was expensive.",
-    "options": [
-      "break",
-      "breaking",
-      "broken",
-      "broke"
-    ],
-    "correct": "broken"
-  },
-  {
-    "id": 40,
-    "question": "She spoke to my brother and __.",
-    "options": [
-      "I",
-      "me",
-      "myself",
-      "mine"
-    ],
-    "correct": "me"
-  },
-  {
-    "id": 41,
-    "question": "The correct sequence in a positive sentence is:",
-    "options": [
-      "I, you, and he",
-      "He, you, and I",
-      "You, he, and I",
-      "I, he, and you"
-    ],
-    "correct": "You, he, and I"
-  },
-  {
-    "id": 42,
-    "question": "In 'a moving story', 'moving' is a:",
-    "options": [
-      "Gerund",
-      "Infinitive",
-      "Present Participle",
-      "Main Verb"
-    ],
-    "correct": "Present Participle"
-  },
-  {
-    "id": 43,
-    "question": "There were ___ students who passed the difficult exam.",
-    "options": [
-      "a little",
-      "little",
-      "few",
-      "a few"
-    ],
-    "correct": "few"
-  },
-  {
-    "id": 44,
-    "question": "Which sentence is correct?",
-    "options": [
-      "I need a few piece of advice.",
-      "I need a piece of advice.",
-      "I need many advices.",
-      "I need a little advices."
-    ],
-    "correct": "I need a piece of advice."
-  },
-  {
-    "id": 45,
-    "question": "___ of these two applicants is better qualified?",
-    "options": [
-      "Who",
-      "Whom",
-      "Whose",
-      "Which"
-    ],
-    "correct": "Which"
-  },
-  {
-    "id": 46,
-    "question": "Which of these words is often treated as plural (unless context specifies otherwise)?",
-    "options": [
-      "Information",
-      "Furniture",
-      "Trousers",
-      "Gold"
-    ],
-    "correct": "Trousers"
-  },
-  {
-    "id": 47,
-    "question": "Which noun refers to a group of archives?",
-    "options": [
-      "Archipelago",
-      "Library",
-      "Archive",
-      "Collection"
-    ],
-    "correct": "Archive"
-  },
-  {
-    "id": 48,
-    "question": "I have ___ hope of winning the lottery.",
-    "options": [
-      "few",
-      "a few",
-      "little",
-      "a little"
-    ],
-    "correct": "little"
-  },
-  {
-    "id": 49,
-    "question": "Neither the students nor the teacher ___ present.",
-    "options": [
-      "are",
-      "is",
-      "were",
-      "have been"
-    ],
-    "correct": "is"
-  },
-  {
-    "id": 50,
-    "question": "Which of the following is singular?",
-    "options": [
-      "Oases",
-      "Alumni",
-      "Crisis",
-      "Lice"
-    ],
-    "correct": "Crisis"
-  },
-  {
-    "id": 51,
-    "question": "The car belongs to ___. (us)",
-    "options": [
-      "our",
-      "ours",
-      "we",
-      "us"
-    ],
-    "correct": "ours"
-  },
-  {
-    "id": 52,
-    "question": "We bought several ___ to decorate the room.",
-    "options": [
-      "furnitures",
-      "pieces of furniture",
-      "machineries",
-      "equipments"
-    ],
-    "correct": "pieces of furniture"
-  },
-  {
-    "id": 53,
-    "question": "The underlined word in 'The crying baby woke up' is a/an:",
-    "options": [
-      "Gerund",
-      "Infinitive",
-      "Past Participle",
-      "Present Participle"
-    ],
-    "correct": "Present Participle"
-  },
-  {
-    "id": 54,
-    "question": "The train ___ at the station is late.",
-    "options": [
-      "arrive",
-      "arrived",
-      "arriving",
-      "to arrive"
-    ],
-    "correct": "arriving"
-  },
-  {
-    "id": 55,
-    "question": "The masculine gender of 'Roe' is:",
-    "options": [
-      "Stag",
-      "Hart",
-      "Buck",
-      "All of the above"
-    ],
-    "correct": "All of the above"
-  },
-  {
-    "id": 56,
-    "question": "Which phrase is correct?",
-    "options": [
-      "An item of stationary",
-      "A piece of information",
-      "Many furnitures",
-      "Much advices"
-    ],
-    "correct": "A piece of information"
-  },
-  {
-    "id": 57,
-    "question": "I drank ___ water than my friend did.",
-    "options": [
-      "fewer",
-      "less",
-      "many",
-      "more"
-    ],
-    "correct": "less"
-  },
-  {
-    "id": 58,
-    "question": "Who is at the door? It is __.",
-    "options": [
-      "me",
-      "I",
-      "mine",
-      "myself"
-    ],
-    "correct": "I"
-  },
-  {
-    "id": 59,
-    "question": "A group of wolves is called a:",
-    "options": [
-      "Herd",
-      "Flock",
-      "Pride",
-      "Pack"
-    ],
-    "correct": "Pack"
-  },
-  {
-    "id": 60,
-    "question": "Which of these is the plural of 'Index'?",
-    "options": [
-      "Indexes",
-      "Indices",
-      "Indexus",
-      "Both a and b"
-    ],
-    "correct": "Both a and b"
-  },
-  {
-    "id": 61,
-    "question": "There was no secret between ___ and her.",
-    "options": [
-      "I",
-      "me",
-      "mine",
-      "myself"
-    ],
-    "correct": "me"
-  },
-  {
-    "id": 62,
-    "question": "They had ___ money, so they couldn't buy food.",
-    "options": [
-      "a little",
-      "little",
-      "few",
-      "a few"
-    ],
-    "correct": "little"
-  },
-  {
-    "id": 63,
-    "question": "I am worried because I have ___ money in my bank account.",
-    "options": [
-      "a little",
-      "little",
-      "a few",
-      "few"
-    ],
-    "correct": "little"
-  },
-  {
-    "id": 64,
-    "question": "A ___ of cattle is grazing in the field.",
-    "options": [
-      "Flock",
-      "School",
-      "Herd",
-      "Swarm"
-    ],
-    "correct": "Herd"
-  },
-  {
-    "id": 65,
-    "question": "Which sentence is correct?",
-    "options": [
-      "There is much peoples here.",
-      "We don't have many rice.",
-      "I have a few items of news.",
-      "He needs a little help."
-    ],
-    "correct": "He needs a little help."
-  },
-  {
-    "id": 66,
-    "question": "They are much faster than __.",
-    "options": [
-      "we",
-      "us",
-      "our",
-      "ourselves"
-    ],
-    "correct": "we"
-  },
-  {
-    "id": 67,
-    "question": "I object to ___ treated like a child.",
-    "options": [
-      "be",
-      "being",
-      "to be",
-      "am"
-    ],
-    "correct": "being"
-  },
-  {
-    "id": 68,
-    "question": "Which one is typically considered singular?",
-    "options": [
-      "Criteria",
-      "Data",
-      "Spectacles",
-      "Ethics"
-    ],
-    "correct": "Ethics"
-  },
-  {
-    "id": 69,
-    "question": "The team gave an excellent performance; ___ members were praised.",
-    "options": [
-      "it's",
-      "it",
-      "their",
-      "its"
-    ],
-    "correct": "their"
-  },
-  {
-    "id": 70,
-    "question": "It was a truly **exhausting** journey. 'Exhausting' is a/an:",
-    "options": [
-      "Past Participle",
-      "Gerund",
-      "Present Participle",
-      "Infinitive"
-    ],
-    "correct": "Present Participle"
-  },
-  {
-    "id": 71,
-    "question": "___ few friends he has are very loyal.",
-    "options": [
-      "A",
-      "The",
-      "Any",
-      "Some"
-    ],
-    "correct": "The"
-  },
-  {
-    "id": 72,
-    "question": "They **will arrive** tomorrow. The underlined phrase is a/an:",
-    "options": [
-      "Adverb",
-      "Verb",
-      "Prepositional Phrase",
-      "Noun Phrase"
-    ],
-    "correct": "Verb"
-  },
-  {
-    "id": 73,
-    "question": "The best sentence is:",
-    "options": [
-      "It was us who made the mistake.",
-      "It was we who made the mistake.",
-      "It were us who made the mistake.",
-      "It were we who made the mistake."
-    ],
-    "correct": "It was we who made the mistake."
-  },
-  {
-    "id": 74,
-    "question": "The policeman spoke sternly to John and __.",
-    "options": [
-      "I",
-      "me",
-      "myself",
-      "he"
-    ],
-    "correct": "me"
-  },
-  {
-    "id": 75,
-    "question": "The word **'having done'** is an example of a:",
-    "options": [
-      "Present Participle",
-      "Gerund",
-      "Perfect Participle",
-      "Infinitive"
-    ],
-    "correct": "Perfect Participle"
-  },
-  {
-    "id": 76,
-    "question": "The feminine gender of 'Baron' is:",
-    "options": [
-      "Duchess",
-      "Countess",
-      "Baroness",
-      "Empress"
-    ],
-    "correct": "Baroness"
-  },
-  {
-    "id": 77,
-    "question": "Which of these pairs is correct?",
-    "options": [
-      "Phenomena - Phenomenon",
-      "Crisis - Crises",
-      "Data - Datum",
-      "Alumnus - Alumna"
-    ],
-    "correct": "Crisis - Crises"
-  },
-  {
-    "id": 78,
-    "question": "The manager **herself** signed the cheque. The underlined word is a/an:",
-    "options": [
-      "Objective Pronoun",
-      "Reflexive Pronoun",
-      "Intensive (Emphatic) Pronoun",
-      "Possessive Pronoun"
-    ],
-    "correct": "Intensive (Emphatic) Pronoun"
-  },
-  {
-    "id": 79,
-    "question": "The word 'Mountain' is a:",
-    "options": [
-      "Proper Noun",
-      "Collective Noun",
-      "Common Noun",
-      "Material Noun"
-    ],
-    "correct": "Common Noun"
-  },
-  {
-    "id": 80,
-    "question": "This is the issue **that** concerns us. The underlined word is a/an:",
-    "options": [
-      "Demonstrative Pronoun",
-      "Relative Pronoun",
-      "Subordinating Conjunction",
-      "Interrogative Pronoun"
-    ],
-    "correct": "Relative Pronoun"
-  },
-  {
-    "id": 81,
-    "question": "Which word is the plural form?",
-    "options": [
-      "Fungus",
-      "Focus",
-      "Axes",
-      "Radius"
-    ],
-    "correct": "Axes"
-  },
-  {
-    "id": 82,
-    "question": "Which of the following phrases is grammatically correct?",
-    "options": [
-      "A few luggages",
-      "Little peoples",
-      "Much money",
-      "Many furnitures"
-    ],
-    "correct": "Much money"
-  },
-  {
-    "id": 83,
-    "question": "What is the feminine gender of 'Gander'?",
-    "options": [
-      "Drake",
-      "Goose",
-      "Doe",
-      "Vixen"
-    ],
-    "correct": "Goose"
-  },
-  {
-    "id": 84,
-    "question": "The plural of 'Formula' is:",
-    "options": [
-      "Formulas",
-      "Formulae",
-      "Formuli",
-      "Both a and b"
-    ],
-    "correct": "Both a and b"
-  },
-  {
-    "id": 85,
-    "question": "The winner was announced to be __.",
-    "options": [
-      "he",
-      "him",
-      "his",
-      "them"
-    ],
-    "correct": "he"
-  },
-  {
-    "id": 86,
-    "question": "Which of these words is often treated as singular and uncountable?",
-    "options": [
-      "Goods",
-      "Tidings",
-      "News",
-      "People"
-    ],
-    "correct": "News"
-  },
-  {
-    "id": 87,
-    "question": "The feminine gender of 'Buck' is:",
-    "options": [
-      "Stag",
-      "Doe",
-      "Mare",
-      "Lioness"
-    ],
-    "correct": "Doe"
-  },
-  {
-    "id": 88,
-    "question": "What is the feminine gender of 'Alumnus'?",
-    "options": [
-      "Alumni",
-      "Alumna",
-      "Alumnas",
-      "Alumnae"
-    ],
-    "correct": "Alumna"
-  },
-  {
-    "id": 89,
-    "question": "The feminine gender of 'Earl' is:",
-    "options": [
-      "Countess",
-      "Baroness",
-      "Duchess",
-      "Count"
-    ],
-    "correct": "Countess"
-  },
-
-];
 
 export default Revision;

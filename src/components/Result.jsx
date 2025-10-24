@@ -30,6 +30,7 @@ export default function Result({
   const [history, setHistory] = useState([]);
   const [showHistory, setShowHistory] = useState(false);
   const [loadingHistory, setLoadingHistory] = useState(false);
+const [selectedDataIndex, setSelectedDataIndex] = useState(null);
   const [confetti, setConfetti] = useState(false);
   const [filter, setFilter] = useState("all");
   const [progress, setProgress] = useState(0);
@@ -559,93 +560,126 @@ const fetchHistory = async () => {
         </ul>
       )}
 
+
+
       {/* Show History */}
 {showHistory && history.length > 0 && (
-  <div className="mt-6 bg-gray-50 p-4 rounded-xl shadow-inner overflow-x-auto">
-    <h3 className="text-xl font-bold mb-4 text-center">All Previous Attempts</h3>
+  <div className="mt-6 bg-gray-50 p-4 rounded-xl shadow-inner overflow-x-auto">
+    <h3 className="text-xl font-bold mb-4 text-center">All Previous Attempts</h3>
 
-    {/* Line Chart */}
-    <div className="mb-6 w-full h-64">
-      <ResponsiveContainer width="100%" height="100%">
-        <LineChart data={history}>
-          <CartesianGrid strokeDasharray="3 3" />
-          <XAxis 
-            dataKey="timestamp" 
-            tickFormatter={(str) => new Date(str).toLocaleDateString(undefined, { month: 'short', day: 'numeric' })}
-            interval="preserveStartEnd"
-          />
-         <YAxis 
-  domain={[0, 100]}
-  label={{ 
-    value: 'Percentage', 
-    angle: -90, 
-    position: 'insideLeft', 
-    style: { textAnchor: 'middle', fill: '#374151', fontWeight: 'bold' } 
-  }}
-/>
+    {/* Line Chart */}
+    <div className="mb-6 w-full h-64">
+      <ResponsiveContainer width="100%" height="100%">
+        <LineChart data={history}>
+          <CartesianGrid strokeDasharray="3 3" />
+          <XAxis 
+            dataKey="timestamp" 
+            tickFormatter={(str) => new Date(str).toLocaleDateString(undefined, { month: 'short', day: 'numeric' })}
+            interval="preserveStartEnd"
+          />
+          <YAxis 
+            domain={[0, 100]}
+            label={{ 
+              value: 'Percentage', 
+              angle: -90, 
+              position: 'insideLeft', 
+              style: { textAnchor: 'middle', fill: '#374151', fontWeight: 'bold' } 
+            }}
+          />
+          <Tooltip 
+            content={({ payload }) => {
+              if (!payload || payload.length === 0) return null;
+              const data = payload[0].payload;
+              return (
+                <div className="bg-white p-2 border rounded shadow text-sm">
+                  <div><strong>Date:</strong> {new Date(data.timestamp).toLocaleString()}</div>
+                  <div><strong>Topic:</strong> {data.topic}</div>
+                  <div><strong>Score:</strong> {data.correct + data.wrong + data.notAnswered ? `${data.score}/${data.correct + data.wrong + data.notAnswered}` : data.score}</div>
+                  <div><strong>Percentage:</strong> {(parseFloat(data.percentage) * 100).toFixed(2)}%</div>
+                </div>
+              );
+            }}
+          />
+          <Legend />
+          <Line 
+            type="monotone" 
+            dataKey={(h) => {
+              const percentage = parseFloat(h.percentage) * 100;
+              return isNaN(percentage) ? 0 : percentage;
+            }}          
+            stroke="#4f46e5" 
+            strokeWidth={2} 
+            activeDot={{ r: 6 }}
+            name="Score %"
+            dot={(props) => {
+              const { cx, cy, index, value } = props; // 'index' is provided by Recharts for data point position in the array
+              if (isNaN(cx) || isNaN(cy) || value == null) return null; // Skip invalid points
 
-          <Tooltip 
-            content={({ payload }) => {
-              if (!payload || payload.length === 0) return null;
-              const data = payload[0].payload;
-              return (
-                <div className="bg-white p-2 border rounded shadow text-sm">
-                  <div><strong>Date:</strong> {new Date(data.timestamp).toLocaleString()}</div>
-                  <div><strong>Topic:</strong> {data.topic}</div>
-                  <div><strong>Score:</strong> {data.correct + data.wrong + data.notAnswered ? `${data.score}/${data.correct + data.wrong + data.notAnswered}` : data.score}</div>
-                  <div><strong>Percentage:</strong> {(parseFloat(data.percentage) * 100).toFixed(2)}%</div>
-                </div>
-              );
-            }}
-          />
-          <Legend />
-          <Line 
-            type="monotone" 
-            dataKey={(h) => h.percentage * 100}           
-            stroke="#4f46e5" 
-            strokeWidth={2} 
-            dot={(props) => {
-              const { cx, cy, payload } = props;
-              if (parseFloat(payload.percentage) >= 0.80) {
-                return <circle key={`dot-${cx}`} cx={cx} cy={cy} r={6} fill="#34d399" stroke="#10b981" strokeWidth={2} />;
-              }
-              return <circle key={`dot-${cx}`} cx={cx} cy={cy} r={4} fill="#4f46e5" />;
-            }}
-            activeDot={{ r: 6 }} 
-            name="Score %" 
-          />
-        </LineChart>
-      </ResponsiveContainer>
-    </div>
+              const isSelected = index === selectedDataIndex;
+              const isHighScore = parseFloat(history[index]?.percentage || 0) >= 0.80;
 
-    {/* Table */}
-    <table className="min-w-full text-center border-collapse">
-      <thead>
-        <tr>
-          <th className="border px-2 py-1">Date</th>
-          <th className="border px-2 py-1">Topic</th>
-          <th className="border px-2 py-1">Score</th>
-          <th className="border px-2 py-1">Correct</th>
-          <th className="border px-2 py-1">Wrong</th>
-          <th className="border px-2 py-1">Not Answered</th>
-          <th className="border px-2 py-1">Percentage</th>
-        </tr>
-      </thead>
-      <tbody>
-        {history.map((h, idx) => (
-          <tr key={idx}>
-            <td className="border px-2 py-1">{new Date(h.timestamp).toLocaleDateString()}</td>
-            <td className="border px-2 py-1">{h.topic}</td>
-            <td className="border px-2 py-1">{`${parseFloat(h.score).toFixed(0)}/${h.correct + h.wrong + h.notAnswered}`}</td>
-            <td className="border px-2 py-1 text-green-700 font-bold">{h.correct}</td>
-            <td className="border px-2 py-1 text-red-700 font-bold">{h.wrong}</td>
-            <td className="border px-2 py-1 text-gray-700 font-bold">{h.notAnswered}</td>
-            <td className="border px-2 py-1">{(parseFloat(h.percentage) * 100).toFixed(2)}%</td>
-          </tr>
-        ))}
-      </tbody>
-    </table>
-  </div>
+              const handleDotClick = () => {
+                console.log("Clicked dot at index:", index, "with payload:", history[index]);
+                setSelectedDataIndex(prev => prev === index ? null : index);
+              };
+
+              return (
+                <g onClick={handleDotClick} style={{ cursor: 'pointer' }}>
+                  <circle 
+                    cx={cx} 
+                    cy={cy} 
+                    r={isSelected ? 8 : (isHighScore ? 6 : 4)} 
+                    fill={isHighScore ? "#34d399" : "#4f46e5"} 
+                    stroke={isSelected ? "#ffffff" : (isHighScore ? "#10b981" : "none")} 
+                    strokeWidth={isSelected ? 3 : (isHighScore ? 2 : 0)} 
+                  />
+                  {/* Optional: Invisible larger hit area for easier clicking */}
+                  <circle 
+                    cx={cx} 
+                    cy={cy} 
+                    r={10} 
+                    fill="transparent" 
+                    stroke="none" 
+                  />
+                </g>
+              );
+            }}
+          />
+        </LineChart>
+      </ResponsiveContainer>
+    </div>
+
+    {/* Table */}
+    <table className="min-w-full text-center border-collapse">
+      <thead>
+        <tr>
+          <th className="border px-2 py-1">Date</th>
+          <th className="border px-2 py-1">Topic</th>
+          <th className="border px-2 py-1">Score</th>
+          <th className="border px-2 py-1">Correct</th>
+          <th className="border px-2 py-1">Wrong</th>
+          <th className="border px-2 py-1">Not Answered</th>
+          <th className="border px-2 py-1">Percentage</th>
+        </tr>
+      </thead>
+      <tbody>
+        {history.map((h, idx) => (
+          <tr 
+            key={idx} 
+            className={`transition-colors duration-200 ${selectedDataIndex === idx ? 'bg-blue-200 font-semibold' : ''}`}
+          >
+            <td className="border px-2 py-1">{new Date(h.timestamp).toLocaleDateString()}</td>
+            <td className="border px-2 py-1">{h.topic}</td>
+            <td className="border px-2 py-1">{`${parseFloat(h.score).toFixed(0)}/${h.correct + h.wrong + h.notAnswered}`}</td>
+            <td className="border px-2 py-1 text-green-700 font-bold">{h.correct}</td>
+            <td className="border px-2 py-1 text-red-700 font-bold">{h.wrong}</td>
+            <td className="border px-2 py-1 text-gray-700 font-bold">{h.notAnswered}</td>
+            <td className="border px-2 py-1">{(parseFloat(h.percentage) * 100).toFixed(2)}%</td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  </div>
 )}
 
 

@@ -3,7 +3,7 @@ import StartForm from "./components/StartForm";
 import Quiz from "./components/Quiz";
 import Result from "./components/Result";
 
-// 🧩 Import question sets
+// 🧩 Local question sets
 import EnglishQuestions from "./questions/EnglishQuestions";
 import BanglaQuestions from "./questions/BanglaQuestions";
 import BangladeshAffairs from "./questions/BangladeshAffairs";
@@ -15,7 +15,7 @@ import Revision from "./questions/Revision";
 
 export default function App() {
   const [step, setStep] = useState("start");
-  const [user, setUser] = useState({ name: "", expectedScore: "", topic: "" });
+  const [user, setUser] = useState({ name: "", expectedScore: "", topic: "", mode: "normal" });
   const [questions, setQuestions] = useState([]);
   const [answers, setAnswers] = useState({});
   const [totalTime, setTotalTime] = useState(0);
@@ -25,24 +25,31 @@ export default function App() {
     Bangla: BanglaQuestions,
     "Bangladesh Affairs": BangladeshAffairs,
     "International Affairs": InternationalAffairs,
-   "Math & IQ": MathAndIQQuestions,
+    "Math & IQ": MathAndIQQuestions,
     "Current Affairs": CurrentAffairs,
     All: AllQuestions,
-    "Revise Mistakes": Revision
+    "Revise Mistakes": Revision,
   };
 
-// 🚀 Start Quiz
-function handleStart(name, expectedScore, totalTime, topic, totalQuestions, attemptMode = "normal") {
-  const selectedQuestions = topicsData[topic] || [];
+  // 🚀 Start Quiz
+  function handleStart(
+    name,
+    expectedScore,
+    totalTime,
+    topic,
+    totalQuestions,
+    attemptMode = "normal",
+    generatedQuestions = [] // for custom Gemini topics
+  ) {
+    const selectedQuestions = generatedQuestions.length
+      ? generatedQuestions
+      : (topicsData[topic] || []).slice(0, totalQuestions);
 
-  setUser({ name, expectedScore, topic, mode: attemptMode }); // save mode
-  setQuestions(selectedQuestions.slice(0, totalQuestions));
-  setTotalTime(totalTime);
-  setStep("quiz");
-}
-
-
-
+    setUser({ name, expectedScore, topic, mode: attemptMode });
+    setQuestions(selectedQuestions);
+    setTotalTime(totalTime);
+    setStep("quiz");
+  }
 
   // 📝 Submit Answers
   function handleSubmit(ans) {
@@ -51,13 +58,19 @@ function handleStart(name, expectedScore, totalTime, topic, totalQuestions, atte
   }
 
   // 🔄 Restart Quiz
-  function handleRestart() {
-    setStep("start");
-    setQuestions([]);
-    setAnswers({});
-    setUser({ name: "", expectedScore: "", topic: "" });
-    setTotalTime(0);
-  }
+function handleRestart(restartQuestions = null, attemptMode = "normal") {
+  setStep("start");
+  setQuestions(restartQuestions || []);
+  setAnswers({});
+  setUser(prev => ({
+    name: prev.name || "",
+    expectedScore: prev.expectedScore || "",
+    topic: prev.topic || "",
+    mode: attemptMode,
+  }));
+  setTotalTime(0);
+}
+
 
   return (
     <div className="p-6 max-w-3xl mx-auto">
@@ -72,18 +85,17 @@ function handleStart(name, expectedScore, totalTime, topic, totalQuestions, atte
         />
       )}
 
-  {step === "result" && (
-  <Result
-    name={user.name}
-    expectedScore={user.expectedScore}
-    questions={questions}
-    answers={answers}
-    onRestart={handleRestart}
-    topic={user.topic}
-    mode={user.mode} // <-- pass mode to Result
-  />
-)}
-
+      {step === "result" && (
+        <Result
+          name={user.name}
+          expectedScore={user.expectedScore}
+          questions={questions}
+          answers={answers}
+          onRestart={handleRestart}
+          topic={user.topic}
+          mode={user.mode}
+        />
+      )}
     </div>
   );
 }

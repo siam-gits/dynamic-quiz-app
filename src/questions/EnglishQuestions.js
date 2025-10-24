@@ -2,375 +2,657 @@ const EnglishQuestions =[
   {
     "id": 1,
     "type": "Identify Figure",
-    "question": "Identify the figure of speech: The city was a concrete jungle.",
-    "options": ["Simile", "Metaphor", "Oxymoron", "Irony"],
-    "correct": "Metaphor"
+    "question": "Identify the figure of speech: \"Hear the mellow wedding bells.\" (Focus on the 'e' vowel sound repetition)",
+    "options": ["Simile", "Consonance", "Assonance", "Alliteration"],
+    "correct": "Assonance"
   },
   {
     "id": 2,
     "type": "Choose the Correct Example",
-    "question": "Which sentence correctly exemplifies Metonymy?",
-    "options": ["He ran as fast as a cheetah.", "The Oval Office issued a statement. (Office representing the President)", "The silence was deafening.", "She wept buckets of tears."],
-    "correct": "The Oval Office issued a statement. (Office representing the President)"
+    "question": "Which sentence correctly exemplifies Consonance?",
+    "options": ["The sweet and sour candy.", "The wind whistled a sad tune.", "Peter Piper picked a peck of pickled peppers.", "The ship sailed past the mast."],
+    "correct": "The ship sailed past the mast."
   },
   {
     "id": 3,
     "type": "Identify Figure",
-    "question": "Identify the figure of speech: The sun smiled down on us.",
-    "options": ["Metaphor", "Personification", "Alliteration", "Synecdoche"],
-    "correct": "Personification"
+    "question": "Identify the figure of speech: \"Mankind must put an end to war—or war will put an end to mankind.\"",
+    "options": ["Antithesis", "Paradox", "Anaphora", "Antimetabole"],
+    "correct": "Antimetabole"
   },
   {
     "id": 4,
-    "type": "Identify Figure",
-    "question": "Identify the figure of speech: I've told you a million times!",
-    "options": ["Paradox", "Euphemism", "Hyperbole", "Litotes"],
-    "correct": "Hyperbole"
+    "type": "Choose the Correct Example",
+    "question": "Which sentence correctly exemplifies Zeugma?",
+    "options": ["She broke his car and his heart.", "The stars smiled down.", "The fire was not a little dangerous.", "He fought valiantly."],
+    "correct": "She broke his car and his heart."
   },
   {
     "id": 5,
-    "type": "Choose the Correct Example",
-    "question": "Which sentence correctly exemplifies Oxymoron?",
-    "options": ["The comedian’s routine was awfully funny.", "The baby cried all night long.", "The ship sailed smoothly through the water.", "The sword is a dangerous weapon."],
-    "correct": "The comedian’s routine was awfully funny."
+    "type": "Identify Figure",
+    "question": "Identify the figure of speech: \"The pen is mightier than the sword.\"",
+    "options": ["Simile", "Hyperbole", "Metonymy", "Antithesis"],
+    "correct": "Metonymy"
   },
   {
     "id": 6,
-    "type": "Identify Figure",
-    "question": "Identify the figure of speech: \"O Romeo, Romeo! wherefore art thou Romeo?\"",
-    "options": ["Personification", "Metonymy", "Apostrophe", "Irony"],
-    "correct": "Apostrophe"
+    "type": "Choose the Correct Example",
+    "question": "Which sentence correctly exemplifies Pun?",
+    "options": ["He is as strong as a lion.", "A bicycle can't stand alone because it is two tired.", "The silence was deafening.", "The earth cried as the trees were cut."],
+    "correct": "A bicycle can't stand alone because it is two tired."
   },
   {
     "id": 7,
     "type": "Identify Figure",
-    "question": "Identify the figure of speech: Speech is silver, but silence is golden.",
-    "options": ["Irony", "Paradox", "Antithesis", "Simile"],
-    "correct": "Antithesis"
+    "question": "Identify the figure of speech: \"Call me Ishmael.\" (Reference to Moby Dick)",
+    "options": ["Euphemism", "Allusion", "Apostrophe", "Hyperbole"],
+    "correct": "Allusion"
   },
   {
     "id": 8,
     "type": "Choose the Correct Example",
-    "question": "Which sentence correctly exemplifies Synecdoche?",
-    "options": ["He ran as fast as a cheetah.", "The silence was deafening.", "Do you need a hand with those boxes? (Hand meaning a person/worker)", "She wept buckets of tears."],
-    "correct": "Do you need a hand with those boxes? (Hand meaning a person/worker)"
+    "question": "Which sentence correctly exemplifies Alliteration?",
+    "options": ["The wind howled a song of sorrow.", "Silent silver stream flows swiftly.", "The car zoomed past the lane.", "The path less traveled."],
+    "correct": "Silent silver stream flows swiftly."
   },
   {
     "id": 9,
     "type": "Identify Figure",
-    "question": "Identify the figure of speech: He's not bad at chess, actually.",
-    "options": ["Hyperbole", "Litotes", "Antithesis", "Personification"],
-    "correct": "Litotes"
+    "question": "Identify the figure of speech: \"To err is human; to forgive, divine.\"",
+    "options": ["Metaphor", "Irony", "Antithesis", "Chiasmus"],
+    "correct": "Antithesis"
   },
   {
     "id": 10,
     "type": "Choose the Correct Example",
-    "question": "Which sentence correctly exemplifies Personification?",
-    "options": ["He has a heart of gold.", "The old house sighed in the wind.", "I could sleep for a thousand years.", "The car vroomed past the finish line."],
-    "correct": "The old house sighed in the wind."
+    "question": "Which sentence correctly exemplifies Climax?",
+    "options": ["The ship sank, the passengers screamed, and then there was silence.", "He saw, he came, he conquered.", "The ocean wept for the lost sailors.", "The truth is a beautiful lie."],
+    "correct": "He saw, he came, he conquered."
   },
   {
     "id": 11,
     "type": "Identify Figure",
-    "question": "Identify the figure of speech: The kitchen cabinet cracked. (Focus on consonant sound repetition)",
-    "options": ["Assonance", "Consonance", "Alliteration", "Metaphor"],
-    "correct": "Alliteration"
+    "question": "Identify the figure of speech: \"Ask not what your country can do for you—ask what you can do for your country.\"",
+    "options": ["Climax", "Paradox", "Anaphora", "Antimetabole"],
+    "correct": "Antimetabole"
   },
   {
     "id": 12,
     "type": "Choose the Correct Example",
-    "question": "Which sentence correctly exemplifies Euphemism?",
-    "options": ["The fire alarm shrieked loudly.", "She was always the life of the party.", "The patient had to be put to sleep.", "The leaves whispered their last goodbye."],
-    "correct": "The patient had to be put to sleep."
+    "question": "Which sentence correctly exemplifies Anaphora?",
+    "options": ["Every day, every night, in every way, I am getting better and better.", "The bell rang, the door opened, and we left.", "You can take the boy out of the country, but you can't take the country out of the boy.", "The leaves whispered their secrets."],
+    "correct": "Every day, every night, in every way, I am getting better and better."
   },
   {
     "id": 13,
     "type": "Identify Figure",
-    "question": "Identify the figure of speech: The burglar alarm let out a loud SCREECH.",
-    "options": ["Alliteration", "Onomatopoeia", "Synecdoche", "Hyperbole"],
-    "correct": "Onomatopoeia"
+    "question": "Identify the figure of speech: \"I have a few bad habits, like eating a whole pizza.\" (Understatement)",
+    "options": ["Euphemism", "Litotes", "Hyperbole", "Irony"],
+    "correct": "Litotes"
   },
   {
     "id": 14,
     "type": "Choose the Correct Example",
-    "question": "Which sentence correctly exemplifies Metonymy?",
-    "options": ["He earned his bread with hard labor.", "The press had a field day with the scandal. (Press representing journalists)", "He is simply not the worst writer in the world.", "The fire of passion consumed him."],
-    "correct": "The press had a field day with the scandal. (Press representing journalists)"
+    "question": "Which sentence correctly exemplifies Epistrophe?",
+    "options": ["The government of the people, by the people, for the people.", "It was the best of times, it was the worst of times.", "I came, I saw, I left.", "He's a real Einstein."],
+    "correct": "The government of the people, by the people, for the people."
   },
   {
     "id": 15,
     "type": "Identify Figure",
-    "question": "Identify the figure of speech: He passed away last night.",
-    "options": ["Paradox", "Hyperbole", "Euphemism", "Litotes"],
-    "correct": "Euphemism"
+    "question": "Identify the figure of speech: \"He gave her a diamond ring on their anniversary.\" (Implies the whole hand)",
+    "options": ["Synecdoche", "Metonymy", "Euphemism", "Allusion"],
+    "correct": "Synecdoche"
   },
   {
     "id": 16,
     "type": "Choose the Correct Example",
-    "question": "Which sentence correctly exemplifies Simile?",
-    "options": ["The moon was a silver coin in the sky.", "O Fortune, take away my pain!", "The argument was as thin as paper.", "It's an optional requirement for the course."],
-    "correct": "The argument was as thin as paper."
+    "question": "Which sentence correctly exemplifies Inversion (Anastrophe)?",
+    "options": ["In the valley deep the river flows.", "He is an old, wise man.", "The sun is a magnificent ball of fire.", "The wind howled and whistled."],
+    "correct": "In the valley deep the river flows."
   },
   {
     "id": 17,
     "type": "Identify Figure",
-    "question": "Identify the figure of speech: The pilot was in an accident—a traffic jam.",
-    "options": ["Hyperbole", "Metaphor", "Irony", "Antithesis"],
-    "correct": "Irony"
+    "question": "Identify the figure of speech: \"The flowers looked happy and content in the morning sun.\"",
+    "options": ["Metaphor", "Personification", "Simile", "Oxymoron"],
+    "correct": "Personification"
   },
   {
     "id": 18,
     "type": "Choose the Correct Example",
-    "question": "Which sentence correctly exemplifies Paradox?",
-    "options": ["The house was big, quiet, and old.", "We must learn to unlearn what we have learned.", "He worked as hard as an ox.", "The thunder BOOMED overhead."],
-    "correct": "We must learn to unlearn what we have learned."
+    "question": "Which sentence correctly exemplifies Euphemism?",
+    "options": ["He's as sharp as a tack.", "The company is experiencing negative cash flow.", "The traffic was a nightmare.", "We waited forever for the bus."],
+    "correct": "The company is experiencing negative cash flow."
   },
   {
     "id": 19,
     "type": "Identify Figure",
-    "question": "Identify the figure of speech: The whole school celebrated the victory. (School meaning students and teachers)",
-    "options": ["Metaphor", "Synecdoche", "Metonymy", "Antithesis"],
-    "correct": "Synecdoche"
+    "question": "Identify the figure of speech: \"Life is short, the art long.\"",
+    "options": ["Metaphor", "Paradox", "Antithesis", "Anaphora"],
+    "correct": "Antithesis"
   },
   {
     "id": 20,
     "type": "Choose the Correct Example",
-    "question": "Which sentence correctly exemplifies Hyperbole?",
-    "options": ["He's not exactly ugly.", "I have a mountain of homework to finish.", "The leaves danced in the autumn air.", "To accept is to surrender."],
-    "correct": "I have a mountain of homework to finish."
+    "question": "Which sentence correctly exemplifies Oxymoron?",
+    "options": ["The waves crashed loudly on the shore.", "The politician's speech was seriously funny.", "She has a heart of stone.", "The crowd was not quiet."],
+    "correct": "The politician's speech was seriously funny."
   },
   {
     "id": 21,
     "type": "Identify Figure",
-    "question": "Identify the figure of speech: The rain raced, ripping, and restless. (Focus on 'R' sound repetition)",
-    "options": ["Assonance", "Alliteration", "Consonance", "Onomatopoeia"],
-    "correct": "Alliteration"
+    "question": "Identify the figure of speech: \"O Death, where is thy sting?\"",
+    "options": ["Irony", "Paradox", "Apostrophe", "Litotes"],
+    "correct": "Apostrophe"
   },
   {
     "id": 22,
     "type": "Choose the Correct Example",
-    "question": "Which sentence correctly exemplifies Irony?",
-    "options": ["The students were studying hard for the easy exam.", "The sign saying 'Keep off the Grass' was painted on the grass.", "The flowers nodded in the summer breeze.", "The lawyer was a beacon of hope."],
-    "correct": "The sign saying 'Keep off the Grass' was painted on the grass."
+    "question": "Which sentence correctly exemplifies Onomatopoeia?",
+    "options": ["The rain fell softly.", "The thunder grumbled in the distance.", "The leaves whispered secrets.", "The branch snapped with a loud CRACK!"],
+    "correct": "The branch snapped with a loud CRACK!"
   },
   {
     "id": 23,
     "type": "Identify Figure",
-    "question": "Identify the figure of speech: His actions led to his happy destruction.",
-    "options": ["Metaphor", "Oxymoron", "Paradox", "Irony"],
-    "correct": "Oxymoron"
+    "question": "Identify the figure of speech: \"The student had an ignorant opinion.\"",
+    "options": ["Hyperbole", "Transferred Epithet", "Irony", "Synecdoche"],
+    "correct": "Transferred Epithet"
   },
   {
     "id": 24,
     "type": "Choose the Correct Example",
-    "question": "Which sentence correctly exemplifies Apostrophe?",
-    "options": ["The flowers bowed their heads sadly.", "She is the sun in my life.", "Oh, happy dagger! This is thy sheath. (Addressing the dagger)", "He is the master of his own destiny."],
-    "correct": "Oh, happy dagger! This is thy sheath. (Addressing the dagger)"
+    "question": "Which sentence correctly exemplifies Metaphor?",
+    "options": ["The wind was a sheet of ice.", "The house stood as still as a statue.", "The noise was less than pleasant.", "He is not bad at sports."],
+    "correct": "The wind was a sheet of ice."
   },
   {
     "id": 25,
     "type": "Identify Figure",
-    "question": "Identify the figure of speech: Failing to prepare is preparing to fail.",
-    "options": ["Simile", "Metaphor", "Antithesis", "Paradox"],
-    "correct": "Antithesis"
+    "question": "Identify the figure of speech: \"You are a sight for sore eyes.\" (An unwelcome sight that is described as welcome)",
+    "options": ["Euphemism", "Irony", "Paradox", "Oxymoron"],
+    "correct": "Irony"
   },
   {
     "id": 26,
     "type": "Choose the Correct Example",
-    "question": "Which sentence correctly exemplifies Litotes?",
-    "options": ["I'm going to wait here for ages.", "The singer's performance was not bad at all.", "She cried like a fountain.", "The child is innocent and pure."],
-    "correct": "The singer's performance was not bad at all."
+    "question": "Which sentence correctly exemplifies Synecdoche?",
+    "options": ["The company needs more hands on deck.", "He is not the smartest person I know.", "The crown controls the country.", "She is my sun and moon."],
+    "correct": "The company needs more hands on deck."
   },
   {
     "id": 27,
     "type": "Identify Figure",
-    "question": "Identify the figure of speech: He is as slippery as an eel when questioned.",
-    "options": ["Metaphor", "Simile", "Hyperbole", "Personification"],
-    "correct": "Simile"
+    "question": "Identify the figure of speech: \"She knows the Bible inside and out.\" (Reference to a sacred text)",
+    "options": ["Metonymy", "Allusion", "Euphemism", "Apostrophe"],
+    "correct": "Allusion"
   },
   {
     "id": 28,
     "type": "Choose the Correct Example",
-    "question": "Which sentence correctly exemplifies Metaphor?",
-    "options": ["He felt as cold as ice.", "The old piano sobbed its tune.", "The road was a ribbon of moonlight.", "His decision was not unpopular."],
-    "correct": "The road was a ribbon of moonlight."
+    "question": "Which sentence correctly exemplifies Anadiplosis?",
+    "options": ["I am tired, and I am hungry.", "The general fought fear, fear that cripples the mind.", "I came, I saw, I conquered.", "You are what you eat."],
+    "correct": "The general fought fear, fear that cripples the mind."
   },
   {
     "id": 29,
     "type": "Identify Figure",
-    "question": "Identify the figure of speech: There was a deafening silence after the announcement.",
-    "options": ["Pun", "Oxymoron", "Euphemism", "Apostrophe"],
-    "correct": "Oxymoron"
+    "question": "Identify the figure of speech: \"Go, and catch a falling star.\" (Uses conjunctions frequently)",
+    "options": ["Asyndeton", "Polysyndeton", "Inversion", "Anaphora"],
+    "correct": "Inversion"
   },
   {
     "id": 30,
     "type": "Choose the Correct Example",
-    "question": "Which sentence correctly exemplifies Antithesis?",
-    "options": ["The young and the old enjoyed the festival.", "The water was not too hot, but warm.", "The truth is stranger than fiction.", "The sun is a magnificent ball of fire."],
-    "correct": "The young and the old enjoyed the festival."
+    "question": "Which sentence correctly exemplifies Asyndeton?",
+    "options": ["I will not surrender now, I will not surrender ever.", "I came, I saw, I conquered.", "The flag was red, white, and blue.", "The pen is mightier than the sword."],
+    "correct": "I came, I saw, I conquered."
   },
   {
     "id": 31,
     "type": "Identify Figure",
-    "question": "Identify the figure of speech: Many are called, but few are chosen.",
-    "options": ["Metaphor", "Paradox", "Antithesis", "Simile"],
-    "correct": "Antithesis"
+    "question": "Identify the figure of speech: \"We have ships and men and money and stores.\" (Uses conjunctions frequently)",
+    "options": ["Polysyndeton", "Asyndeton", "Alliteration", "Climax"],
+    "correct": "Polysyndeton"
   },
   {
     "id": 32,
     "type": "Choose the Correct Example",
-    "question": "Which sentence correctly exemplifies Alliteration?",
-    "options": ["She is a woman of her word.", "The sound of the river was hypnotic.", "Five famous films featured falcons.", "The world is cruel, but beautiful."],
-    "correct": "Five famous films featured falcons."
+    "question": "Which sentence correctly exemplifies Transferred Epithet?",
+    "options": ["He lived a restless life.", "The thunder ROARED.", "The teacher gave a quiz.", "The grass is always greener."],
+    "correct": "He lived a restless life."
   },
   {
     "id": 33,
     "type": "Identify Figure",
-    "question": "Identify the figure of speech: The management needed extra brains on the project. (Brains meaning intelligent people)",
-    "options": ["Metonymy", "Synecdoche", "Alliteration", "Hyperbole"],
-    "correct": "Synecdoche"
+    "question": "Identify the figure of speech: \"The trees whispered their ancient secrets to the wind.\"",
+    "options": ["Simile", "Personification", "Hyperbole", "Metaphor"],
+    "correct": "Personification"
   },
   {
     "id": 34,
     "type": "Choose the Correct Example",
     "question": "Which sentence correctly exemplifies Metonymy?",
-    "options": ["The clock is an enemy of man.", "She enjoyed a glass of bubbly at the party. (Bubbly meaning champagne)", "The whole neighborhood came out for the concert.", "The soldier fought like a maniac."],
-    "correct": "She enjoyed a glass of bubbly at the party. (Bubbly meaning champagne)"
+    "options": ["The whole neighborhood attended the meeting.", "The road was as straight as a ruler.", "The answer is surprisingly obvious.", "He is a great chef."],
+    "correct": "The whole neighborhood attended the meeting."
   },
   {
     "id": 35,
     "type": "Identify Figure",
-    "question": "Identify the figure of speech: The White House issued a statement. (White House meaning the U.S. Administration)",
-    "options": ["Synecdoche", "Simile", "Metonymy", "Personification"],
-    "correct": "Metonymy"
+    "question": "Identify the figure of speech: \"It was a tragic comedy.\"",
+    "options": ["Paradox", "Antithesis", "Oxymoron", "Pun"],
+    "correct": "Oxymoron"
   },
   {
     "id": 36,
     "type": "Choose the Correct Example",
-    "question": "Which sentence correctly exemplifies Personification?",
-    "options": ["O, liberty, what crimes are committed in thy name!", "The thunder grumbled in the distance.", "The diamond was a shard of ice.", "The wind was a gentle whirr."],
-    "correct": "The thunder grumbled in the distance."
+    "question": "Which sentence correctly exemplifies Paradox?",
+    "options": ["The silence was broken by a sudden noise.", "Less is more.", "He ran like the wind.", "The thunder clapped."],
+    "correct": "Less is more."
   },
   {
     "id": 37,
     "type": "Identify Figure",
-    "question": "Identify the figure of speech: Death has been very kind to me.",
-    "options": ["Simile", "Personification", "Metaphor", "Oxymoron"],
-    "correct": "Personification"
+    "question": "Identify the figure of speech: \"The boxer packed a powerful punch.\" (Repetition of 'p' sound)",
+    "options": ["Assonance", "Consonance", "Alliteration", "Onomatopoeia"],
+    "correct": "Alliteration"
   },
   {
     "id": 38,
     "type": "Choose the Correct Example",
-    "question": "Which sentence correctly exemplifies Paradox?",
-    "options": ["The best defense is a strong offense.", "Life is short, art is long.", "The only constant in life is change.", "The rain came down in sheets and torrents."],
-    "correct": "The only constant in life is change."
+    "question": "Which sentence correctly exemplifies Euphemism?",
+    "options": ["He is not the sharpest tool in the shed.", "The diplomat was economical with the truth.", "The thunder yelled its anger.", "The house was a mess."],
+    "correct": "The diplomat was economical with the truth."
   },
   {
     "id": 39,
     "type": "Identify Figure",
-    "question": "Identify the figure of speech: The past is a foreign country.",
-    "options": ["Simile", "Metaphor", "Hyperbole", "Irony"],
+    "question": "Identify the figure of speech: \"Her mind was a garden of ideas.\"",
+    "options": ["Simile", "Metaphor", "Personification", "Hyperbole"],
     "correct": "Metaphor"
   },
   {
     "id": 40,
     "type": "Choose the Correct Example",
-    "question": "Which sentence correctly exemplifies Synecdoche?",
-    "options": ["They are hiring new faces at the store. (Faces meaning people)", "The press had a field day with the scandal.", "The White House is being renovated.", "He left the room in a cloud of sadness."],
-    "correct": "They are hiring new faces at the store. (Faces meaning people)"
-  },
-  {
-    "id": 41,
-    "type": "Identify Figure",
-    "question": "Identify the figure of speech: I can resist everything except temptation.",
-    "options": ["Irony", "Paradox", "Hyperbole", "Simile"],
-    "correct": "Paradox"
-  },
-  {
-    "id": 42,
-    "type": "Choose the Correct Example",
     "question": "Which sentence correctly exemplifies Simile?",
-    "options": ["His heart was a drum beating with fear.", "The computer crashed without warning.", "Her voice was clear like a bell.", "The government raised the minimum wage."],
-    "correct": "Her voice was clear like a bell."
-  },
-  {
-    "id": 43,
-    "type": "Choose the Correct Example",
-    "question": "Which sentence correctly exemplifies Oxymoron?",
-    "options": ["The world is a book.", "She wore an original antique necklace.", "The house was small but cozy.", "I'm leaving for the West Coast."],
-    "correct": "She wore an original antique necklace."
-  },
-  {
-    "id": 44,
-    "type": "Identify Figure",
-    "question": "Identify the figure of speech: The baby's skin was as soft as a rose petal.",
-    "options": ["Metaphor", "Simile", "Irony", "Metonymy"],
-    "correct": "Simile"
-  },
-  {
-    "id": 45,
-    "type": "Choose the Correct Example",
-    "question": "Which sentence correctly exemplifies Onomatopoeia?",
-    "options": ["The silence was louder than a storm.", "The alarm clock went BEEP, BEEP, BEEP.", "Her beauty was dazzling.", "They are not friends, but enemies."],
-    "correct": "The alarm clock went BEEP, BEEP, BEEP."
-  },
-  {
-    "id": 46,
-    "type": "Identify Figure",
-    "question": "Identify the figure of speech: \"Friends, Romans, countrymen, lend me your ears.\" (Direct address)",
-    "options": ["Synecdoche", "Apostrophe", "Metonymy", "Alliteration"],
-    "correct": "Apostrophe"
-  },
-  {
-    "id": 47,
-    "type": "Choose the Correct Example",
-    "question": "Which sentence correctly exemplifies Hyperbole?",
-    "options": ["He spoke in riddles and rhymes.", "The groceries weighed a ton.", "The test was simple, yet complex.", "The law is the foundation of order."],
-    "correct": "The groceries weighed a ton."
-  },
-  {
-    "id": 48,
-    "type": "Identify Figure",
-    "question": "Identify the figure of speech: A boiled egg is hard to beat.",
-    "options": ["Pun", "Irony", "Paradox", "Hyperbole"],
-    "correct": "Pun"
-  },
-  {
-    "id": 49,
-    "type": "Identify Figure",
-    "question": "Identify the figure of speech: We shall fight on the beaches, we shall fight on the landing grounds, we shall fight in the fields and in the streets.",
-    "options": ["Climax", "Anaphora", "Metonymy", "Personification"],
-    "correct": "Anaphora"
-  },
-  {
-    "id": 50,
-    "type": "Identify Figure",
-    "question": "Identify the figure of speech: He came, he saw, he conquered.",
-    "options": ["Climax", "Paradox", "Anaphora", "Metaphor"],
-    "correct": "Climax"
-  },
-  {
-    "id": 51,
-    "type": "Identify Figure",
-    "question": "Identify the figure of speech: He spent a sleepless night.",
-    "options": ["Transferred Epithet", "Personification", "Irony", "Hyperbole"],
-    "correct": "Transferred Epithet"
-  },
-  {
-    "id": 52,
-    "type": "Identify Figure",
-    "question": "Identify the figure of speech: He met his Waterloo in the debate.",
-    "options": ["Metonymy", "Allusion", "Hyperbole", "Metaphor"],
-    "correct": "Allusion"
-  },
-  {
-    "id": 53,
-    "type": "Choose the Correct Example",
-    "question": "Which sentence correctly exemplifies Antithesis?",
-    "options": ["He spoke softly, gently, and quietly.", "The stars were diamonds in the black night.", "Patience is bitter, but its fruit is sweet.", "The mountain was a giant asleep."],
-    "correct": "Patience is bitter, but its fruit is sweet."
+    "options": ["The wind was a roaring beast.", "He stood as still as a stone.", "The thunder was a loud clap.", "The committee made the decision."],
+    "correct": "He stood as still as a stone."
   }
 ]
+// [
+//   {
+//     "id": 1,
+//     "type": "Identify Figure",
+//     "question": "Identify the figure of speech: The city was a concrete jungle.",
+//     "options": ["Simile", "Metaphor", "Oxymoron", "Irony"],
+//     "correct": "Metaphor"
+//   },
+//   {
+//     "id": 2,
+//     "type": "Choose the Correct Example",
+//     "question": "Which sentence correctly exemplifies Metonymy?",
+//     "options": ["He ran as fast as a cheetah.", "The Oval Office issued a statement. (Office representing the President)", "The silence was deafening.", "She wept buckets of tears."],
+//     "correct": "The Oval Office issued a statement. (Office representing the President)"
+//   },
+//   {
+//     "id": 3,
+//     "type": "Identify Figure",
+//     "question": "Identify the figure of speech: The sun smiled down on us.",
+//     "options": ["Metaphor", "Personification", "Alliteration", "Synecdoche"],
+//     "correct": "Personification"
+//   },
+//   {
+//     "id": 4,
+//     "type": "Identify Figure",
+//     "question": "Identify the figure of speech: I've told you a million times!",
+//     "options": ["Paradox", "Euphemism", "Hyperbole", "Litotes"],
+//     "correct": "Hyperbole"
+//   },
+//   {
+//     "id": 5,
+//     "type": "Choose the Correct Example",
+//     "question": "Which sentence correctly exemplifies Oxymoron?",
+//     "options": ["The comedian’s routine was awfully funny.", "The baby cried all night long.", "The ship sailed smoothly through the water.", "The sword is a dangerous weapon."],
+//     "correct": "The comedian’s routine was awfully funny."
+//   },
+//   {
+//     "id": 6,
+//     "type": "Identify Figure",
+//     "question": "Identify the figure of speech: \"O Romeo, Romeo! wherefore art thou Romeo?\"",
+//     "options": ["Personification", "Metonymy", "Apostrophe", "Irony"],
+//     "correct": "Apostrophe"
+//   },
+//   {
+//     "id": 7,
+//     "type": "Identify Figure",
+//     "question": "Identify the figure of speech: Speech is silver, but silence is golden.",
+//     "options": ["Irony", "Paradox", "Antithesis", "Simile"],
+//     "correct": "Antithesis"
+//   },
+//   {
+//     "id": 8,
+//     "type": "Choose the Correct Example",
+//     "question": "Which sentence correctly exemplifies Synecdoche?",
+//     "options": ["He ran as fast as a cheetah.", "The silence was deafening.", "Do you need a hand with those boxes? (Hand meaning a person/worker)", "She wept buckets of tears."],
+//     "correct": "Do you need a hand with those boxes? (Hand meaning a person/worker)"
+//   },
+//   {
+//     "id": 9,
+//     "type": "Identify Figure",
+//     "question": "Identify the figure of speech: He's not bad at chess, actually.",
+//     "options": ["Hyperbole", "Litotes", "Antithesis", "Personification"],
+//     "correct": "Litotes"
+//   },
+//   {
+//     "id": 10,
+//     "type": "Choose the Correct Example",
+//     "question": "Which sentence correctly exemplifies Personification?",
+//     "options": ["He has a heart of gold.", "The old house sighed in the wind.", "I could sleep for a thousand years.", "The car vroomed past the finish line."],
+//     "correct": "The old house sighed in the wind."
+//   },
+//   {
+//     "id": 11,
+//     "type": "Identify Figure",
+//     "question": "Identify the figure of speech: The kitchen cabinet cracked. (Focus on consonant sound repetition)",
+//     "options": ["Assonance", "Consonance", "Alliteration", "Metaphor"],
+//     "correct": "Alliteration"
+//   },
+//   {
+//     "id": 12,
+//     "type": "Choose the Correct Example",
+//     "question": "Which sentence correctly exemplifies Euphemism?",
+//     "options": ["The fire alarm shrieked loudly.", "She was always the life of the party.", "The patient had to be put to sleep.", "The leaves whispered their last goodbye."],
+//     "correct": "The patient had to be put to sleep."
+//   },
+//   {
+//     "id": 13,
+//     "type": "Identify Figure",
+//     "question": "Identify the figure of speech: The burglar alarm let out a loud SCREECH.",
+//     "options": ["Alliteration", "Onomatopoeia", "Synecdoche", "Hyperbole"],
+//     "correct": "Onomatopoeia"
+//   },
+//   {
+//     "id": 14,
+//     "type": "Choose the Correct Example",
+//     "question": "Which sentence correctly exemplifies Metonymy?",
+//     "options": ["He earned his bread with hard labor.", "The press had a field day with the scandal. (Press representing journalists)", "He is simply not the worst writer in the world.", "The fire of passion consumed him."],
+//     "correct": "The press had a field day with the scandal. (Press representing journalists)"
+//   },
+//   {
+//     "id": 15,
+//     "type": "Identify Figure",
+//     "question": "Identify the figure of speech: He passed away last night.",
+//     "options": ["Paradox", "Hyperbole", "Euphemism", "Litotes"],
+//     "correct": "Euphemism"
+//   },
+//   {
+//     "id": 16,
+//     "type": "Choose the Correct Example",
+//     "question": "Which sentence correctly exemplifies Simile?",
+//     "options": ["The moon was a silver coin in the sky.", "O Fortune, take away my pain!", "The argument was as thin as paper.", "It's an optional requirement for the course."],
+//     "correct": "The argument was as thin as paper."
+//   },
+//   {
+//     "id": 17,
+//     "type": "Identify Figure",
+//     "question": "Identify the figure of speech: The pilot was in an accident—a traffic jam.",
+//     "options": ["Hyperbole", "Metaphor", "Irony", "Antithesis"],
+//     "correct": "Irony"
+//   },
+//   {
+//     "id": 18,
+//     "type": "Choose the Correct Example",
+//     "question": "Which sentence correctly exemplifies Paradox?",
+//     "options": ["The house was big, quiet, and old.", "We must learn to unlearn what we have learned.", "He worked as hard as an ox.", "The thunder BOOMED overhead."],
+//     "correct": "We must learn to unlearn what we have learned."
+//   },
+//   {
+//     "id": 19,
+//     "type": "Identify Figure",
+//     "question": "Identify the figure of speech: The whole school celebrated the victory. (School meaning students and teachers)",
+//     "options": ["Metaphor", "Synecdoche", "Metonymy", "Antithesis"],
+//     "correct": "Synecdoche"
+//   },
+//   {
+//     "id": 20,
+//     "type": "Choose the Correct Example",
+//     "question": "Which sentence correctly exemplifies Hyperbole?",
+//     "options": ["He's not exactly ugly.", "I have a mountain of homework to finish.", "The leaves danced in the autumn air.", "To accept is to surrender."],
+//     "correct": "I have a mountain of homework to finish."
+//   },
+//   {
+//     "id": 21,
+//     "type": "Identify Figure",
+//     "question": "Identify the figure of speech: The rain raced, ripping, and restless. (Focus on 'R' sound repetition)",
+//     "options": ["Assonance", "Alliteration", "Consonance", "Onomatopoeia"],
+//     "correct": "Alliteration"
+//   },
+//   {
+//     "id": 22,
+//     "type": "Choose the Correct Example",
+//     "question": "Which sentence correctly exemplifies Irony?",
+//     "options": ["The students were studying hard for the easy exam.", "The sign saying 'Keep off the Grass' was painted on the grass.", "The flowers nodded in the summer breeze.", "The lawyer was a beacon of hope."],
+//     "correct": "The sign saying 'Keep off the Grass' was painted on the grass."
+//   },
+//   {
+//     "id": 23,
+//     "type": "Identify Figure",
+//     "question": "Identify the figure of speech: His actions led to his happy destruction.",
+//     "options": ["Metaphor", "Oxymoron", "Paradox", "Irony"],
+//     "correct": "Oxymoron"
+//   },
+//   {
+//     "id": 24,
+//     "type": "Choose the Correct Example",
+//     "question": "Which sentence correctly exemplifies Apostrophe?",
+//     "options": ["The flowers bowed their heads sadly.", "She is the sun in my life.", "Oh, happy dagger! This is thy sheath. (Addressing the dagger)", "He is the master of his own destiny."],
+//     "correct": "Oh, happy dagger! This is thy sheath. (Addressing the dagger)"
+//   },
+//   {
+//     "id": 25,
+//     "type": "Identify Figure",
+//     "question": "Identify the figure of speech: Failing to prepare is preparing to fail.",
+//     "options": ["Simile", "Metaphor", "Antithesis", "Paradox"],
+//     "correct": "Antithesis"
+//   },
+//   {
+//     "id": 26,
+//     "type": "Choose the Correct Example",
+//     "question": "Which sentence correctly exemplifies Litotes?",
+//     "options": ["I'm going to wait here for ages.", "The singer's performance was not bad at all.", "She cried like a fountain.", "The child is innocent and pure."],
+//     "correct": "The singer's performance was not bad at all."
+//   },
+//   {
+//     "id": 27,
+//     "type": "Identify Figure",
+//     "question": "Identify the figure of speech: He is as slippery as an eel when questioned.",
+//     "options": ["Metaphor", "Simile", "Hyperbole", "Personification"],
+//     "correct": "Simile"
+//   },
+//   {
+//     "id": 28,
+//     "type": "Choose the Correct Example",
+//     "question": "Which sentence correctly exemplifies Metaphor?",
+//     "options": ["He felt as cold as ice.", "The old piano sobbed its tune.", "The road was a ribbon of moonlight.", "His decision was not unpopular."],
+//     "correct": "The road was a ribbon of moonlight."
+//   },
+//   {
+//     "id": 29,
+//     "type": "Identify Figure",
+//     "question": "Identify the figure of speech: There was a deafening silence after the announcement.",
+//     "options": ["Pun", "Oxymoron", "Euphemism", "Apostrophe"],
+//     "correct": "Oxymoron"
+//   },
+//   {
+//     "id": 30,
+//     "type": "Choose the Correct Example",
+//     "question": "Which sentence correctly exemplifies Antithesis?",
+//     "options": ["The young and the old enjoyed the festival.", "The water was not too hot, but warm.", "The truth is stranger than fiction.", "The sun is a magnificent ball of fire."],
+//     "correct": "The young and the old enjoyed the festival."
+//   },
+//   {
+//     "id": 31,
+//     "type": "Identify Figure",
+//     "question": "Identify the figure of speech: Many are called, but few are chosen.",
+//     "options": ["Metaphor", "Paradox", "Antithesis", "Simile"],
+//     "correct": "Antithesis"
+//   },
+//   {
+//     "id": 32,
+//     "type": "Choose the Correct Example",
+//     "question": "Which sentence correctly exemplifies Alliteration?",
+//     "options": ["She is a woman of her word.", "The sound of the river was hypnotic.", "Five famous films featured falcons.", "The world is cruel, but beautiful."],
+//     "correct": "Five famous films featured falcons."
+//   },
+//   {
+//     "id": 33,
+//     "type": "Identify Figure",
+//     "question": "Identify the figure of speech: The management needed extra brains on the project. (Brains meaning intelligent people)",
+//     "options": ["Metonymy", "Synecdoche", "Alliteration", "Hyperbole"],
+//     "correct": "Synecdoche"
+//   },
+//   {
+//     "id": 34,
+//     "type": "Choose the Correct Example",
+//     "question": "Which sentence correctly exemplifies Metonymy?",
+//     "options": ["The clock is an enemy of man.", "She enjoyed a glass of bubbly at the party. (Bubbly meaning champagne)", "The whole neighborhood came out for the concert.", "The soldier fought like a maniac."],
+//     "correct": "She enjoyed a glass of bubbly at the party. (Bubbly meaning champagne)"
+//   },
+//   {
+//     "id": 35,
+//     "type": "Identify Figure",
+//     "question": "Identify the figure of speech: The White House issued a statement. (White House meaning the U.S. Administration)",
+//     "options": ["Synecdoche", "Simile", "Metonymy", "Personification"],
+//     "correct": "Metonymy"
+//   },
+//   {
+//     "id": 36,
+//     "type": "Choose the Correct Example",
+//     "question": "Which sentence correctly exemplifies Personification?",
+//     "options": ["O, liberty, what crimes are committed in thy name!", "The thunder grumbled in the distance.", "The diamond was a shard of ice.", "The wind was a gentle whirr."],
+//     "correct": "The thunder grumbled in the distance."
+//   },
+//   {
+//     "id": 37,
+//     "type": "Identify Figure",
+//     "question": "Identify the figure of speech: Death has been very kind to me.",
+//     "options": ["Simile", "Personification", "Metaphor", "Oxymoron"],
+//     "correct": "Personification"
+//   },
+//   {
+//     "id": 38,
+//     "type": "Choose the Correct Example",
+//     "question": "Which sentence correctly exemplifies Paradox?",
+//     "options": ["The best defense is a strong offense.", "Life is short, art is long.", "The only constant in life is change.", "The rain came down in sheets and torrents."],
+//     "correct": "The only constant in life is change."
+//   },
+//   {
+//     "id": 39,
+//     "type": "Identify Figure",
+//     "question": "Identify the figure of speech: The past is a foreign country.",
+//     "options": ["Simile", "Metaphor", "Hyperbole", "Irony"],
+//     "correct": "Metaphor"
+//   },
+//   {
+//     "id": 40,
+//     "type": "Choose the Correct Example",
+//     "question": "Which sentence correctly exemplifies Synecdoche?",
+//     "options": ["They are hiring new faces at the store. (Faces meaning people)", "The press had a field day with the scandal.", "The White House is being renovated.", "He left the room in a cloud of sadness."],
+//     "correct": "They are hiring new faces at the store. (Faces meaning people)"
+//   },
+//   {
+//     "id": 41,
+//     "type": "Identify Figure",
+//     "question": "Identify the figure of speech: I can resist everything except temptation.",
+//     "options": ["Irony", "Paradox", "Hyperbole", "Simile"],
+//     "correct": "Paradox"
+//   },
+//   {
+//     "id": 42,
+//     "type": "Choose the Correct Example",
+//     "question": "Which sentence correctly exemplifies Simile?",
+//     "options": ["His heart was a drum beating with fear.", "The computer crashed without warning.", "Her voice was clear like a bell.", "The government raised the minimum wage."],
+//     "correct": "Her voice was clear like a bell."
+//   },
+//   {
+//     "id": 43,
+//     "type": "Choose the Correct Example",
+//     "question": "Which sentence correctly exemplifies Oxymoron?",
+//     "options": ["The world is a book.", "She wore an original antique necklace.", "The house was small but cozy.", "I'm leaving for the West Coast."],
+//     "correct": "She wore an original antique necklace."
+//   },
+//   {
+//     "id": 44,
+//     "type": "Identify Figure",
+//     "question": "Identify the figure of speech: The baby's skin was as soft as a rose petal.",
+//     "options": ["Metaphor", "Simile", "Irony", "Metonymy"],
+//     "correct": "Simile"
+//   },
+//   {
+//     "id": 45,
+//     "type": "Choose the Correct Example",
+//     "question": "Which sentence correctly exemplifies Onomatopoeia?",
+//     "options": ["The silence was louder than a storm.", "The alarm clock went BEEP, BEEP, BEEP.", "Her beauty was dazzling.", "They are not friends, but enemies."],
+//     "correct": "The alarm clock went BEEP, BEEP, BEEP."
+//   },
+//   {
+//     "id": 46,
+//     "type": "Identify Figure",
+//     "question": "Identify the figure of speech: \"Friends, Romans, countrymen, lend me your ears.\" (Direct address)",
+//     "options": ["Synecdoche", "Apostrophe", "Metonymy", "Alliteration"],
+//     "correct": "Apostrophe"
+//   },
+//   {
+//     "id": 47,
+//     "type": "Choose the Correct Example",
+//     "question": "Which sentence correctly exemplifies Hyperbole?",
+//     "options": ["He spoke in riddles and rhymes.", "The groceries weighed a ton.", "The test was simple, yet complex.", "The law is the foundation of order."],
+//     "correct": "The groceries weighed a ton."
+//   },
+//   {
+//     "id": 48,
+//     "type": "Identify Figure",
+//     "question": "Identify the figure of speech: A boiled egg is hard to beat.",
+//     "options": ["Pun", "Irony", "Paradox", "Hyperbole"],
+//     "correct": "Pun"
+//   },
+//   {
+//     "id": 49,
+//     "type": "Identify Figure",
+//     "question": "Identify the figure of speech: We shall fight on the beaches, we shall fight on the landing grounds, we shall fight in the fields and in the streets.",
+//     "options": ["Climax", "Anaphora", "Metonymy", "Personification"],
+//     "correct": "Anaphora"
+//   },
+//   {
+//     "id": 50,
+//     "type": "Identify Figure",
+//     "question": "Identify the figure of speech: He came, he saw, he conquered.",
+//     "options": ["Climax", "Paradox", "Anaphora", "Metaphor"],
+//     "correct": "Climax"
+//   },
+//   {
+//     "id": 51,
+//     "type": "Identify Figure",
+//     "question": "Identify the figure of speech: He spent a sleepless night.",
+//     "options": ["Transferred Epithet", "Personification", "Irony", "Hyperbole"],
+//     "correct": "Transferred Epithet"
+//   },
+//   {
+//     "id": 52,
+//     "type": "Identify Figure",
+//     "question": "Identify the figure of speech: He met his Waterloo in the debate.",
+//     "options": ["Metonymy", "Allusion", "Hyperbole", "Metaphor"],
+//     "correct": "Allusion"
+//   },
+//   {
+//     "id": 53,
+//     "type": "Choose the Correct Example",
+//     "question": "Which sentence correctly exemplifies Antithesis?",
+//     "options": ["He spoke softly, gently, and quietly.", "The stars were diamonds in the black night.", "Patience is bitter, but its fruit is sweet.", "The mountain was a giant asleep."],
+//     "correct": "Patience is bitter, but its fruit is sweet."
+//   }
+// ]
 
 // [
 //     {
