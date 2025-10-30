@@ -59,7 +59,7 @@ const [selectedDataIndex, setSelectedDataIndex] = useState(null);
       : "💖 Don't worry honey, I still believe in you!";
 
   const scriptURL =
-    "https://script.google.com/macros/s/AKfycbzwRqxhJoOATh4Npm4DFLXqm53c9cMkt9zes27xD8i2REdg3XU_Q8u5mjl7LWW1NJn2Ng/exec";
+    "https://script.google.com/macros/s/AKfycbzOaOXGKIdDP70a870cB_2d8dTYk-zRJO1S8lhDSsF11QKjpVzmVvfGi0Fm3NqrI-Kzew/exec";
 
 
 
@@ -122,18 +122,39 @@ const [selectedDataIndex, setSelectedDataIndex] = useState(null);
     form.action = scriptURL;
     form.target = "hidden_iframe";
 
-    const fields = {
-      name,
-      topic,
-      score: Number(score).toFixed(2),
-      correct,
-      wrong,
-      notAnswered,
-      expectedScore: Number(expectedScore).toFixed(2),
-      percentage: Number(percentage).toFixed(2) + "%",
-      revisionJSON: JSON.stringify(revisionData),
-      attemptType: mode === "revision" ? "Revision" : "Normal",
-    };
+
+    const resultData = {
+  timestamp: new Date().toISOString(),
+  name,
+  topic,
+  score,
+  correct,
+  wrong,
+  notAnswered,
+  percentage,
+  mode,
+  quizJSON: JSON.stringify({
+    questions,
+    answers,
+    score,
+    maxScore: questions.length,
+    percentage,
+  }),
+};
+
+const fields = {
+  name,
+  topic,
+  score: Number(score).toFixed(2),
+  correct,
+  wrong,
+  notAnswered,
+  expectedScore: Number(expectedScore).toFixed(2),
+  percentage: Number(percentage).toFixed(2) + "%",
+  revisionJSON: JSON.stringify(revisionData),
+  attemptType: mode === "revision" ? "Revision" : "Normal",
+  quizJSON: resultData.quizJSON, // ✅ add this line
+};
 
     Object.keys(fields).forEach((key) => {
       const input = document.createElement("input");
@@ -650,35 +671,74 @@ const fetchHistory = async () => {
     </div>
 
     {/* Table */}
-    <table className="min-w-full text-center border-collapse">
-      <thead>
-        <tr>
-          <th className="border px-2 py-1">Date</th>
-          <th className="border px-2 py-1">Topic</th>
-          <th className="border px-2 py-1">Score</th>
-          <th className="border px-2 py-1">Correct</th>
-          <th className="border px-2 py-1">Wrong</th>
-          <th className="border px-2 py-1">Not Answered</th>
-          <th className="border px-2 py-1">Percentage</th>
-        </tr>
-      </thead>
-      <tbody>
-        {history.map((h, idx) => (
-          <tr 
-            key={idx} 
-            className={`transition-colors duration-200 ${selectedDataIndex === idx ? 'bg-blue-200 font-semibold' : ''}`}
-          >
-            <td className="border px-2 py-1">{new Date(h.timestamp).toLocaleDateString()}</td>
-            <td className="border px-2 py-1">{h.topic}</td>
-            <td className="border px-2 py-1">{`${parseFloat(h.score).toFixed(0)}/${h.correct + h.wrong + h.notAnswered}`}</td>
-            <td className="border px-2 py-1 text-green-700 font-bold">{h.correct}</td>
-            <td className="border px-2 py-1 text-red-700 font-bold">{h.wrong}</td>
-            <td className="border px-2 py-1 text-gray-700 font-bold">{h.notAnswered}</td>
-            <td className="border px-2 py-1">{(parseFloat(h.percentage) * 100).toFixed(2)}%</td>
-          </tr>
-        ))}
-      </tbody>
-    </table>
+  <table className="min-w-full text-center border-collapse">
+  <thead>
+    <tr>
+      <th className="border px-2 py-1">Date</th>
+      <th className="border px-2 py-1">Topic</th>
+      <th className="border px-2 py-1">Score</th>
+      <th className="border px-2 py-1">Correct</th>
+      <th className="border px-2 py-1">Wrong</th>
+      <th className="border px-2 py-1">Not Answered</th>
+      <th className="border px-2 py-1">Percentage</th>
+      <th className="border px-2 py-1">Download</th> {/* 🆕 New column */}
+    </tr>
+  </thead>
+
+  <tbody>
+    {history.map((h, idx) => (
+      <tr
+        key={idx}
+        className={`transition-colors duration-200 ${
+          selectedDataIndex === idx ? "bg-blue-200 font-semibold" : ""
+        }`}
+      >
+        <td className="border px-2 py-1">
+          {new Date(h.timestamp).toLocaleDateString()}
+        </td>
+        <td className="border px-2 py-1">{h.topic}</td>
+        <td className="border px-2 py-1">{`${parseFloat(h.score).toFixed(0)}/${
+          h.correct + h.wrong + h.notAnswered
+        }`}</td>
+        <td className="border px-2 py-1 text-green-700 font-bold">{h.correct}</td>
+        <td className="border px-2 py-1 text-red-700 font-bold">{h.wrong}</td>
+        <td className="border px-2 py-1 text-gray-700 font-bold">
+          {h.notAnswered}
+        </td>
+        <td className="border px-2 py-1">
+          {(parseFloat(h.percentage) * 100).toFixed(2)}%
+        </td>
+
+        {/* 🆕 Download button */}
+<td className="border px-2 py-1">
+  <button
+    onClick={() => {
+      if (!h.quizJSON) return alert("No quiz data available!");
+      const quizData = JSON.parse(h.quizJSON);
+
+      downloadQuizPDF({
+        name: h.name,
+        topic: h.topic,
+        questions: quizData.questions,
+        answers: quizData.answers,
+        score: quizData.score,
+        maxScore: quizData.maxScore,
+        percentage: quizData.percentage,
+        date: new Date(h.timestamp).toLocaleString(), // optional
+      });
+    }}
+    className="px-3 py-1 bg-blue-500 text-white rounded hover:bg-blue-600 text-xs"
+  >
+    Download PDF
+  </button>
+</td>
+
+
+      </tr>
+    ))}
+  </tbody>
+</table>
+
   </div>
 )}
 
